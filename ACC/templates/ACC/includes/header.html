@@ -1,0 +1,48 @@
+{% load static %}
+<!-- HEADER -->
+    <header class="w-full bg-white px-6 py-3 shadow flex items-center justify-between">
+        
+        <!-- LOGO -->
+        <img src="{% static 'ACC/img/ado.png' %}" class="w-40" alt="Logo ADO">
+
+        <!-- BUSCADOR -->
+        <div class="w-1/2">
+            <input 
+                type="text" 
+                placeholder="Buscar"
+                class="w-full border rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-[#6A2973]"
+            >
+        </div>
+
+        <!-- AVATAR + POPUP -->
+        <div class="relative" x-data="{ open:false }">
+
+            <!-- Círculo con iniciales -->
+            <button 
+                @click="open = !open"
+                class="w-12 h-12 bg-[#00194F] text-white rounded-full flex items-center justify-center text-xl shadow"
+            >
+                BS
+            </button>
+
+            <!-- Ventana flotante -->
+            <div 
+                x-show="open" 
+                @click.outside="open = false"
+                x-transition
+                class="absolute right-0 mt-3 w-56 bg-white shadow-xl rounded-lg border p-4"
+            >
+                <p class="font-semibold text-gray-800 text-center">Brandon Silva</p>
+                <p class="text-sm text-gray-500 text-center">brandon.silva@correo.com</p>
+
+                <button 
+                    class="w-full mt-4 bg-red-600 text-white py-2 rounded-lg hover:bg-red-700"
+                    onclick="window.location.href='/'"
+                >
+                    Cerrar sesión
+                </button>
+            </div>
+
+        </div>
+
+    </header>

@@ -1,0 +1,201 @@
+{% load static %}
+{% load django_browser_reload %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    {% include './includes/head.html' %}
+  </head>
+  <body class="bg-[#f5f5f5]">
+    {% include './includes/header.html' %}
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="flex">
+      {% include './includes/menu.html' %}
+
+      <!-- CUERPO PRINCIPAL -->
+      <main class="flex-1 pt-6 pr-6 pl-6">
+        <!-- TARJETAS SUPERIORES -->
+        <div class="flex gap-6 mb-6">
+          <!-- ADO GL -->
+          <div class="flex-1 bg-[#6A2973] text-white p-6 rounded-xl shadow-md">
+            <p class="text-center text-xl font-semibold">ADO GL</p>
+            <h2 class="text-center text-6xl font-bold mt-5 mb-4">220</h2>
+          </div>
+
+          <!-- ADO PL -->
+          <div class="flex-1 bg-[#00194F] text-white p-6 rounded-xl shadow-md">
+            <p class="text-center text-xl font-semibold">ADO PL</p>
+            <h2 class="text-center text-6xl font-bold mt-5 mb-4">85</h2>
+          </div>
+
+          <!-- ACCIDENTES -->
+          <div class="flex-1 bg-[#D42222] text-white p-6 rounded-xl shadow-md">
+            <p class="text-center text-xl font-semibold">ACCIDENTES</p>
+            <h2 class="text-center text-6xl font-bold mt-5 mb-4">55</h2>
+          </div>
+        </div>
+        <!-- CONDUCTORES DATOS ESTADISTICOS -->
+        <div class="bg-white min-h-screen rounded-tl-xl rounded-tr-xl shadow p-6">
+
+  <h2 class="text-2xl font-semibold mb-4">Conductores</h2>
+
+  <table class="w-full border-collapse">
+    
+    <!-- Encabezados -->
+    <thead>
+      <tr class="text-left text-gray-700">
+        <th class="py-3 px-4">Conductor</th>
+        <th class="py-3 px-4">Nombre</th>
+        <th class="py-3 px-4">Accidentes</th>
+        <th class="py-3 px-4">Costo</th>
+        <th class="py-3 px-4">Fecha</th>
+      </tr>
+    </thead>
+
+    <!-- Cuerpo -->
+    <tbody class="text-gray-700">
+
+      <!-- FILA 1 -->
+      <tr class="border-b">
+        <td class="py-4 px-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-[#6A2973] text-white flex items-center justify-center text-xl">
+              HB
+            </div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-medium">Herman Beck</td>
+
+        <td class="py-4 px-4">
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-green-500 h-3 rounded-full" style="width: 70%;"></div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-semibold">$ 77.99</td>
+        <td class="py-4 px-4">May 15, 2015</td>
+      </tr>
+
+      <!-- FILA 2 -->
+      <tr class="border-b">
+        <td class="py-4 px-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-blue-900 text-white flex items-center justify-center text-xl">
+              MA
+            </div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-medium">Messsy Adam</td>
+
+        <td class="py-4 px-4">
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-red-500 h-3 rounded-full" style="width: 40%;"></div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-semibold">$245.30</td>
+        <td class="py-4 px-4">July 1, 2015</td>
+      </tr>
+
+      <!-- FILA 3 -->
+      <tr class="border-b">
+        <td class="py-4 px-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-[#D42222] text-white flex items-center justify-center text-xl">
+              JR
+            </div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-medium">John Richards</td>
+
+        <td class="py-4 px-4">
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-yellow-400 h-3 rounded-full" style="width: 60%;"></div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-semibold">$138.00</td>
+        <td class="py-4 px-4">Apr 12, 2015</td>
+      </tr>
+
+      <!-- FILA 4 -->
+      <tr class="border-b">
+        <td class="py-4 px-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-[#00194F] text-white flex items-center justify-center text-xl">
+              PM
+            </div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-medium">Peter Meggik</td>
+
+        <td class="py-4 px-4">
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 50%;"></div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-semibold">$ 77.99</td>
+        <td class="py-4 px-4">May 15, 2015</td>
+      </tr>
+
+      <!-- FILA 5 -->
+      <tr class="border-b">
+        <td class="py-4 px-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center text-xl">
+              ED
+            </div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-medium">Edward</td>
+
+        <td class="py-4 px-4">
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-red-500 h-3 rounded-full" style="width: 30%;"></div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-semibold">$160.25</td>
+        <td class="py-4 px-4">May 03, 2015</td>
+      </tr>
+
+      <!-- FILA 6 -->
+      <tr class="border-b">
+        <td class="py-4 px-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-[#6A2973] text-white flex items-center justify-center text-xl">
+              JD
+            </div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-medium">John Doe</td>
+
+        <td class="py-4 px-4">
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-blue-500 h-3 rounded-full" style="width: 85%;"></div>
+          </div>
+        </td>
+
+        <td class="py-4 px-4 font-semibold">$123.21</td>
+        <td class="py-4 px-4">April 05, 2015</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
+
+      </main>
+    </div>
+  </body>
+</html>

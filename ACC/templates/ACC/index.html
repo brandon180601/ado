@@ -1,0 +1,115 @@
+{% load static %}
+{% load django_browser_reload %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INICIO</title>
+    {% include './includes/head.html' %}
+  </head>
+  {% django_browser_reload_script %}
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-[900px] h-[520px] bg-white rounded-2xl shadow-xl flex overflow-hidden">
+      <!-- IZQUIERDA -->
+      <div class="w-[55%] bg-cover bg-center" style="background-image: url('{% static 'ACC/img/ado.jpg' %}');"></div>
+
+      <!-- DERECHA -->
+      <div class="w-[50%] flex flex-col justify-center px-12">
+        <p class="text-gray-700 text-xl font-light mx-3">Hola !</p>
+        <p class="text-3xl font-semibold text-[#6A2973] -mt-1 mx-3">Bienvenido</p>
+
+        <p class="mt-6 text-gray-600 text-center text-lg">
+          <a class="text-[#D92323] font-semibold">Inicia Sesión</a> con tu cuenta
+        </p>
+
+        <!-- FORMULARIO -->
+        <form class="mt-6 mx-3">
+          <!-- USUARIO -->
+          <div class="mb-4">
+            <label class="text-gray-700 text-sm">Usuario</label>
+            <div class="relative mt-1">
+              <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+                <!-- icono usuario -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 
+                                1.79-4 4 1.79 4 4 4zm0 2c-3.31 0-6 
+                                2.69-6 6h12c0-3.31-2.69-6-6-6z" />
+                </svg>
+              </span>
+              <input type="text" name="username" class="w-full bg-gray-100 border border-gray-300 text-gray-800 rounded-lg pl-11 pr-3 py-2 focus:ring-2 focus:ring-[#6A2973] focus:outline-none" placeholder="Usuario" />
+            </div>
+          </div>
+
+          <!-- CONTRASEÑA -->
+          <div class="mb-4">
+            <label class="text-gray-700 text-sm">Contraseña</label>
+            <div class="relative mt-1">
+              <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+                <!-- icono candado -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 10V8a4 4 0 10-8 0v2m2 4v2m4-2v2m2-6H6a2 2 0 00-2 2v6a2 2 
+                                0 002 2h12a2 2 0 002-2v-6a2 2 0 
+                                00-2-2z" />
+                </svg>
+              </span>
+
+              <!-- input -->
+              <input id="password" type="password" name="password" class="w-full bg-gray-100 border border-gray-300 text-gray-800 rounded-lg pl-11 pr-10 py-2 focus:ring-2 focus:ring-[#6A2973] focus:outline-none" placeholder="Contraseña" />
+
+              <!-- botón ver/ocultar -->
+              <button type="button" onclick="togglePassword()" class="absolute inset-y-0 right-3 flex items-center text-gray-500 hover:text-purple-700">
+                <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 
+                                5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 
+                                7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </button>
+            </div>
+
+            <p class="text-right text-sm text-gray-500 mt-1 italic">¿Has olvidado tu contraseña?</p>
+          </div>
+
+          <!-- BOTÓN -->
+          <button type="submit" class="w-full bg-[#6A2973] text-white font-semibold py-2 rounded-lg mt-4 hover:bg-[#9A56A3] transition">INICIAR SESION</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function togglePassword() {
+        const input = document.getElementById('password')
+        const icon = document.getElementById('eyeIcon')
+      
+        if (input.type === 'password') {
+          input.type = 'text'
+          icon.innerHTML = `
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M13.875 18.825A10.05 10.05 0 0112 19c-4.477 
+                            0-8.268-2.943-9.542-7a9.97 9.97 0 012.338-4.043M6.2 
+                            6.2A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 
+                            9.542 7-.413 1.316-1.07 2.53-1.928 
+                            3.553M15 12a3 3 0 11-6 0 3 3 0 016 
+                            0z" />
+                        <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="1.5" />
+                    `
+        } else {
+          input.type = 'password'
+          icon.innerHTML = `
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M15 12a3 3 0 11-6 0 3 3 
+                            0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 
+                            5c4.478 0 8.268 2.943 9.542 7-1.274 
+                            4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    `
+        }
+      }
+    </script>
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>

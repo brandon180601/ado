@@ -1,0 +1,76 @@
+<!-- SIDEBAR -->
+        <aside class="w-56 min-h-screen bg-white py-6 px-4 shadow" x-data="{ openGestion: false }">
+
+            <!-- OPCIONES -->
+            <ul class="space-y-2">
+
+                <!-- Dashboard -->
+                <li>
+                    <a href="#" 
+                    class="flex items-center gap-3 px-4 py-2 rounded-lg transition 
+                            hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
+                        <i class="bi bi-graph-up text-lg"></i> Dashboard
+                    </a>
+                </li>
+
+                <!-- Registrar -->
+                <li>
+                    <a href="#" 
+                    class="flex items-center gap-3 px-4 py-2 rounded-lg transition 
+                            hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
+                        <i class="bi bi-plus-circle text-lg"></i> Registrar
+                    </a>
+                </li>
+
+                <!-- GESTIÓN (con submenú) -->
+                <li>
+                    <button 
+                        @click="openGestion = !openGestion"
+                        class="w-full flex items-center justify-between px-4 py-2 rounded-lg transition 
+                            hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
+                        
+                        <div class="flex items-center gap-3">
+                            <i class="bi bi-filter-square text-lg"></i> 
+                            Gestión
+                        </div>
+
+                        <!-- Flecha -->
+                        <i :class="openGestion ? 'bi bi-chevron-up' : 'bi bi-chevron-down'"></i>
+                    </button>
+
+                    <!-- Submenú -->
+                    <ul 
+                        x-show="openGestion"
+                        x-transition 
+                        class="ml-1 mt-1 pl-4 space-y-2"
+                    >
+                        <li>
+                            <a href="#" 
+                            class="flex items-center gap-2 px-4 py-2 rounded-lg transition 
+                                    hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
+                                <i class="bi bi-person text-sm"></i> Conductores
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" 
+                            class="flex items-center gap-2 px-4 py-2 rounded-lg transition 
+                                    hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
+                                <i class="bi bi-truck-front text-sm"></i> Accidentes
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Configuración -->
+                <li>
+                    <a href="#" 
+                    class="flex items-center gap-3 px-4 py-2 rounded-lg transition 
+                            hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
+                        <i class="bi bi-gear text-lg"></i> Configuración
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
