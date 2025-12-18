@@ -9,6 +9,10 @@
     {% include './includes/head.html' %}
   </head>
   <body class="bg-[#f5f5f5]">
+    <!-- LOADER GLOBAL -->
+    <div id="page-loader" class="fixed inset-0 bg-white flex items-center justify-center z-[9999] transition-opacity duration-300">
+      <div class="loader"></div>
+    </div>
     {% include './includes/header.html' %}
 
     <!-- CONTENEDOR PRINCIPAL -->
@@ -330,6 +334,24 @@
         step2Tab.classList.replace('bg-gray-300', 'bg-blue-900')
         step2Tab.classList.replace('text-gray-600', 'text-white')
       }
+    </script>
+    <script>
+      // Ocultar loader al cargar la página
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('page-loader')
+        if (!loader) return
+      
+        loader.classList.add('opacity-0')
+        setTimeout(() => (loader.style.display = 'none'), 300)
+      })
+      
+      // Mostrar loader al cambiar de página
+      document.querySelectorAll('a[href]').forEach((link) => {
+        link.addEventListener('click', () => {
+          const loader = document.getElementById('page-loader')
+          if (loader) loader.style.display = 'flex'
+        })
+      })
     </script>
   </body>
 </html>
