@@ -1,0 +1,335 @@
+{% load static %}
+{% load django_browser_reload %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    {% include './includes/head.html' %}
+  </head>
+  <body class="bg-[#f5f5f5]">
+    {% include './includes/header.html' %}
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="flex">
+      {% include './includes/menu.html' %}
+
+      <!-- CUERPO PRINCIPAL -->
+      <main class="flex-1 pt-6 pr-6 pl-6">
+        <!-- ACCIDENTES DATOS -->
+        <div class="bg-white min-h-screen rounded-tl-xl rounded-tr-xl shadow p-6">
+          <!-- HEADER -->
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800">Accidentes</h2>
+
+            <div class="flex gap-3 mt-4 md:mt-0">
+              <button class="group flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                <i class="bi bi-file-earmark-arrow-down group-hover:hidden"></i>
+                <i class="bi bi-file-earmark-arrow-down-fill hidden group-hover:inline"></i>
+                Exportar PDF
+              </button>
+
+              <button id="openModal" class="flex items-center gap-2 bg-purple-700 hover:bg-purple-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition group">
+                <i class="bi bi-plus-circle text-lg group-hover:scale-110 transition"></i>
+                Añadir
+              </button>
+            </div>
+          </div>
+
+          <!-- FILTROS -->
+          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-6">
+            <div class="flex flex-wrap items-center gap-4">
+              <div class="flex items-center gap-2 text-sm text-gray-600">
+                <span>Mostrar</span>
+                <select class="border rounded-md px-2 py-1 text-sm">
+                  <option>10</option>
+                  <option>25</option>
+                  <option>50</option>
+                </select>
+                <span>registros</span>
+              </div>
+
+              <select class="border rounded-md px-3 py-2 text-sm">
+                <option>Estado</option>
+                <option>En proceso</option>
+                <option>En reparación</option>
+                <option>Cerrado</option>
+              </select>
+
+              <select class="border rounded-md px-3 py-2 text-sm">
+                <option>Tipo unidad</option>
+                <option>GL</option>
+                <option>PL</option>
+              </select>
+
+              <select class="border rounded-md px-3 py-2 text-sm">
+                <option>Fecha</option>
+                <option>Últimos 7 días</option>
+                <option>Últimos 30 días</option>
+              </select>
+            </div>
+
+            <div class="relative">
+              <i class="bi bi-search absolute left-3 top-2 text-gray-400"></i>
+              <input type="text" placeholder="Buscar unidad o conductor..." class="border rounded-lg pl-10 pr-4 py-2 text-sm w-64" />
+            </div>
+          </div>
+
+          <!-- TABLA -->
+          <div class="overflow-x-auto bg-white rounded-xl shadow">
+            <table class="min-w-full text-sm text-left">
+              <thead class="bg-gray-50 text-gray-600 uppercase text-xs">
+                <tr>
+                  <th class="px-4 py-3">#</th>
+                  <th class="px-4 py-3">Fecha</th>
+                  <th class="px-4 py-3">Unidad</th>
+                  <th class="px-4 py-3">Tipo</th>
+                  <th class="px-4 py-3">Conductor</th>
+                  <th class="px-4 py-3">Estado</th>
+                  <th class="px-4 py-3">Costo</th>
+                  <th class="px-4 py-3">Código</th>
+                  <th class="px-4 py-3 text-center">Acciones</th>
+                </tr>
+              </thead>
+
+              <tbody class="divide-y">
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3">1</td>
+                  <td class="px-4 py-3">15/08/2024</td>
+                  <td class="px-4 py-3">8002</td>
+                  <td class="px-4 py-3">
+                    <span class="bg-purple-600 text-white px-2 py-1 rounded-full text-xs">GL</span>
+                  </td>
+                  <td class="px-4 py-3">Jorge García</td>
+                  <td class="px-4 py-3">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs">En reparación</span>
+                  </td>
+                  <td class="px-4 py-3">—</td>
+                  <td class="px-4 py-3">—</td>
+                  <td class="px-4 py-3 flex justify-center gap-2">
+                    <!-- BOTON VER -->
+                    <button class="group text-gray-400 hover:text-[#00194F] transition">
+                      <i class="bi bi-eye group-hover:hidden text-lg"></i>
+                      <i class="bi bi-eye-fill hidden group-hover:inline text-lg"></i>
+                    </button>
+                    <!-- BOTON EDITAR -->
+                    <button class="text-gray-400 hover:text-yellow-500 transition"><i class="bi bi-pencil-square text-lg"></i></button>
+                    <!-- BOTON ELIMINAR -->
+                    <button class="group text-gray-400 hover:text-red-600 transition">
+                      <i class="bi bi-trash group-hover:hidden text-lg"></i>
+                      <i class="bi bi-trash-fill hidden group-hover:inline text-lg"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3">2</td>
+                  <td class="px-4 py-3">29/07/2024</td>
+                  <td class="px-4 py-3">7250</td>
+                  <td class="px-4 py-3">
+                    <span class="bg-blue-900 text-white px-2 py-1 rounded-full text-xs">PL</span>
+                  </td>
+                  <td class="px-4 py-3">Rubén Torres</td>
+                  <td class="px-4 py-3">
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs">Cerrado</span>
+                  </td>
+                  <td class="px-4 py-3">$28,500</td>
+                  <td class="px-4 py-3">ML-5465820</td>
+                  <td class="px-4 py-3 flex justify-center gap-2">
+                    <!-- BOTON VER -->
+                    <button class="group text-gray-400 hover:text-[#00194F] transition">
+                      <i class="bi bi-eye group-hover:hidden text-lg"></i>
+                      <i class="bi bi-eye-fill hidden group-hover:inline text-lg"></i>
+                    </button>
+
+                    <!-- BOTÓN PDF -->
+                    <button class="group text-gray-400 hover:text-red-600 transition">
+                      <i class="bi bi-file-pdf group-hover:hidden text-lg"></i>
+                      <i class="bi bi-file-pdf-fill hidden group-hover:inline text-lg"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3">3</td>
+                  <td class="px-4 py-3">10/08/2024</td>
+                  <td class="px-4 py-3">8001</td>
+                  <td class="px-4 py-3">
+                    <span class="bg-purple-600 text-white px-2 py-1 rounded-full text-xs">GL</span>
+                  </td>
+                  <td class="px-4 py-3">Jorge García</td>
+                  <td class="px-4 py-3">
+                    <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs">En proceso</span>
+                  </td>
+                  <td class="px-4 py-3">—</td>
+                  <td class="px-4 py-3">—</td>
+                  <td class="px-4 py-3 flex justify-center gap-2">
+                    <!-- BOTON VER -->
+                    <button class="group text-gray-400 hover:text-[#00194F] transition">
+                      <i class="bi bi-eye group-hover:hidden text-lg"></i>
+                      <i class="bi bi-eye-fill hidden group-hover:inline text-lg"></i>
+                    </button>
+                    <!-- BOTON EDITAR -->
+                    <button class="text-gray-400 hover:text-yellow-500 transition"><i class="bi bi-pencil-square text-lg"></i></button>
+                    <!-- BOTON ELIMINAR -->
+                    <button class="group text-gray-400 hover:text-red-600 transition">
+                      <i class="bi bi-trash group-hover:hidden text-lg"></i>
+                      <i class="bi bi-trash-fill hidden group-hover:inline text-lg"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- PAGINACIÓN -->
+            <div class="flex items-center justify-between px-4 py-3 text-sm text-gray-600">
+              <span>Mostrando 1 a 3 de 10 registros</span>
+
+              <div class="flex gap-2">
+                <button class="border px-3 py-1 rounded-md">Previo</button>
+                <button class="bg-purple-700 text-white px-3 py-1 rounded-md">1</button>
+                <button class="border px-3 py-1 rounded-md">2</button>
+                <button class="border px-3 py-1 rounded-md">Siguiente</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- MODAL REGISTRO -->
+    <div id="modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+      <div class="bg-white w-full max-w-3xl rounded-xl shadow-lg px-4 py-1 relative">
+        <!-- HEADER -->
+        <div class="flex justify-between items-center mb-4 mt-1">
+          <h3 class="text-xl font-semibold">Registro Nuevo</h3>
+          <button id="closeModal" class="text-gray-400 hover:text-gray-600 text-4xl leading-none">&times;</button>
+        </div>
+
+        <!-- CONTENEDOR FIJO -->
+        <div class="px-4 h-[460px] flex flex-col">
+          <!-- STEPS -->
+          <div class="flex gap-2 mb-6">
+            <div id="step1Tab" class="flex-1 text-center py-4 rounded-lg bg-blue-900 text-white text-sm font-medium">1. Unidad</div>
+            <div id="step2Tab" class="flex-1 text-center py-4 rounded-lg bg-gray-300 text-gray-600 text-sm font-medium">2. Descripción</div>
+            <div id="step3Tab" class="flex-1 text-center py-4 rounded-lg bg-gray-300 text-gray-600 text-sm font-medium">3. Evidencia</div>
+          </div>
+
+          <!-- ================= STEP 1 ================= -->
+          <div id="step1" class="flex flex-col flex-1">
+            <!-- CONTENIDO -->
+            <div class="flex-1 overflow-y-auto pr-1">
+              <h4 class="text-lg font-medium mb-4">Unidad</h4>
+
+              <div class="grid grid-cols-3 gap-4 mb-4">
+                <input class="border rounded px-3 py-2 text-sm" placeholder="Económico" />
+                <input class="border rounded px-3 py-2 text-sm" placeholder="Tipo de unidad" />
+                <input class="border rounded px-3 py-2 text-sm" placeholder="Seams" />
+                <input class="border rounded px-3 py-2 text-sm" placeholder="Número de obra" />
+                <input class="border rounded px-3 py-2 text-sm" placeholder="Número de serie" />
+                <input class="border rounded px-3 py-2 text-sm" placeholder="Placas" />
+              </div>
+
+              <h4 class="text-lg font-medium mb-4">Conductor</h4>
+              <input class="border rounded px-3 py-2 text-sm mb-4 pr-12" placeholder="Clave del conductor" />
+              <input class="border rounded px-3 py-2 text-sm w-full" placeholder="Nombre completo" />
+            </div>
+
+            <!-- BOTONES -->
+            <div class="flex justify-end gap-3 mb-7">
+              <button id="toStep2" class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2 rounded-lg w-[140px]">Siguiente</button>
+            </div>
+          </div>
+
+          <!-- ================= STEP 2 ================= -->
+          <div id="step2" class="hidden flex flex-col flex-1">
+            <!-- CONTENIDO -->
+            <div class="flex-1 overflow-y-auto pr-1">
+              <h4 class="text-lg font-medium mb-4">Descripción</h4>
+
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <input class="border rounded px-3 py-2 text-sm" placeholder="Daño" />
+                <input class="border rounded px-3 py-2 text-sm" placeholder="Tipo de cargo" />
+              </div>
+
+              <textarea class="border rounded px-3 py-2 text-sm w-full h-48" placeholder="Descripción del accidente"></textarea>
+            </div>
+
+            <!-- BOTONES -->
+            <div class="flex justify-end gap-3 mb-7">
+              <button id="backTo1" class="bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded-lg w-[140px]">Anterior</button>
+              <button id="toStep3" class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2 rounded-lg w-[140px]">Siguiente</button>
+            </div>
+          </div>
+
+          <!-- ================= STEP 3 ================= -->
+          <div id="step3" class="hidden flex flex-col flex-1">
+            <!-- CONTENIDO -->
+            <div class="flex-1 overflow-y-auto pr-1">
+              <h4 class="text-lg font-medium mb-4">Evidencia</h4>
+
+              <div class="border-2 border-dashed rounded-lg h-60 flex items-center justify-center text-gray-400">Drag and drop o click para subir archivos</div>
+            </div>
+
+            <!-- BOTONES -->
+            <div class="flex justify-end gap-3 mb-7">
+              <button id="backTo2" class="bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded-lg w-[140px]">Anterior</button>
+              <button class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2 rounded-lg w-[140px]">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById('modal')
+      
+      document.getElementById('openModal').onclick = () => modal.classList.remove('hidden')
+      document.getElementById('closeModal').onclick = () => modal.classList.add('hidden')
+      
+      const step1 = document.getElementById('step1')
+      const step2 = document.getElementById('step2')
+      const step3 = document.getElementById('step3')
+      
+      const step1Tab = document.getElementById('step1Tab')
+      const step2Tab = document.getElementById('step2Tab')
+      const step3Tab = document.getElementById('step3Tab')
+      
+      document.getElementById('toStep2').onclick = () => {
+        step1.classList.add('hidden')
+        step2.classList.remove('hidden')
+        step1Tab.classList.replace('bg-blue-900', 'bg-gray-300')
+        step1Tab.classList.replace('text-white', 'text-gray-600')
+        step2Tab.classList.replace('bg-gray-300', 'bg-blue-900')
+        step2Tab.classList.replace('text-gray-600', 'text-white')
+      }
+      
+      document.getElementById('toStep3').onclick = () => {
+        step2.classList.add('hidden')
+        step3.classList.remove('hidden')
+        step2Tab.classList.replace('bg-blue-900', 'bg-gray-300')
+        step2Tab.classList.replace('text-white', 'text-gray-600')
+        step3Tab.classList.replace('bg-gray-300', 'bg-blue-900')
+        step3Tab.classList.replace('text-gray-600', 'text-white')
+      }
+      
+      document.getElementById('backTo1').onclick = () => {
+        step2.classList.add('hidden')
+        step1.classList.remove('hidden')
+        step2Tab.classList.replace('bg-blue-900', 'bg-gray-300')
+        step2Tab.classList.replace('text-white', 'text-gray-600')
+        step1Tab.classList.replace('bg-gray-300', 'bg-blue-900')
+        step1Tab.classList.replace('text-gray-600', 'text-white')
+      }
+      
+      document.getElementById('backTo2').onclick = () => {
+        step3.classList.add('hidden')
+        step2.classList.remove('hidden')
+        step3Tab.classList.replace('bg-blue-900', 'bg-gray-300')
+        step3Tab.classList.replace('text-white', 'text-gray-600')
+        step2Tab.classList.replace('bg-gray-300', 'bg-blue-900')
+        step2Tab.classList.replace('text-gray-600', 'text-white')
+      }
+    </script>
+  </body>
+</html>

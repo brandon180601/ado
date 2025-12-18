@@ -1,7 +1,10 @@
 from django.shortcuts import render
 
-def index(request):
-    return render(request, 'ACC/index.html')
+def login(request):
+    return render(request, 'ACC/login.html')
 
-def main(request):
-    return render(request, 'ACC/main.html')
+def dashboard(request):
+    return render(request, 'ACC/dashboard.html')
+
+def accidentes(request):
+    return render(request, 'ACC/accidentes.html')
