@@ -1,0 +1,102 @@
+[
+  {
+    "model": "ACC.conductor",
+    "pk": 1,
+    "fields": {
+      "clave": "100001",
+      "nombres": "Juan",
+      "a_paterno": "Ramírez",
+      "a_materno": "López"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 2,
+    "fields": {
+      "clave": "100002",
+      "nombres": "Carlos",
+      "a_paterno": "Hernández",
+      "a_materno": "Martínez"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 3,
+    "fields": {
+      "clave": "100003",
+      "nombres": "Miguel",
+      "a_paterno": "Torres",
+      "a_materno": "Gómez"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 4,
+    "fields": {
+      "clave": "100004",
+      "nombres": "Luis",
+      "a_paterno": "Pérez",
+      "a_materno": "Sánchez"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 5,
+    "fields": {
+      "clave": "100005",
+      "nombres": "Andrés",
+      "a_paterno": "Morales",
+      "a_materno": "Castro"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 6,
+    "fields": {
+      "clave": "100006",
+      "nombres": "José",
+      "a_paterno": "Vázquez",
+      "a_materno": "Ruiz"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 7,
+    "fields": {
+      "clave": "100007",
+      "nombres": "Ricardo",
+      "a_paterno": "Mendoza",
+      "a_materno": "Flores"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 8,
+    "fields": {
+      "clave": "100008",
+      "nombres": "Roberto",
+      "a_paterno": "Salazar",
+      "a_materno": "Núñez"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 9,
+    "fields": {
+      "clave": "100009",
+      "nombres": "Fernando",
+      "a_paterno": "Ortega",
+      "a_materno": "Cruz"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 10,
+    "fields": {
+      "clave": "100010",
+      "nombres": "Daniel",
+      "a_paterno": "Rivas",
+      "a_materno": "Jiménez"
+    }
+  }
+]

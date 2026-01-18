@@ -1,0 +1,3638 @@
+[
+  {
+    "model": "ACC.autobus",
+    "pk": 1,
+    "fields": {
+      "economico": "8001",
+      "placas": "37 HC 4M",
+      "serie": "YS2K4X200S1930266",
+      "no_obra": "315902",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 2,
+    "fields": {
+      "economico": "8002",
+      "placas": "60 HC 3M",
+      "serie": "YS2K4X209S1930234",
+      "no_obra": "315910",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 3,
+    "fields": {
+      "economico": "8003",
+      "placas": "56 HC 6K",
+      "serie": "YS2K4X208S1929950",
+      "no_obra": "315865",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 4,
+    "fields": {
+      "economico": "8004",
+      "placas": "36 HC 4K",
+      "serie": "YS2K4X204S1929203",
+      "no_obra": "315470",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 5,
+    "fields": {
+      "economico": "8005",
+      "placas": "92 HC 6K",
+      "serie": "YS2K4X20XS1929948",
+      "no_obra": "315874",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 6,
+    "fields": {
+      "economico": "8006",
+      "placas": "09 HC 7M",
+      "serie": "YS2K4X206T1931441",
+      "no_obra": "315980",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 7,
+    "fields": {
+      "economico": "8007",
+      "placas": "44 HC 7M",
+      "serie": "YS2K4X205T1931429",
+      "no_obra": "315990",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 8,
+    "fields": {
+      "economico": "8008",
+      "placas": "12 HC 5K",
+      "serie": "YS2K4X207S1929311",
+      "no_obra": "315438",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 9,
+    "fields": {
+      "economico": "8009",
+      "placas": "79 HC 4M",
+      "serie": "YS2K4X205S1930313",
+      "no_obra": "315928",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 10,
+    "fields": {
+      "economico": "8010",
+      "placas": "90 HC 6K",
+      "serie": "YS2K4X203S1929967",
+      "no_obra": "315876",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 11,
+    "fields": {
+      "economico": "8011",
+      "placas": "13 HC 5K",
+      "serie": "YS2K4X209S1929312",
+      "no_obra": "315437",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 12,
+    "fields": {
+      "economico": "8012",
+      "placas": "35 HC 4K",
+      "serie": "YS2K4X207S1929258",
+      "no_obra": "315471",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 13,
+    "fields": {
+      "economico": "8013",
+      "placas": "96 HC 4M",
+      "serie": "YS2K4X200S1930316",
+      "no_obra": "315922",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 14,
+    "fields": {
+      "economico": "8014",
+      "placas": "61 HC 3K",
+      "serie": "YS2K4X204S1929458",
+      "no_obra": "315486",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 15,
+    "fields": {
+      "economico": "8015",
+      "placas": "66 HC 3K",
+      "serie": "YS2K4X203S1929287",
+      "no_obra": "315481",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 16,
+    "fields": {
+      "economico": "8016",
+      "placas": "59 HC 3M",
+      "serie": "YS2K4X200S1930249",
+      "no_obra": "315911",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 17,
+    "fields": {
+      "economico": "8017",
+      "placas": "37 HC 8K",
+      "serie": "YS2K4X204S1929380",
+      "no_obra": "315855",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 18,
+    "fields": {
+      "economico": "8018",
+      "placas": "76 HC 6K",
+      "serie": "YS2K4X202S1929300",
+      "no_obra": "315444",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 19,
+    "fields": {
+      "economico": "8019",
+      "placas": "78 HC 6K",
+      "serie": "YS2K4X202S1929314",
+      "no_obra": "315442",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 20,
+    "fields": {
+      "economico": "8020",
+      "placas": "33 HC 2M",
+      "serie": "YS2K4X209S1929679",
+      "no_obra": "315846",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 21,
+    "fields": {
+      "economico": "8021",
+      "placas": "30 HC 2M",
+      "serie": "YS2K4X206S1930188",
+      "no_obra": "315883",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 22,
+    "fields": {
+      "economico": "8022",
+      "placas": "62 HC 6M",
+      "serie": "YS2K4X206T1931214",
+      "no_obra": "315956",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 23,
+    "fields": {
+      "economico": "8023",
+      "placas": "18 HC 5K",
+      "serie": "YS2K4X200S1929294",
+      "no_obra": "315432",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 24,
+    "fields": {
+      "economico": "8024",
+      "placas": "42 HC 5K",
+      "serie": "YS2K4X205S1929470",
+      "no_obra": "315498",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 25,
+    "fields": {
+      "economico": "8025",
+      "placas": "23 HC 4K",
+      "serie": "YS2K4X203S1928026",
+      "no_obra": "315462",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 26,
+    "fields": {
+      "economico": "8026",
+      "placas": "62 HC 3M",
+      "serie": "YS2K4X208S1930273",
+      "no_obra": "315908",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 27,
+    "fields": {
+      "economico": "8027",
+      "placas": "80 HC 1M",
+      "serie": "YS2K4X203S1930181",
+      "no_obra": "315892",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 28,
+    "fields": {
+      "economico": "8028",
+      "placas": "61 HC 5M",
+      "serie": "YS2K4X200S1930364",
+      "no_obra": "315932",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 29,
+    "fields": {
+      "economico": "8029",
+      "placas": "12 HC 7M",
+      "serie": "YS2K4X204T1931387",
+      "no_obra": "315976",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 30,
+    "fields": {
+      "economico": "8030",
+      "placas": "39 HC 4M",
+      "serie": "YS2K4X20XS1930193",
+      "no_obra": "315899",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 31,
+    "fields": {
+      "economico": "8031",
+      "placas": "33 HC 8K",
+      "serie": "YS2K4X201S1929708",
+      "no_obra": "315859",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 32,
+    "fields": {
+      "economico": "8032",
+      "placas": "38 HC 5K",
+      "serie": "YS2K4X200S1929232",
+      "no_obra": "315502",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 33,
+    "fields": {
+      "economico": "8033",
+      "placas": "73 HC 6M",
+      "serie": "YS2K4X202T1931078",
+      "no_obra": "315943",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 34,
+    "fields": {
+      "economico": "8034",
+      "placas": "78 HC 1M",
+      "serie": "YS2K4X205S1930165",
+      "no_obra": "315894",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 35,
+    "fields": {
+      "economico": "8035",
+      "placas": "81 HC 4M",
+      "serie": "YS2K4X206S1930322",
+      "no_obra": "315926",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 36,
+    "fields": {
+      "economico": "8036",
+      "placas": "79 HC 6M",
+      "serie": "YS2K4X200T1930950",
+      "no_obra": "315937",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 37,
+    "fields": {
+      "economico": "8037",
+      "placas": "36 HC 4M",
+      "serie": "YS2K4X203S1930262",
+      "no_obra": "315903",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 38,
+    "fields": {
+      "economico": "8038",
+      "placas": "12 HB 5J",
+      "serie": "YS2K4X203T1931428",
+      "no_obra": "315986",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 39,
+    "fields": {
+      "economico": "8039",
+      "placas": "71 HC 5M",
+      "serie": "YS2K4X202T1931095",
+      "no_obra": "315945",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 40,
+    "fields": {
+      "economico": "8040",
+      "placas": "66 HC 5M",
+      "serie": "YS2K4X20XT1931104",
+      "no_obra": "315950",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 41,
+    "fields": {
+      "economico": "8041",
+      "placas": "36 HC 8K",
+      "serie": "YS2K4X200S1929375",
+      "no_obra": "315856",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 42,
+    "fields": {
+      "economico": "8042",
+      "placas": "77 HC 6M",
+      "serie": "YS2K4X207T1930945",
+      "no_obra": "315939",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 43,
+    "fields": {
+      "economico": "8043",
+      "placas": "87 HC 6M",
+      "serie": "YS2K4X20XT1931216",
+      "no_obra": "315961",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 44,
+    "fields": {
+      "economico": "8044",
+      "placas": "71 HC 3K",
+      "serie": "YS2K4X202S1929250",
+      "no_obra": "315476",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 45,
+    "fields": {
+      "economico": "8045",
+      "placas": "37 HC 4K",
+      "serie": "YS2K4X208S1929205",
+      "no_obra": "315469",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 46,
+    "fields": {
+      "economico": "8046",
+      "placas": "73 HC 3K",
+      "serie": "YS2K4X205S1929243",
+      "no_obra": "315474",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 47,
+    "fields": {
+      "economico": "8047",
+      "placas": "25 HC 4K",
+      "serie": "YS2K4X206S1927999",
+      "no_obra": "315460",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 48,
+    "fields": {
+      "economico": "8048",
+      "placas": "96 HC 6K",
+      "serie": "YS2K4X208S1929933",
+      "no_obra": "315870",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 49,
+    "fields": {
+      "economico": "8049",
+      "placas": "62 HC 5M",
+      "serie": "YS2K4X201S1930325",
+      "no_obra": "315931",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 50,
+    "fields": {
+      "economico": "8050",
+      "placas": "08 HC 7M",
+      "serie": "YS2K4X208T1931442",
+      "no_obra": "315981",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 51,
+    "fields": {
+      "economico": "8051",
+      "placas": "27 HC 4K",
+      "serie": "YS2K4X20XS1927990",
+      "no_obra": "315458",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 52,
+    "fields": {
+      "economico": "8052",
+      "placas": "95 HC 6K",
+      "serie": "YS2K4X205S1929940",
+      "no_obra": "315871",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 53,
+    "fields": {
+      "economico": "8053",
+      "placas": "58 HC 6K",
+      "serie": "YS2K4X205S1929971",
+      "no_obra": "315863",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 54,
+    "fields": {
+      "economico": "8054",
+      "placas": "32 HC 8K",
+      "serie": "YS2K4X200S1929702",
+      "no_obra": "315860",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 55,
+    "fields": {
+      "economico": "8055",
+      "placas": "93 HC 6K",
+      "serie": "YS2K4X206S1929977",
+      "no_obra": "315873",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 56,
+    "fields": {
+      "economico": "8056",
+      "placas": "57 HC 6K",
+      "serie": "YS2K4X201S1929952",
+      "no_obra": "315864",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 57,
+    "fields": {
+      "economico": "8057",
+      "placas": "81 HC 6M",
+      "serie": "YS2K4X207T1931349",
+      "no_obra": "315971",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 58,
+    "fields": {
+      "economico": "8058",
+      "placas": "14 HC 5K",
+      "serie": "YS2K4X206S1929235",
+      "no_obra": "315436",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 59,
+    "fields": {
+      "economico": "8059",
+      "placas": "15 HC 5K",
+      "serie": "YS2K4X200S1929313",
+      "no_obra": "315435",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 60,
+    "fields": {
+      "economico": "8060",
+      "placas": "13 HC 7M",
+      "serie": "YS2K4X200T1931385",
+      "no_obra": "315975",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 61,
+    "fields": {
+      "economico": "8061",
+      "placas": "98 HC 4M",
+      "serie": "YS2K4X207S1930376",
+      "no_obra": "315920",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 62,
+    "fields": {
+      "economico": "8062",
+      "placas": "80 HC 4M",
+      "serie": "YS2K4X208S1930323",
+      "no_obra": "315927",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 63,
+    "fields": {
+      "economico": "8063",
+      "placas": "81 HC 1M",
+      "serie": "YS2K4X202S1930169",
+      "no_obra": "315891",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 64,
+    "fields": {
+      "economico": "8064",
+      "placas": "31 HC 4M",
+      "serie": "YS2K4X204S1930304",
+      "no_obra": "315901",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 65,
+    "fields": {
+      "economico": "8065",
+      "placas": "40 HC 4M",
+      "serie": "YS2K4X206S1930191",
+      "no_obra": "315898",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 66,
+    "fields": {
+      "economico": "8066",
+      "placas": "65 HC 6M",
+      "serie": "YS2K4X201T1931105",
+      "no_obra": "315952",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 67,
+    "fields": {
+      "economico": "8067",
+      "placas": "31 HC 8K",
+      "serie": "YS2K4X200S1929781",
+      "no_obra": "315861",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 68,
+    "fields": {
+      "economico": "8068",
+      "placas": "60 HC 6K",
+      "serie": "YS2K4X202S1929684",
+      "no_obra": "315844",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 69,
+    "fields": {
+      "economico": "8069",
+      "placas": "27 HC 2M",
+      "serie": "YS2K4X200S1930185",
+      "no_obra": "315886",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 70,
+    "fields": {
+      "economico": "8070",
+      "placas": "72 HC 6K",
+      "serie": "YS2K4X202S1929359",
+      "no_obra": "315531",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 71,
+    "fields": {
+      "economico": "8071",
+      "placas": "42 HC 4K",
+      "serie": "YS2K4X209S1929195",
+      "no_obra": "315464",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 72,
+    "fields": {
+      "economico": "8072",
+      "placas": "41 HC 5K",
+      "serie": "YS2K4X209S1929522",
+      "no_obra": "315499",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 73,
+    "fields": {
+      "economico": "8073",
+      "placas": "41 HC 7M",
+      "serie": "YS2K4X208T1931375",
+      "no_obra": "315970",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 74,
+    "fields": {
+      "economico": "8074",
+      "placas": "57 HC 3M",
+      "serie": "YS2K4X204S1930254",
+      "no_obra": "315913",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 75,
+    "fields": {
+      "economico": "8075",
+      "placas": "54 HC 6K",
+      "serie": "YS2K4X209S1929973",
+      "no_obra": "315867",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 76,
+    "fields": {
+      "economico": "8076",
+      "placas": "70 HC 6K",
+      "serie": "YS2K4X20XS1929688",
+      "no_obra": "315841",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 77,
+    "fields": {
+      "economico": "8077",
+      "placas": "54 HC 3K",
+      "serie": "YS2K4X205S1929467",
+      "no_obra": "315493",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 78,
+    "fields": {
+      "economico": "8078",
+      "placas": "97 HC 4M",
+      "serie": "YS2K4X203S1930374",
+      "no_obra": "315921",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 79,
+    "fields": {
+      "economico": "8079",
+      "placas": "86 HC 6M",
+      "serie": "YS2K4X208S1930371",
+      "no_obra": "315918",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 80,
+    "fields": {
+      "economico": "8080",
+      "placas": "68 HC 3K",
+      "serie": "YS2K4X208S1929284",
+      "no_obra": "315479",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 81,
+    "fields": {
+      "economico": "8081",
+      "placas": "45 HC 5K",
+      "serie": "YS2K4X208S1929477",
+      "no_obra": "315495",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 82,
+    "fields": {
+      "economico": "8082",
+      "placas": "89 HC 6K",
+      "serie": "YS2K4X20XS1929979",
+      "no_obra": "315877",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 83,
+    "fields": {
+      "economico": "8083",
+      "placas": "57 HC 3K",
+      "serie": "YS2K4X205S1929453",
+      "no_obra": "315490",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 84,
+    "fields": {
+      "economico": "8084",
+      "placas": "60 HC 3K",
+      "serie": "YS2K4X206S1929462",
+      "no_obra": "315487",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 85,
+    "fields": {
+      "economico": "8085",
+      "placas": "09 HC 8K",
+      "serie": "YS2K4X203S1929712",
+      "no_obra": "315852",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 86,
+    "fields": {
+      "economico": "8086",
+      "placas": "11 HC 8K",
+      "serie": "YS2K4X201S1929689",
+      "no_obra": "315848",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 87,
+    "fields": {
+      "economico": "8087",
+      "placas": "93 HC 9L",
+      "serie": "YS2K4X207S1929681",
+      "no_obra": "315853",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 88,
+    "fields": {
+      "economico": "8088",
+      "placas": "07 HC 8K",
+      "serie": "YS2K4X205S1929727",
+      "no_obra": "315851",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 89,
+    "fields": {
+      "economico": "8089",
+      "placas": "41 HC 1M",
+      "serie": "YS2K4X206S1929719",
+      "no_obra": "315850",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 90,
+    "fields": {
+      "economico": "8090",
+      "placas": "10 HC 8K",
+      "serie": "YS2K4X207S1929292",
+      "no_obra": "315854",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 91,
+    "fields": {
+      "economico": "8091",
+      "placas": "50 HC 8K",
+      "serie": "YS2K4X200S1929733",
+      "no_obra": "315847",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 92,
+    "fields": {
+      "economico": "8092",
+      "placas": "92 HC 9L",
+      "serie": "YS2K4X208S1929723",
+      "no_obra": "315849",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 93,
+    "fields": {
+      "economico": "8093",
+      "placas": "29 HC 1M",
+      "serie": "YS2K4X208S1930161",
+      "no_obra": "315881",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 94,
+    "fields": {
+      "economico": "8094",
+      "placas": "61 HC 3M",
+      "serie": "YS2K4X20XS1930257",
+      "no_obra": "315909",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 95,
+    "fields": {
+      "economico": "8095",
+      "placas": "46 HC 7M",
+      "serie": "YS2K4X206T1931438",
+      "no_obra": "315988",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 96,
+    "fields": {
+      "economico": "8096",
+      "placas": "35 HC 4M",
+      "serie": "YS2K4X20XS1930260",
+      "no_obra": "315904",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 97,
+    "fields": {
+      "economico": "8097",
+      "placas": "34 HC 8K",
+      "serie": "YS2K4X201S1929725",
+      "no_obra": "315858",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 98,
+    "fields": {
+      "economico": "8098",
+      "placas": "47 HC 5K",
+      "serie": "YS2K4X208S1928068",
+      "no_obra": "315463",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 99,
+    "fields": {
+      "economico": "8099",
+      "placas": "43 HC 5K",
+      "serie": "YS2K4X200S1929456",
+      "no_obra": "315497",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 100,
+    "fields": {
+      "economico": "8100",
+      "placas": "68 HC 6M",
+      "serie": "YS2K4X206T1931150",
+      "no_obra": "315963",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 101,
+    "fields": {
+      "economico": "8101",
+      "placas": "26 HC 4K",
+      "serie": "YS2K4X207S1927994",
+      "no_obra": "315459",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 102,
+    "fields": {
+      "economico": "8102",
+      "placas": "70 HC 6M",
+      "serie": "YS2K4X204T1931230",
+      "no_obra": "315960",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 103,
+    "fields": {
+      "economico": "8103",
+      "placas": "88 HC 6K",
+      "serie": "YS2K4X202S1929944",
+      "no_obra": "315878",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 104,
+    "fields": {
+      "economico": "8104",
+      "placas": "64 HC 3K",
+      "serie": "YS2K4X205S1929291",
+      "no_obra": "315483",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 105,
+    "fields": {
+      "economico": "8105",
+      "placas": "30 HC 8K",
+      "serie": "YS2K4X203S1929936",
+      "no_obra": "315879",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 106,
+    "fields": {
+      "economico": "8106",
+      "placas": "64 HC 6M",
+      "serie": "YS2K4X204T1931213",
+      "no_obra": "315954",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 107,
+    "fields": {
+      "economico": "8107",
+      "placas": "17 HB 5J",
+      "serie": "YS2K4X20XT1931443",
+      "no_obra": "315979",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 108,
+    "fields": {
+      "economico": "8108",
+      "placas": "63 HC 6M",
+      "serie": "YS2K4X205T1931222",
+      "no_obra": "315955",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 109,
+    "fields": {
+      "economico": "8109",
+      "placas": "39 HC 4K",
+      "serie": "YS2K4X203S1929189",
+      "no_obra": "315467",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 110,
+    "fields": {
+      "economico": "8110",
+      "placas": "15 HB 5J",
+      "serie": "YS2K4X209T1931434",
+      "no_obra": "315984",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 111,
+    "fields": {
+      "economico": "8111",
+      "placas": "55 HC 3M",
+      "serie": "YS2K4X206S1930367",
+      "no_obra": "315915",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 112,
+    "fields": {
+      "economico": "8112",
+      "placas": "34 HC 4M",
+      "serie": "YS2K4X204S1930268",
+      "no_obra": "315905",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 113,
+    "fields": {
+      "economico": "8113",
+      "placas": "31 HC 4K",
+      "serie": "YS2K4X202S1927997",
+      "no_obra": "315454",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 114,
+    "fields": {
+      "economico": "8114",
+      "placas": "63 HC 3K",
+      "serie": "YS2K4X207S1929289",
+      "no_obra": "315484",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 115,
+    "fields": {
+      "economico": "8115",
+      "placas": "32 HC 4M",
+      "serie": "YS2K4X206S1930272",
+      "no_obra": "315907",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 116,
+    "fields": {
+      "economico": "8116",
+      "placas": "71 HC 6K",
+      "serie": "YS2K4X207S1929700",
+      "no_obra": "315840",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 117,
+    "fields": {
+      "economico": "8117",
+      "placas": "60 HC 5M",
+      "serie": "YS2K4X201T1930942",
+      "no_obra": "315933",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 118,
+    "fields": {
+      "economico": "8118",
+      "placas": "67 HC 6M",
+      "serie": "YS2K4X209T1931160",
+      "no_obra": "315964",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 119,
+    "fields": {
+      "economico": "8119",
+      "placas": "69 HC 3K",
+      "serie": "YS2K4X20XS1929285",
+      "no_obra": "315478",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 120,
+    "fields": {
+      "economico": "8120",
+      "placas": "28 HC 2M",
+      "serie": "YS2K4X204S1930187",
+      "no_obra": "315885",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 121,
+    "fields": {
+      "economico": "8121",
+      "placas": "76 HC 1M",
+      "serie": "YS2K4X201S1930180",
+      "no_obra": "315896",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 122,
+    "fields": {
+      "economico": "8122",
+      "placas": "95 HC 4M",
+      "serie": "YS2K4X201S1930311",
+      "no_obra": "315923",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 123,
+    "fields": {
+      "economico": "8123",
+      "placas": "73 HC 6K",
+      "serie": "YS2K4X205S1929355",
+      "no_obra": "315447",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 124,
+    "fields": {
+      "economico": "8124",
+      "placas": "26 HC 2M",
+      "serie": "YS2K4X203S1930178",
+      "no_obra": "315887",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 125,
+    "fields": {
+      "economico": "8125",
+      "placas": "61 HC 6M",
+      "serie": "YS2K4X200T1931225",
+      "no_obra": "315957",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 126,
+    "fields": {
+      "economico": "8126",
+      "placas": "85 HC 6M",
+      "serie": "YS2K4X208T1931392",
+      "no_obra": "315965",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 127,
+    "fields": {
+      "economico": "8127",
+      "placas": "32 HC 4K",
+      "serie": "YS2K4X202S1927983",
+      "no_obra": "315453",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 128,
+    "fields": {
+      "economico": "8128",
+      "placas": "30 HC 4K",
+      "serie": "YS2K4X204S1927970",
+      "no_obra": "315455",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 129,
+    "fields": {
+      "economico": "8129",
+      "placas": "54 HC 3M",
+      "serie": "YS2K4X208S1930368",
+      "no_obra": "315916",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 130,
+    "fields": {
+      "economico": "8130",
+      "placas": "16 HC 5K",
+      "serie": "YS2K4X208S1929317",
+      "no_obra": "315434",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 131,
+    "fields": {
+      "economico": "8131",
+      "placas": "84 HC 6M",
+      "serie": "YS2K4X205T1931396",
+      "no_obra": "315966",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 132,
+    "fields": {
+      "economico": "8132",
+      "placas": "38 HC 4M",
+      "serie": "YS2K4X208S1930189",
+      "no_obra": "315900",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 133,
+    "fields": {
+      "economico": "8133",
+      "placas": "38 HC 4K",
+      "serie": "YS2K4X208S1929236",
+      "no_obra": "315468",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 134,
+    "fields": {
+      "economico": "8134",
+      "placas": "13 HB 5J",
+      "serie": "YS2K4X207T1931447",
+      "no_obra": "315985",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 135,
+    "fields": {
+      "economico": "8135",
+      "placas": "80 HC 6M",
+      "serie": "YS2K4X200T1931368",
+      "no_obra": "315972",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 136,
+    "fields": {
+      "economico": "8136",
+      "placas": "76 HC 6M",
+      "serie": "YS2K4X200T1930947",
+      "no_obra": "315940",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 137,
+    "fields": {
+      "economico": "8137",
+      "placas": "11 HC 5K",
+      "serie": "YS2K4X209S1929309",
+      "no_obra": "315439",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 138,
+    "fields": {
+      "economico": "8138",
+      "placas": "88 HC 6M",
+      "serie": "YS2K4X209T1931224",
+      "no_obra": "315953",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 139,
+    "fields": {
+      "economico": "8139",
+      "placas": "11 HC 7M",
+      "serie": "YS2K4X208T1931439",
+      "no_obra": "315977",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 140,
+    "fields": {
+      "economico": "8140",
+      "placas": "33 HC 4M",
+      "serie": "YS2K4X202S1930270",
+      "no_obra": "315906",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 141,
+    "fields": {
+      "economico": "8141",
+      "placas": "24 HC 2M",
+      "serie": "YS2K4X20XS1930176",
+      "no_obra": "315889",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 142,
+    "fields": {
+      "economico": "8142",
+      "placas": "74 HC 6K",
+      "serie": "YS2K4X201S1929319",
+      "no_obra": "315446",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 143,
+    "fields": {
+      "economico": "8143",
+      "placas": "78 HC 6M",
+      "serie": "YS2K4X206T1930953",
+      "no_obra": "315938",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 144,
+    "fields": {
+      "economico": "8144",
+      "placas": "53 HC 6K",
+      "serie": "YS2K4X207S1929986",
+      "no_obra": "315868",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 145,
+    "fields": {
+      "economico": "8145",
+      "placas": "67 HC 3K",
+      "serie": "YS2K4X201S1929286",
+      "no_obra": "315480",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 146,
+    "fields": {
+      "economico": "8146",
+      "placas": "75 HC 6M",
+      "serie": "YS2K4X20XT1930955",
+      "no_obra": "315941",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 147,
+    "fields": {
+      "economico": "8147",
+      "placas": "57 HC 5M",
+      "serie": "YS2K4X204T1930952",
+      "no_obra": "315936",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 148,
+    "fields": {
+      "economico": "8148",
+      "placas": "07 HC 7M",
+      "serie": "YS2K4X201T1931444",
+      "no_obra": "315982",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 149,
+    "fields": {
+      "economico": "8149",
+      "placas": "14 HC 7M",
+      "serie": "YS2K4X207T1931383",
+      "no_obra": "315974",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 150,
+    "fields": {
+      "economico": "8150",
+      "placas": "68 HC 5M",
+      "serie": "YS2K4X202T1931081",
+      "no_obra": "315948",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 151,
+    "fields": {
+      "economico": "8151",
+      "placas": "72 HC 6M",
+      "serie": "YS2K4X205T1931219",
+      "no_obra": "315958",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 152,
+    "fields": {
+      "economico": "8152",
+      "placas": "67 HC 5M",
+      "serie": "YS2K4X207T1931092",
+      "no_obra": "315949",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 153,
+    "fields": {
+      "economico": "8153",
+      "placas": "66 HC 6M",
+      "serie": "YS2K4X201T1931086",
+      "no_obra": "315951",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 154,
+    "fields": {
+      "economico": "8154",
+      "placas": "82 HC 6M",
+      "serie": "YS2K4X20XT1931362",
+      "no_obra": "315968",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 155,
+    "fields": {
+      "economico": "8155",
+      "placas": "40 HC 4K",
+      "serie": "YS2K4X206S1929199",
+      "no_obra": "315466",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 156,
+    "fields": {
+      "economico": "8156",
+      "placas": "82 HC 1M",
+      "serie": "YS2K4X205S1930182",
+      "no_obra": "315890",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 157,
+    "fields": {
+      "economico": "8157",
+      "placas": "58 HC 3K",
+      "serie": "YS2K4X203S1929466",
+      "no_obra": "315489",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 158,
+    "fields": {
+      "economico": "8158",
+      "placas": "59 HC 5M",
+      "serie": "YS2K4X204T1930949",
+      "no_obra": "315934",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 159,
+    "fields": {
+      "economico": "8159",
+      "placas": "77 HC 6K",
+      "serie": "YS2K4X208S1929298",
+      "no_obra": "315443",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 160,
+    "fields": {
+      "economico": "8160",
+      "placas": "28 HC 1M",
+      "serie": "YS2K4X203S1930195",
+      "no_obra": "315897",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 161,
+    "fields": {
+      "economico": "8161",
+      "placas": "69 HC 6M",
+      "serie": "YS2K4X206T1931228",
+      "no_obra": "315962",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 162,
+    "fields": {
+      "economico": "8162",
+      "placas": "55 HC 3K",
+      "serie": "YS2K4X209S1929455",
+      "no_obra": "315492",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 163,
+    "fields": {
+      "economico": "8163",
+      "placas": "15 HC 7M",
+      "serie": "YS2K4X205T1931379",
+      "no_obra": "315973",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 164,
+    "fields": {
+      "economico": "8164",
+      "placas": "63 HC 5M",
+      "serie": "YS2K4X202S1930320",
+      "no_obra": "315930",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 165,
+    "fields": {
+      "economico": "8165",
+      "placas": "41 HC 4K",
+      "serie": "YS2K4X201S1929191",
+      "no_obra": "315465",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 166,
+    "fields": {
+      "economico": "8166",
+      "placas": "59 HC 3K",
+      "serie": "YS2K4X208S1929463",
+      "no_obra": "315488",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 167,
+    "fields": {
+      "economico": "8167",
+      "placas": "28 HC 4K",
+      "serie": "YS2K4X208S1928006",
+      "no_obra": "315457",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 168,
+    "fields": {
+      "economico": "8168",
+      "placas": "58 HC 5M",
+      "serie": "YS2K4X203T1930943",
+      "no_obra": "315935",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 169,
+    "fields": {
+      "economico": "8169",
+      "placas": "52 HC 6K",
+      "serie": "YS2K4X20XS1929965",
+      "no_obra": "315869",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 170,
+    "fields": {
+      "economico": "8170",
+      "placas": "70 HC 5M",
+      "serie": "YS2K4X203T1931087",
+      "no_obra": "315946",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 171,
+    "fields": {
+      "economico": "8171",
+      "placas": "79 HC 1M",
+      "serie": "YS2K4X209S1930167",
+      "no_obra": "315893",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 172,
+    "fields": {
+      "economico": "8172",
+      "placas": "29 HC 8K",
+      "serie": "YS2K4X206S1929929",
+      "no_obra": "315862",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 173,
+    "fields": {
+      "economico": "8173",
+      "placas": "31 HC 2M",
+      "serie": "YS2K4X206S1930174",
+      "no_obra": "315882",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 174,
+    "fields": {
+      "economico": "8174",
+      "placas": "34 HC 4K",
+      "serie": "YS2K4X201S1929241",
+      "no_obra": "315472",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 175,
+    "fields": {
+      "economico": "8175",
+      "placas": "78 HC 4M",
+      "serie": "YS2K4X206S1930319",
+      "no_obra": "315929",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 176,
+    "fields": {
+      "economico": "8176",
+      "placas": "14 HB 5J",
+      "serie": "YS2K4X204T1931373",
+      "no_obra": "315969",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 177,
+    "fields": {
+      "economico": "8177",
+      "placas": "58 HC 3M",
+      "serie": "YS2K4X201S1930275",
+      "no_obra": "315912",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 178,
+    "fields": {
+      "economico": "8178",
+      "placas": "46 HC 5K",
+      "serie": "YS2K4X200S1929473",
+      "no_obra": "315494",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 179,
+    "fields": {
+      "economico": "8179",
+      "placas": "17 HC 5K",
+      "serie": "YS2K4X209S1929293",
+      "no_obra": "315433",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 180,
+    "fields": {
+      "economico": "8180",
+      "placas": "61 HC 6K",
+      "serie": "YS2K4X207S1929731",
+      "no_obra": "315843",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 181,
+    "fields": {
+      "economico": "8181",
+      "placas": "10 HC 7M",
+      "serie": "YS2K4X204T1931440",
+      "no_obra": "315978",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 182,
+    "fields": {
+      "economico": "8182",
+      "placas": "32 HC 2M",
+      "serie": "YS2K4X20XS1930162",
+      "no_obra": "315880",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 183,
+    "fields": {
+      "economico": "8183",
+      "placas": "16 HB 5J",
+      "serie": "YS2K4X207T1931433",
+      "no_obra": "315983",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 184,
+    "fields": {
+      "economico": "8184",
+      "placas": "53 HC 3M",
+      "serie": "YS2K4X206S1930370",
+      "no_obra": "315917",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 185,
+    "fields": {
+      "economico": "8185",
+      "placas": "72 HC 5M",
+      "serie": "YS2K4X200T1931080",
+      "no_obra": "315944",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 186,
+    "fields": {
+      "economico": "8186",
+      "placas": "62 HC 3K",
+      "serie": "YS2K4X205S1929288",
+      "no_obra": "315485",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 187,
+    "fields": {
+      "economico": "8187",
+      "placas": "29 HC 4K",
+      "serie": "YS2K4X200S1928002",
+      "no_obra": "315456",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 188,
+    "fields": {
+      "economico": "8188",
+      "placas": "77 HC 1M",
+      "serie": "YS2K4X203S1930164",
+      "no_obra": "315895",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 189,
+    "fields": {
+      "economico": "8189",
+      "placas": "94 HC 4M",
+      "serie": "YS2K4X204S1930318",
+      "no_obra": "315924",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 190,
+    "fields": {
+      "economico": "8190",
+      "placas": "70 HC 3K",
+      "serie": "YS2K4X206S1929252",
+      "no_obra": "315477",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 191,
+    "fields": {
+      "economico": "8191",
+      "placas": "82 HC 4M",
+      "serie": "YS2K4X201S1930308",
+      "no_obra": "315925",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 192,
+    "fields": {
+      "economico": "8192",
+      "placas": "65 HC 3K",
+      "serie": "YS2K4X203S1929290",
+      "no_obra": "315482",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 193,
+    "fields": {
+      "economico": "8193",
+      "placas": "83 HC 6M",
+      "serie": "YS2K4X203T1931364",
+      "no_obra": "315967",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 194,
+    "fields": {
+      "economico": "8194",
+      "placas": "69 HC 5M",
+      "serie": "YS2K4X20XT1931099",
+      "no_obra": "315947",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 195,
+    "fields": {
+      "economico": "8195",
+      "placas": "43 HC 7M",
+      "serie": "YS2K4X203T1931431",
+      "no_obra": "315991",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 196,
+    "fields": {
+      "economico": "8196",
+      "placas": "35 HC 8K",
+      "serie": "YS2K4X205S1929677",
+      "no_obra": "315857",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 197,
+    "fields": {
+      "economico": "8197",
+      "placas": "59 HC 6K",
+      "serie": "YS2K4X202S1929698",
+      "no_obra": "315845",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 198,
+    "fields": {
+      "economico": "8198",
+      "placas": "42 HC 7M",
+      "serie": "YS2K4X209T1931613",
+      "no_obra": "315992",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 199,
+    "fields": {
+      "economico": "8199",
+      "placas": "94 HC 6K",
+      "serie": "YS2K4X209S1929942",
+      "no_obra": "315872",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 200,
+    "fields": {
+      "economico": "8200",
+      "placas": "39 HC 5K",
+      "serie": "YS2K4X201S1929546",
+      "no_obra": "315501",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 201,
+    "fields": {
+      "economico": "8201",
+      "placas": "56 HC 3K",
+      "serie": "YS2K4X203S1929449",
+      "no_obra": "315491",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 202,
+    "fields": {
+      "economico": "8202",
+      "placas": "55 HC 6K",
+      "serie": "YS2K4X205S1929954",
+      "no_obra": "315866",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 203,
+    "fields": {
+      "economico": "8203",
+      "placas": "72 HC 3K",
+      "serie": "YS2K4X201S1929238",
+      "no_obra": "315475",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 204,
+    "fields": {
+      "economico": "8204",
+      "placas": "29 HC 2M",
+      "serie": "YS2K4X202S1930172",
+      "no_obra": "315884",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 205,
+    "fields": {
+      "economico": "8205",
+      "placas": "33 HC 4K",
+      "serie": "YS2K4X201S1929255",
+      "no_obra": "315473",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 206,
+    "fields": {
+      "economico": "8206",
+      "placas": "56 HC 3M",
+      "serie": "YS2K4X208S1930306",
+      "no_obra": "315914",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 207,
+    "fields": {
+      "economico": "8207",
+      "placas": "69 HC 6K",
+      "serie": "YS2K4X206S1929686",
+      "no_obra": "315842",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 208,
+    "fields": {
+      "economico": "8208",
+      "placas": "99 HC 4M",
+      "serie": "YS2K4X201S1930373",
+      "no_obra": "315919",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 209,
+    "fields": {
+      "economico": "8209",
+      "placas": "91 HC 6K",
+      "serie": "YS2K4X207S1929969",
+      "no_obra": "315875",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 210,
+    "fields": {
+      "economico": "8210",
+      "placas": "40 HC 5K",
+      "serie": "YS2K4X208S1929544",
+      "no_obra": "315500",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 211,
+    "fields": {
+      "economico": "8211",
+      "placas": "75 HC 6K",
+      "serie": "YS2K4X20XS1929299",
+      "no_obra": "315445",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 212,
+    "fields": {
+      "economico": "8212",
+      "placas": "09 HC 5K",
+      "serie": "YS2K4X206S1929316",
+      "no_obra": "315441",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 213,
+    "fields": {
+      "economico": "8213",
+      "placas": "45 HC 7M",
+      "serie": "YS2K4X209T1931448",
+      "no_obra": "315989",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 214,
+    "fields": {
+      "economico": "8214",
+      "placas": "10 HC 5K",
+      "serie": "YS2K4X205S1929307",
+      "no_obra": "315440",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 215,
+    "fields": {
+      "economico": "8215",
+      "placas": "25 HC 2M",
+      "serie": "YS2K4X209S1930184",
+      "no_obra": "315888",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 216,
+    "fields": {
+      "economico": "8216",
+      "placas": "74 HC 6M",
+      "serie": "YS2K4X201T1930939",
+      "no_obra": "315942",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 217,
+    "fields": {
+      "economico": "8217",
+      "placas": "71 HC 6M",
+      "serie": "YS2K4X201T1931217",
+      "no_obra": "315959",
+      "seams": "null",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 218,
+    "fields": {
+      "economico": "8218",
+      "placas": "24 HC 4K",
+      "serie": "YS2KX205S1928044",
+      "no_obra": "315461",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 219,
+    "fields": {
+      "economico": "8219",
+      "placas": "47 HC 7M",
+      "serie": "YS2K4X202T1931436",
+      "no_obra": "315987",
+      "seams": "7",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 220,
+    "fields": {
+      "economico": "8220",
+      "placas": "44 HC 5K",
+      "serie": "YS2K4X207S1929468",
+      "no_obra": "315496",
+      "seams": "6",
+      "tipo": "GL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 221,
+    "fields": {
+      "economico": "7201",
+      "placas": "95 HC 7K",
+      "serie": "YS2K6X200S1929192",
+      "no_obra": "315526",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 222,
+    "fields": {
+      "economico": "7202",
+      "placas": "87 HC 7K",
+      "serie": "YS2K6X207S1929156",
+      "no_obra": "315520",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 223,
+    "fields": {
+      "economico": "7203",
+      "placas": "91 HC 7K",
+      "serie": "YS2K6X207S1929190",
+      "no_obra": "315525",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 224,
+    "fields": {
+      "economico": "7204",
+      "placas": "49 HC 8K",
+      "serie": "YS2K6X205S1929690",
+      "no_obra": "315994",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 225,
+    "fields": {
+      "economico": "7205",
+      "placas": "47 HC 8K",
+      "serie": "YS2K6X207S1929853",
+      "no_obra": "315996",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 226,
+    "fields": {
+      "economico": "7206",
+      "placas": "41 HC 8K",
+      "serie": "YS2K6X200S1929886",
+      "no_obra": "316002",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 227,
+    "fields": {
+      "economico": "7207",
+      "placas": "76 HC 7K",
+      "serie": "YS2K6X202S1929825",
+      "no_obra": "316005",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 228,
+    "fields": {
+      "economico": "7208",
+      "placas": "90 HC 7K",
+      "serie": "YS2K6X202S1929176",
+      "no_obra": "315521",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 229,
+    "fields": {
+      "economico": "7209",
+      "placas": "44 HC 8K",
+      "serie": "YS2K6X205S1929835",
+      "no_obra": "315999",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 230,
+    "fields": {
+      "economico": "7210",
+      "placas": "94 HC 7K",
+      "serie": "YS2K6X206S1929682",
+      "no_obra": "315528",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 231,
+    "fields": {
+      "economico": "7211",
+      "placas": "70 HC 3M",
+      "serie": "YS2K6X206S1930198",
+      "no_obra": "316036",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 232,
+    "fields": {
+      "economico": "7212",
+      "placas": "43 HC 8K",
+      "serie": "YS2K6X209S1929868",
+      "no_obra": "316000",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 233,
+    "fields": {
+      "economico": "7213",
+      "placas": "92 HC 7K",
+      "serie": "YS2K6X204S1929180",
+      "no_obra": "315523",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 234,
+    "fields": {
+      "economico": "7214",
+      "placas": "68 HC 3M",
+      "serie": "YS2K6X203S1930157",
+      "no_obra": "316038",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 235,
+    "fields": {
+      "economico": "7215",
+      "placas": "89 HC 7K",
+      "serie": "YS2K6X209S1929188",
+      "no_obra": "315522",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 236,
+    "fields": {
+      "economico": "7216",
+      "placas": "46 HC 8K",
+      "serie": "YS2K6X204S1929860",
+      "no_obra": "315997",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 237,
+    "fields": {
+      "economico": "7217",
+      "placas": "64 HC 2M",
+      "serie": "YS2K6X204S1929955",
+      "no_obra": "316015",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 238,
+    "fields": {
+      "economico": "7218",
+      "placas": "72 HC 7K",
+      "serie": "YS2K6X20XS1929958",
+      "no_obra": "316009",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 239,
+    "fields": {
+      "economico": "7219",
+      "placas": "14 HC 5M",
+      "serie": "YS2K6X204S1930300",
+      "no_obra": "316042",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 240,
+    "fields": {
+      "economico": "7220",
+      "placas": "08 HC 2M",
+      "serie": "YS2K6X204S1930166",
+      "no_obra": "316030",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 241,
+    "fields": {
+      "economico": "7221",
+      "placas": "60 HC 2M",
+      "serie": "YS2K6X203S1929980",
+      "no_obra": "316019",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 242,
+    "fields": {
+      "economico": "7222",
+      "placas": "66 HC 2M",
+      "serie": "YS2K6X20XS1929846",
+      "no_obra": "316013",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 243,
+    "fields": {
+      "economico": "7223",
+      "placas": "65 HC 3M",
+      "serie": "YS2K6X207S1930209",
+      "no_obra": "316040",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 244,
+    "fields": {
+      "economico": "7224",
+      "placas": "71 HC 7K",
+      "serie": "YS2K6X200S1329872",
+      "no_obra": "316010",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 245,
+    "fields": {
+      "economico": "7225",
+      "placas": "61 HC 2M",
+      "serie": "YS2K6X202S1929985",
+      "no_obra": "316018",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 246,
+    "fields": {
+      "economico": "7226",
+      "placas": "58 HC 2M",
+      "serie": "YS2K6X202S1930036",
+      "no_obra": "316021",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 247,
+    "fields": {
+      "economico": "7227",
+      "placas": "13 HC 2M",
+      "serie": "YS2K6X203S1930028",
+      "no_obra": "316025",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 248,
+    "fields": {
+      "economico": "7228",
+      "placas": "74 HC 3M",
+      "serie": "YS2K6X203S1930207",
+      "no_obra": "316032",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 249,
+    "fields": {
+      "economico": "7229",
+      "placas": "11 HC 2M",
+      "serie": "YS2K6X203S1930059",
+      "no_obra": "316027",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 250,
+    "fields": {
+      "economico": "7230",
+      "placas": "78 HC 7K",
+      "serie": "YS2K6X206S1929844",
+      "no_obra": "316003",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 251,
+    "fields": {
+      "economico": "7231",
+      "placas": "07 HC 2M",
+      "serie": "YS2K6X206S1930024",
+      "no_obra": "316031",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 252,
+    "fields": {
+      "economico": "7232",
+      "placas": "14 HC 2M",
+      "serie": "YS2K6X205S1930032",
+      "no_obra": "316024",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 253,
+    "fields": {
+      "economico": "7233",
+      "placas": "74 HC 7K",
+      "serie": "YS2K6X204S1929874",
+      "no_obra": "316007",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 254,
+    "fields": {
+      "economico": "7234",
+      "placas": "09 HC 2M",
+      "serie": "YS2K6X202S1930022",
+      "no_obra": "316029",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 255,
+    "fields": {
+      "economico": "7235",
+      "placas": "96 HC 7K",
+      "serie": "YS2K6X201S1929184",
+      "no_obra": "315527",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 256,
+    "fields": {
+      "economico": "7236",
+      "placas": "73 HC 7K",
+      "serie": "YS2K6X201S1929878",
+      "no_obra": "316008",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 257,
+    "fields": {
+      "economico": "7237",
+      "placas": "48 HC 8K",
+      "serie": "YS2K6X200S1929693",
+      "no_obra": "315995",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 258,
+    "fields": {
+      "economico": "7238",
+      "placas": "81 HC 9L",
+      "serie": "YS2K6X206S1929004",
+      "no_obra": "315518",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 259,
+    "fields": {
+      "economico": "7239",
+      "placas": "72 HC 3M",
+      "serie": "YS2K6X209S1930163",
+      "no_obra": "316034",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 260,
+    "fields": {
+      "economico": "7240",
+      "placas": "36 HC 1M",
+      "serie": "YS2K6X201S1929833",
+      "no_obra": "316011",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 261,
+    "fields": {
+      "economico": "7241",
+      "placas": "15 HC 5M",
+      "serie": "YS2K6X20XS1930205",
+      "no_obra": "316041",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 262,
+    "fields": {
+      "economico": "7242",
+      "placas": "57 HC 2M",
+      "serie": "YS2K6X201S1929976",
+      "no_obra": "316022",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 263,
+    "fields": {
+      "economico": "7243",
+      "placas": "12 HC 5M",
+      "serie": "YS2K6X203S1930241",
+      "no_obra": "316044",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 264,
+    "fields": {
+      "economico": "7244",
+      "placas": "73 HC 3M",
+      "serie": "YS2K6X206S1930153",
+      "no_obra": "316033",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 265,
+    "fields": {
+      "economico": "7245",
+      "placas": "62 HC 2M",
+      "serie": "YS2K6X208S1929957",
+      "no_obra": "316017",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 266,
+    "fields": {
+      "economico": "7246",
+      "placas": "70 HC 7K",
+      "serie": "YS2K6X201S1929945",
+      "no_obra": "316012",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 267,
+    "fields": {
+      "economico": "7247",
+      "placas": "71 HC 3M",
+      "serie": "YS2K6X20XS1930186",
+      "no_obra": "316035",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 268,
+    "fields": {
+      "economico": "7248",
+      "placas": "15 HC 2M",
+      "serie": "YS2K6X208S1929974",
+      "no_obra": "316023",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 269,
+    "fields": {
+      "economico": "7249",
+      "placas": "67 HC 3M",
+      "serie": "YS2K6X20XS1930155",
+      "no_obra": "316039",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 270,
+    "fields": {
+      "economico": "7250",
+      "placas": "45 HC 8K",
+      "serie": "YS2K6X205S1929849",
+      "no_obra": "315998",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 271,
+    "fields": {
+      "economico": "7251",
+      "placas": "18 HB 6J",
+      "serie": "YS2K6X203T1930886",
+      "no_obra": "316058",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 272,
+    "fields": {
+      "economico": "7252",
+      "placas": "69 HC 3M",
+      "serie": "YS2K6X203S1930160",
+      "no_obra": "316037",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 273,
+    "fields": {
+      "economico": "7253",
+      "placas": "42 HC 8K",
+      "serie": "YS2K6X207S1929884",
+      "no_obra": "316001",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 274,
+    "fields": {
+      "economico": "7254",
+      "placas": "75 HC 7K",
+      "serie": "YS2K6X203S1929882",
+      "no_obra": "316006",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 275,
+    "fields": {
+      "economico": "7255",
+      "placas": "77 HC 7K",
+      "serie": "YS2K6X206S1929889",
+      "no_obra": "316004",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 276,
+    "fields": {
+      "economico": "7256",
+      "placas": "12 HC 2M",
+      "serie": "YS2K6X206S1930038",
+      "no_obra": "316026",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 277,
+    "fields": {
+      "economico": "7257",
+      "placas": "63 HC 2M",
+      "serie": "YS2K6X205S1929947",
+      "no_obra": "316016",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 278,
+    "fields": {
+      "economico": "7258",
+      "placas": "77 HB 6J",
+      "serie": "YS2K6X204T1930878",
+      "no_obra": "316055",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 279,
+    "fields": {
+      "economico": "7259",
+      "placas": "13 HC 5M",
+      "serie": "YS2K6X20XS1930317",
+      "no_obra": "316043",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 280,
+    "fields": {
+      "economico": "7260",
+      "placas": "74 HB 6J",
+      "serie": "YS2K6X20XT1930898",
+      "no_obra": "316059",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 281,
+    "fields": {
+      "economico": "7261",
+      "placas": "22 HB 6J",
+      "serie": "YS2K6X209T1930892",
+      "no_obra": "316062",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 282,
+    "fields": {
+      "economico": "7262",
+      "placas": "09 HC 5M",
+      "serie": "YS2K6X202S1930246",
+      "no_obra": "316047",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 283,
+    "fields": {
+      "economico": "7263",
+      "placas": "19 HB 6J",
+      "serie": "YS2K6X203T1931651",
+      "no_obra": "316110",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 284,
+    "fields": {
+      "economico": "7264",
+      "placas": "75 HB 6J",
+      "serie": "YS2K6X204T1930900",
+      "no_obra": "316057",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 285,
+    "fields": {
+      "economico": "7265",
+      "placas": "08 HC 5M",
+      "serie": "YS2K6X207S1930243",
+      "no_obra": "316048",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 286,
+    "fields": {
+      "economico": "7266",
+      "placas": "80 HB 6J",
+      "serie": "YS2K6X209S1930258",
+      "no_obra": "316052",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 287,
+    "fields": {
+      "economico": "7267",
+      "placas": "65 HC 2M",
+      "serie": "YS2K6X209S1929983",
+      "no_obra": "316014",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 288,
+    "fields": {
+      "economico": "7268",
+      "placas": "65 HB 3M",
+      "serie": "YS2K6X204S1930250",
+      "no_obra": "316049",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 289,
+    "fields": {
+      "economico": "7269",
+      "placas": "16 HB 6J",
+      "serie": "YS2K6X202T1930894",
+      "no_obra": "316061",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 290,
+    "fields": {
+      "economico": "7270",
+      "placas": "20 HB 6J",
+      "serie": "YS2K6X201T1931633",
+      "no_obra": "316109",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 291,
+    "fields": {
+      "economico": "7271",
+      "placas": "10 HC 2M",
+      "serie": "YS2K6X207S1930047",
+      "no_obra": "316028",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 292,
+    "fields": {
+      "economico": "7272",
+      "placas": "59 HC 2M",
+      "serie": "YS2K6X205S1929978",
+      "no_obra": "316020",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 293,
+    "fields": {
+      "economico": "7273",
+      "placas": "76 HB 6J",
+      "serie": "YS2K6X209T1930889",
+      "no_obra": "316056",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 294,
+    "fields": {
+      "economico": "7274",
+      "placas": "11 HC 5M",
+      "serie": "YS2K6X205S1930256",
+      "no_obra": "316045",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 295,
+    "fields": {
+      "economico": "7275",
+      "placas": "78 HB 6J",
+      "serie": "YS2K6X208T1930902",
+      "no_obra": "316054",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 296,
+    "fields": {
+      "economico": "7276",
+      "placas": "64 HB 3M",
+      "serie": "YS2K6X20XS1930236",
+      "no_obra": "316050",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 297,
+    "fields": {
+      "economico": "7277",
+      "placas": "81 HB 6J",
+      "serie": "YS2K6X209S1930261",
+      "no_obra": "316051",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 298,
+    "fields": {
+      "economico": "7278",
+      "placas": "10 HC 5M",
+      "serie": "YS2K6X20XS1930253",
+      "no_obra": "316046",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 299,
+    "fields": {
+      "economico": "7279",
+      "placas": "79 HB 6J",
+      "serie": "YS2K6X201T1930904",
+      "no_obra": "316053",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 300,
+    "fields": {
+      "economico": "7280",
+      "placas": "21 HB 6J",
+      "serie": "YS2K6X209T1931511",
+      "no_obra": "316108",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 301,
+    "fields": {
+      "economico": "7281",
+      "placas": "93 HC 7K",
+      "serie": "YS2K6X208S1929182",
+      "no_obra": "315524",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 302,
+    "fields": {
+      "economico": "7282",
+      "placas": "88 HC 7K",
+      "serie": "YS2K6X205S1929009",
+      "no_obra": "315519",
+      "seams": "6",
+      "tipo": "PL"
+    }
+  },
+  {
+    "model": "ACC.autobus",
+    "pk": 303,
+    "fields": {
+      "economico": "7283",
+      "placas": "17 HB 6J",
+      "serie": "YS2K6X206T1930896",
+      "no_obra": "316060",
+      "seams": "7",
+      "tipo": "PL"
+    }
+  }
+]

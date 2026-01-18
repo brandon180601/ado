@@ -138,3 +138,10 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+GOOGLE_DRIVE_CREDENTIALS = os.path.join(
+    BASE_DIR, "credentials", "drive_client_secret.json"
+)
+
+GOOGLE_DRIVE_ROOT_FOLDER = "ACCIDENTES_ADO"

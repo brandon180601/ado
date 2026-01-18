@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Accidentes</title>
     {% include './includes/head.html' %}
   </head>
   <body class="bg-[#f5f5f5]">
@@ -211,7 +211,7 @@
         </div>
 
         <!-- CONTENEDOR FIJO -->
-        <div class="px-4 h-[460px] flex flex-col">
+        <div class="px-4 h-[530px] flex flex-col">
           <!-- STEPS -->
           <div class="flex gap-2 mb-6">
             <div id="step1Tab" class="flex-1 text-center py-4 rounded-lg bg-blue-900 text-white text-sm font-medium">1. Unidad</div>
@@ -226,17 +226,76 @@
               <h4 class="text-lg font-medium mb-4">Unidad</h4>
 
               <div class="grid grid-cols-3 gap-4 mb-4">
-                <input class="border rounded px-3 py-2 text-sm" placeholder="Económico" />
-                <input class="border rounded px-3 py-2 text-sm" placeholder="Tipo de unidad" />
-                <input class="border rounded px-3 py-2 text-sm" placeholder="Seams" />
-                <input class="border rounded px-3 py-2 text-sm" placeholder="Número de obra" />
-                <input class="border rounded px-3 py-2 text-sm" placeholder="Número de serie" />
-                <input class="border rounded px-3 py-2 text-sm" placeholder="Placas" />
+                <div>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1">Económico</label>
+                  <input id="economicoInput"
+                    class="border rounded px-3 py-2 text-sm w-full"
+                    placeholder="Económico" />
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1">Tipo de unidad</label>
+                  <input id="tipoUnidad"
+                    class="border rounded px-3 py-2 text-sm w-full"
+                    placeholder="Tipo de unidad"
+                    readonly/>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1">Seams</label>
+                  <input id="seams"
+                    class="border rounded px-3 py-2 text-sm w-full"
+                    placeholder="Seams"
+                    readonly/>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1">Número de obra</label>
+                  <input id="noObra"
+                    class="border rounded px-3 py-2 text-sm w-full"
+                    placeholder="Número de obra"
+                    readonly/>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1">Número de serie</label>
+                  <input id="serie"
+                    class="border rounded px-3 py-2 text-sm w-full"
+                    placeholder="Número de serie"
+                    readonly/>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1">Placas</label>
+                  <input id="placas"
+                    class="border rounded px-3 py-2 text-sm w-full"
+                    placeholder="Placas"
+                    readonly/>
+                </div>
               </div>
 
               <h4 class="text-lg font-medium mb-4">Conductor</h4>
-              <input class="border rounded px-3 py-2 text-sm mb-4 pr-12" placeholder="Clave del conductor" />
-              <input class="border rounded px-3 py-2 text-sm w-full" placeholder="Nombre completo" />
+              <div class="mb-4">
+                <label class="block text-xs font-semibold text-gray-700 mb-1">
+                  Clave del conductor
+                </label>
+                <input 
+                  id="claveConductor"
+                  class="border rounded px-3 py-2 text-sm w-full"
+                  placeholder="Clave del conductor" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">
+                  Nombre completo
+                </label>
+                <input 
+                  id="nombreConductor"
+                  class="border rounded px-3 py-2 text-sm w-full"
+                  placeholder="Nombre completo"
+                  readonly/>
+              </div>
+
             </div>
 
             <!-- BOTONES -->
@@ -252,11 +311,26 @@
               <h4 class="text-lg font-medium mb-4">Descripción</h4>
 
               <div class="grid grid-cols-2 gap-4 mb-4">
-                <input class="border rounded px-3 py-2 text-sm" placeholder="Daño" />
-                <input class="border rounded px-3 py-2 text-sm" placeholder="Tipo de cargo" />
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Daño</label>
+                <select id="tipoDanio"
+                class="border rounded px-3 py-2 text-sm w-full bg-white">
+                <option value="">-- Seleccionar daño --</option>
+                </select>
               </div>
 
-              <textarea class="border rounded px-3 py-2 text-sm w-full h-48" placeholder="Descripción del accidente"></textarea>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Tipo de cargo</label>
+                <select id="tipoCargo"
+                  class="border rounded px-3 py-2 text-sm w-full bg-white">
+                  <option value="">-- Seleccionar cargo --</option>
+                </select>
+              </div>
+
+            </div>
+
+
+              <textarea id="descripcionAccidente" class="border rounded px-3 py-2 text-sm w-full h-60" placeholder="Descripción del accidente"></textarea>
             </div>
 
             <!-- BOTONES -->
@@ -269,16 +343,27 @@
           <!-- ================= STEP 3 ================= -->
           <div id="step3" class="hidden flex flex-col flex-1">
             <!-- CONTENIDO -->
-            <div class="flex-1 overflow-y-auto pr-1">
+            <div class="flex-1 overflow-y-auto pr-1 space-y-4">
               <h4 class="text-lg font-medium mb-4">Evidencia</h4>
 
-              <div class="border-2 border-dashed rounded-lg h-60 flex items-center justify-center text-gray-400">Drag and drop o click para subir archivos</div>
+              <!-- DROPZONE -->
+              <div id="dropzone" class="border-2 border-dashed rounded-lg min-h-[170px] max-h-[130px] flex flex-col items-center justify-center  text-gray-400 cursor-pointer hover:border-purple-600 hover:text-purple-700 transition">
+                <i class="bi bi-cloud-arrow-up text-4xl"></i>
+                <p class="text-sm">Drag and drop o click para subir archivos</p>
+              </div>
+
+              <!-- INPUT OCULTO -->
+              <input type="file" id="fileInput" multiple accept="image/*" class="hidden" />
+
+              <!-- PREVIEW -->
+              <div id="preview" class="grid grid-cols-4 gap-4 mt-4 max-h-[130px] overflow-y-auto pr-1 mb-2"></div>
             </div>
 
             <!-- BOTONES -->
             <div class="flex justify-end gap-3 mb-7">
               <button id="backTo2" class="bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded-lg w-[140px]">Anterior</button>
-              <button class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2 rounded-lg w-[140px]">Aceptar</button>
+
+              <button id="btnAceptar" class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2 rounded-lg w-[140px]">Aceptar</button>
             </div>
           </div>
         </div>
@@ -352,6 +437,222 @@
           if (loader) loader.style.display = 'flex'
         })
       })
+    </script>
+    <script>
+      const dropzone = document.getElementById("dropzone");
+      const fileInput = document.getElementById("fileInput");
+      const preview = document.getElementById("preview");
+
+      // CLICK abre explorador
+      dropzone.addEventListener("click", () => {
+        fileInput.click();
+      });
+
+      // ARCHIVOS SELECCIONADOS
+      fileInput.addEventListener("change", (e) => {
+        handleFiles(e.target.files);
+      });
+
+      // DRAG & DROP
+      dropzone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        dropzone.classList.add("border-purple-600", "text-purple-700");
+      });
+
+      dropzone.addEventListener("dragleave", () => {
+        dropzone.classList.remove("border-purple-600", "text-purple-700");
+      });
+
+      dropzone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        dropzone.classList.remove("border-purple-600", "text-purple-700");
+        handleFiles(e.dataTransfer.files);
+      });
+
+      function handleFiles(files) {
+        [...files].forEach(file => {
+          if (!file.type.startsWith("image/")) return;
+
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            const div = document.createElement("div");
+            div.className = "relative group";
+
+            div.innerHTML = `
+              <img src="${e.target.result}"
+                  class="w-full h-32 object-cover rounded-lg border"/>
+
+              <button
+                class="absolute top-1 right-1 bg-red-600 text-white rounded-full w-6 h-6
+                      flex items-center justify-center text-xs opacity-0 group-hover:opacity-100
+                      transition"
+              >
+                &times;
+              </button>
+            `;
+
+            // ELIMINAR IMAGEN
+            div.querySelector("button").addEventListener("click", () => {
+              div.remove();
+            });
+
+            preview.appendChild(div);
+          };
+
+          reader.readAsDataURL(file);
+        });
+      }
+    </script>
+    <script>
+      const economicoInput = document.getElementById("economicoInput");
+      economicoInput.addEventListener("blur", function () {
+        const economico = this.value.trim();
+
+        if (!economico) return;
+
+        fetch(`/buscar-autobus/?economico=${economico}`)
+          .then(response => response.json())
+          .then(data => {
+            if (data.existe) {
+              document.getElementById("tipoUnidad").value = data.tipo_unidad;
+              document.getElementById("noObra").value = data.no_obra;
+              document.getElementById("serie").value = data.serie;
+              document.getElementById("seams").value = data.seams;
+              document.getElementById("placas").value = data.placas;
+            } else {
+              document.getElementById("tipoUnidad").value = "";
+              document.getElementById("noObra").value = "";
+              document.getElementById("serie").value = "";
+              document.getElementById("seams").value = "";
+              document.getElementById("placas").value = "";
+            }
+          });
+      });
+      const claveInput = document.getElementById("claveConductor");
+
+      claveInput.addEventListener("blur", function () {
+        const clave = this.value.trim();
+
+        if (!clave) return;
+
+        fetch(`/buscar-conductor/?clave=${clave}`)
+          .then(response => response.json())
+          .then(data => {
+            if (data.existe) {
+              document.getElementById("nombreConductor").value = data.nombre_completo;
+            } else {
+              document.getElementById("nombreConductor").value = "";
+            }
+          });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      fetch("/listar-tipo-cargo/")
+        .then(response => response.json())
+        .then(data => {
+          const select = document.getElementById("tipoCargo");
+
+          data.cargos.forEach(cargo => {
+            const option = document.createElement("option");
+            option.value = cargo.id_tipo_cargo;
+            option.textContent = cargo.descripcion;
+            select.appendChild(option);
+          });
+        });
+        // ---- Cargar Tipo de Daño ----
+        fetch("/listar-tipo-danio/")
+        .then(response => response.json())
+        .then(data => {
+          const selectDanio = document.getElementById("tipoDanio");
+          
+          data.danios.forEach(danio => {
+            const option = document.createElement("option");
+            option.value = danio.id_tipo_dano;
+            option.textContent = danio.descripcion;
+            selectDanio.appendChild(option);
+          });
+        });
+      });
+    </script>
+    <script>
+      function getCSRFToken() {
+      return document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+      }
+
+    async function registrarAccidente() {
+      console.log("Daño:", document.getElementById("tipoDanio").value);
+      console.log("Cargo:", document.getElementById("tipoCargo").value);
+
+      const datos = new FormData();
+      
+      datos.append("economico", document.getElementById("economicoInput").value);
+      datos.append("clave_conductor", document.getElementById("claveConductor").value);
+      datos.append("tipo_dano", document.getElementById("tipoDanio").value);
+      datos.append("tipo_cargo", document.getElementById("tipoCargo").value);
+      datos.append("descripcion", document.querySelector("textarea").value);
+
+      const response = await fetch("/registrar-accidente/", {
+        method: "POST",
+        headers: {
+          "X-CSRFToken": getCSRFToken()
+        },
+        body: datos
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        window.folderId = data.folder_id;
+        window.accidenteId = data.accidente_id;
+        return true;
+      } else {
+        Swal.fire("Error", data.error, "error");
+        return false;
+      }
+    }
+
+
+    async function subirImagenes() {
+      const formData = new FormData();
+      formData.append("folder_id", window.folderId);
+
+      const files = document.getElementById("fileInput").files;
+
+      for (let file of files) {
+        formData.append("imagenes", file);
+      }
+
+      const response = await fetch("/subir-evidencia/", {
+        method: "POST",
+        headers: {
+        "X-CSRFToken": getCSRFToken()
+         },
+        body: formData
+      });
+
+      return await response.json();
+    }
+
+    document.getElementById("btnAceptar").addEventListener("click", async function() {
+
+      const creado = await registrarAccidente();
+
+      if (!creado) return;
+
+      await subirImagenes();
+
+      Swal.fire({
+        icon: "success",
+        title: "¡Registro creado!",
+        text: "El accidente y su evidencia fueron guardados correctamente.",
+        confirmButtonColor: "#6b21a8"
+      }).then(() => {
+        location.reload(); // o cierra el modal
+      });
+
+    });
+
     </script>
   </body>
 </html>

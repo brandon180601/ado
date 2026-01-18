@@ -5,14 +5,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INICIO</title>
+    <title>Login</title>
     {% include './includes/head.html' %}
   </head>
   {% django_browser_reload_script %}
   <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="w-[900px] h-[520px] bg-white rounded-2xl shadow-xl flex overflow-hidden">
       <!-- IZQUIERDA -->
-      <div class="w-[55%] bg-cover bg-center" style="background-image: url('{% static 'ACC/img/ado.jpg' %}');"></div>
+      <div class="w-[55%] bg-cover bg-center" style="background-image: url('{% static 'ACC/img/login2.png' %}');"></div>
 
       <!-- DERECHA -->
       <div class="w-[50%] flex flex-col justify-center px-12">
@@ -24,7 +24,7 @@
         </p>
 
         <!-- FORMULARIO -->
-        <form class="mt-6 mx-3">
+        <form class="mt-6 mx-3" action="{% url 'dashboard' %}">
           <!-- USUARIO -->
           <div class="mb-4">
             <label class="text-gray-700 text-sm">Usuario</label>

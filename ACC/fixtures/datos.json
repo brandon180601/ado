@@ -1,0 +1,39 @@
+[
+  {
+    "model": "ACC.tipo_cargo",
+    "pk": 1,
+    "fields": {
+      "descripcion": "WR"
+    }
+  },
+  {
+    "model": "ACC.tipo_cargo",
+    "pk": 2,
+    "fields": {
+      "descripcion": "WJ"
+    }
+  },
+
+  {
+    "model": "ACC.proveedor",
+    "pk": 1,
+    "fields": {
+      "nombre": "ADO"
+    }
+  },
+  {
+    "model": "ACC.proveedor",
+    "pk": 2,
+    "fields": {
+      "nombre": "SERMAG"
+    }
+  },
+  {
+    "model": "ACC.proveedor",
+    "pk": 3,
+    "fields": {
+      "nombre": "BACANDA"
+    }
+  }
+]
+
