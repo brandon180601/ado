@@ -11,26 +11,34 @@ from googleapiclient.http import MediaIoBaseUpload
 SCOPES = ["https://www.googleapis.com/auth/drive"]
 
 # TOKEN_FILE = os.path.join(settings.BASE_DIR, "token_drive.json")
-TOKEN_FILE = os.getenv("GOOGLE_TOKEN_JSON")
-
+# TOKEN_FILE = os.getenv("GOOGLE_TOKEN_JSON")
 
 def get_drive_service():
     creds = None
 
-    # --- NUEVO: leer token desde variable de entorno ---
-    token_env = os.getenv("GOOGLE_TOKEN_JSON")
+    # ---------- 1) LEER TOKEN DESDE RENDER (Secret File) ----------
+    try:
+        with open("/etc/secrets/GOOGLE_TOKEN_JSON") as f:
+            token_env = f.read()
+    except FileNotFoundError:
+        token_env = None
+
     if token_env:
         creds = Credentials.from_authorized_user_info(
             json.loads(token_env), SCOPES
         )
 
-    # Si no hay credenciales válidas, pedimos login (igual que antes)
+    # ---------- 2) LEER CREDENCIALES DESDE RENDER (Secret File) ----------
+    with open("/etc/secrets/GOOGLE_DRIVE_CREDENTIALS") as f:
+        client_json = json.loads(f.read())
+
+    # ---------- 3) MISMA LÓGICA OAuth QUE YA TENÍAS ----------
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_config(
-                json.loads(os.getenv("GOOGLE_DRIVE_CREDENTIALS")),
+                client_json,
                 scopes=SCOPES,
                 redirect_uri="http://localhost:8080/"
             )
@@ -41,6 +49,7 @@ def get_drive_service():
             token.write(creds.to_json())
 
     return build("drive", "v3", credentials=creds)
+
 
 
 def get_root_folder_id():
