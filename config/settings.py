@@ -145,7 +145,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     BASE_DIR, "credentials", "drive_client_secret.json"
 # )
 
-GOOGLE_DRIVE_CREDENTIALS = json.loads(os.getenv("GOOGLE_DRIVE_CREDENTIALS"))
-
+GOOGLE_DRIVE_CREDENTIALS = os.getenv("GOOGLE_DRIVE_CREDENTIALS")
 
 GOOGLE_DRIVE_ROOT_FOLDER = "ACCIDENTES_ADO"
