@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 from pathlib import Path
+import json
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -140,8 +141,11 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-GOOGLE_DRIVE_CREDENTIALS = os.path.join(
-    BASE_DIR, "credentials", "drive_client_secret.json"
-)
+# GOOGLE_DRIVE_CREDENTIALS = os.path.join(
+#     BASE_DIR, "credentials", "drive_client_secret.json"
+# )
+
+GOOGLE_DRIVE_CREDENTIALS = json.loads(os.getenv("GOOGLE_DRIVE_CREDENTIALS"))
+
 
 GOOGLE_DRIVE_ROOT_FOLDER = "ACCIDENTES_ADO"
