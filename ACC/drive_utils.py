@@ -1,6 +1,6 @@
 import os
 import io
-
+import json
 from django.conf import settings
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -10,34 +10,34 @@ from googleapiclient.http import MediaIoBaseUpload
 
 SCOPES = ["https://www.googleapis.com/auth/drive"]
 
-TOKEN_FILE = os.path.join(settings.BASE_DIR, "token_drive.json")
+# TOKEN_FILE = os.path.join(settings.BASE_DIR, "token_drive.json")
+TOKEN_FILE = os.getenv("GOOGLE_TOKEN_JSON")
 
 
 def get_drive_service():
-    """
-    Autenticación OAuth con tu cuenta personal.
-    Genera token_drive.json la primera vez.
-    """
-
     creds = None
 
-    # Si ya existe el token guardado, lo usamos
-    if os.path.exists(TOKEN_FILE):
-        creds = Credentials.from_authorized_user_file(TOKEN_FILE, SCOPES)
+    # --- NUEVO: leer token desde variable de entorno ---
+    token_env = os.getenv("GOOGLE_TOKEN_JSON")
+    if token_env:
+        creds = Credentials.from_authorized_user_info(
+            json.loads(token_env), SCOPES
+        )
 
-    # Si no hay credenciales válidas, pedimos login en navegador
+    # Si no hay credenciales válidas, pedimos login (igual que antes)
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file(
-            settings.GOOGLE_DRIVE_CREDENTIALS,
-            scopes=SCOPES,
-            redirect_uri="http://localhost:8080/")
+            flow = InstalledAppFlow.from_client_config(
+                json.loads(os.getenv("GOOGLE_CLIENT_JSON")),
+                scopes=SCOPES,
+                redirect_uri="http://localhost:8080/"
+            )
             creds = flow.run_local_server(port=8080)
 
-        # Guardamos el token para no volver a pedir login
-        with open(TOKEN_FILE, "w") as token:
+        # Guardamos el token SOLO para tu máquina local
+        with open("token_drive.json", "w") as token:
             token.write(creds.to_json())
 
     return build("drive", "v3", credentials=creds)
