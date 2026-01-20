@@ -30,7 +30,7 @@ def get_drive_service():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_config(
-                json.loads(os.getenv("GOOGLE_CLIENT_JSON")),
+                json.loads(os.getenv("GOOGLE_DRIVE_CREDENTIALS")),
                 scopes=SCOPES,
                 redirect_uri="http://localhost:8080/"
             )
