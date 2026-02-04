@@ -13,7 +13,6 @@ urlpatterns = [
     path("listar-tipo-danio/", views.listar_tipo_danio, name="listar_tipo_danio"),
     path('listar-proveedores/', views.listar_proveedores, name='listar_proveedores'),
     path("registrar-accidente/", views.registrar_accidente, name="registrar_accidente"),
-    path("subir-evidencia/", views.subir_evidencia, name="subir_evidencia"),
     path('accidente/eliminar/<int:accidente_id>/', views.eliminar_accidente, name='eliminar_accidente'),
     path('accidente/asignar-proveedor/<int:accidente_id>/',views.asignar_proveedor,name='asignar_proveedor'),
     path('accidente/detalle/<int:accidente_id>/',views.detalle_accidente,name='detalle_accidente'),

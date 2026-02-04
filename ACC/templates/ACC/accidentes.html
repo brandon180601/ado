@@ -125,7 +125,9 @@
                           
                           
                           
+                          
                           bg-purple-600
+
 
 
 
@@ -147,7 +149,9 @@
                           
                           
                           
+                          
                           bg-blue-900
+
 
 
 
@@ -169,7 +173,9 @@
                           
                           
                           
+                          
                           bg-gray-500
+
 
 
 
@@ -569,100 +575,49 @@
       /* ===================== VALIDACIONES ===================== */
       
       function validarStep1() {
-        const economico = document.getElementById('economicoInput')
-        const clave = document.getElementById('claveConductor')
-      
-        if (!economico.value.trim() || !clave.value.trim()) {
-          Swal.fire({
-            icon: 'warning',
-            title: 'Campos incompletos',
-            text: 'Completa los datos de la unidad y el conductor',
-            confirmButtonColor: '#6A2973'
-          })
+        if (!economicoInput.value.trim() || !claveConductor.value.trim()) {
+          Swal.fire('Campos incompletos', 'Completa los datos de la unidad y conductor', 'warning')
           return false
         }
         return true
       }
       
       function validarStep2() {
-        const tipoDanio = document.getElementById('tipoDanio')
-        const tipoCargo = document.getElementById('tipoCargo')
-        const descripcion = document.getElementById('descripcionAccidente')
-      
-        if (!tipoDanio.value || !tipoCargo.value || !descripcion.value.trim()) {
-          Swal.fire({
-            icon: 'warning',
-            title: 'Información incompleta',
-            text: 'Completa todos los campos de la descripción',
-            confirmButtonColor: '#6A2973'
-          })
+        if (!tipoDanio.value || !tipoCargo.value || !descripcionAccidente.value.trim()) {
+          Swal.fire('Información incompleta', 'Completa la descripción', 'warning')
           return false
         }
         return true
       }
       
       function validarStep3() {
-        const files = document.getElementById('fileInput').files
-      
-        if (files.length === 0) {
-          Swal.fire({
-            icon: 'warning',
-            title: 'Evidencia requerida',
-            text: 'Debes subir al menos una imagen',
-            confirmButtonColor: '#6A2973'
-          })
+        if (fileInput.files.length === 0) {
+          Swal.fire('Evidencia requerida', 'Debes subir al menos una imagen', 'warning')
           return false
         }
         return true
       }
       
-      /* ===================== REGISTRO ===================== */
+      /* ===================== REGISTRO COMPLETO ===================== */
       
-      async function registrarAccidente() {
-        const datos = new FormData()
-      
-        datos.append('economico', document.getElementById('economicoInput').value)
-        datos.append('clave_conductor', document.getElementById('claveConductor').value)
-        datos.append('tipo_dano', document.getElementById('tipoDanio').value)
-        datos.append('tipo_cargo', document.getElementById('tipoCargo').value)
-        datos.append('descripcion', document.getElementById('descripcionAccidente').value)
-      
-        const response = await fetch('/registrar-accidente/', {
-          method: 'POST',
-          headers: {
-            'X-CSRFToken': getCSRFToken()
-          },
-          body: datos
-        })
-      
-        const data = await response.json()
-      
-        if (response.ok) {
-          window.folderId = data.folder_id
-          window.accidenteId = data.accidente_id
-          return true
-        } else {
-          Swal.fire('Error', data.error, 'error')
-          return false
-        }
-      }
-      
-      /* ===================== SUBIR IMÁGENES ===================== */
-      
-      async function subirImagenes() {
+      async function registrarAccidenteCompleto() {
         const formData = new FormData()
-        formData.append('folder_id', window.folderId)
       
-        const files = document.getElementById('fileInput').files
-        for (let file of files) {
+        // Datos
+        formData.append('economico', economicoInput.value)
+        formData.append('clave_conductor', claveConductor.value)
+        formData.append('tipo_dano', tipoDanio.value)
+        formData.append('tipo_cargo', tipoCargo.value)
+        formData.append('descripcion', descripcionAccidente.value)
+      
+        // Imágenes
+        for (let file of fileInput.files) {
           formData.append('imagenes', file)
         }
       
-        const response = await fetch('/subir-evidencia/', {
+        const response = await fetch('/registrar-accidente/', {
           method: 'POST',
-          headers: {
-            'X-CSRFToken': getCSRFToken()
-          },
+          headers: { 'X-CSRFToken': getCSRFToken() },
           body: formData
         })
       
@@ -671,39 +626,35 @@
       
       /* ===================== BOTÓN FINAL ===================== */
       
-      document.getElementById('btnAceptar').addEventListener('click', async function () {
-        // 🔒 VALIDACIONES ANTES DE TODO
+      document.getElementById('btnAceptar').addEventListener('click', async () => {
         if (!validarStep1() || !validarStep2() || !validarStep3()) return
       
         try {
           mostrarLoader()
       
-          const creado = await registrarAccidente()
-          if (!creado) {
-            ocultarLoader()
-            return
-          }
-      
-          await subirImagenes()
+          const data = await registrarAccidenteCompleto()
       
           ocultarLoader()
       
-          Swal.fire({
-            icon: 'success',
-            title: '¡Registro creado!',
-            text: 'El accidente y su evidencia fueron guardados correctamente.',
-            timer: 2500,
-            showConfirmButton: false
-          }).then(() => {
-            location.reload()
-          })
-        } catch (error) {
-          console.error(error)
+          if (data.success) {
+            Swal.fire({
+              icon: 'success',
+              title: '¡Registro creado!',
+              text: 'El accidente y su evidencia fueron guardados correctamente',
+              timer: 2500,
+              showConfirmButton: false
+            }).then(() => location.reload())
+          } else {
+            Swal.fire('Error', data.error, 'error')
+          }
+        } catch (err) {
+          console.error(err)
           ocultarLoader()
           Swal.fire('Error', 'Ocurrió un problema al guardar', 'error')
         }
       })
     </script>
+
     <SCript>
       function mostrarTabAccidente(tabId, btn) {
         // Ocultar tabs
