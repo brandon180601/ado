@@ -1,62 +1,58 @@
 import os
 import io
-import json
+import socket
 from django.conf import settings
 from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseUpload
 
+# ================================
+# Forzar que todas las conexiones usen IPv4
+# ================================
+old_getaddrinfo = socket.getaddrinfo
+
+def getaddrinfo_ipv4(host, port, *args, **kwargs):
+    return [x for x in old_getaddrinfo(host, port, *args, **kwargs) if x[0] == socket.AF_INET]
+
+socket.getaddrinfo = getaddrinfo_ipv4
+
+# ================================
+# Configuración Drive
+# ================================
 SCOPES = ["https://www.googleapis.com/auth/drive"]
+TOKEN_FILE = str(settings.GOOGLE_DRIVE_TOKEN_FILE)  # Asegúrate de que esto existe
+ROOT_FOLDER_NAME = str(settings.GOOGLE_DRIVE_ROOT_FOLDER)  # Nombre de tu carpeta raíz
 
-# TOKEN_FILE = os.path.join(settings.BASE_DIR, "token_drive.json")
-# TOKEN_FILE = os.getenv("GOOGLE_TOKEN_JSON")
-
+# ================================
+# Servicio de Google Drive
+# ================================
 def get_drive_service():
-    creds = None
+    """
+    Devuelve un servicio de Google Drive usando token OAuth.
+    """
+    if not os.path.exists(TOKEN_FILE):
+        raise Exception(f"No se encontró token en {TOKEN_FILE}. Ejecuta obtener_token.py primero.")
 
-    # ---------- 1) LEER TOKEN DESDE RENDER (Secret File) ----------
-    try:
-        with open("/etc/secrets/GOOGLE_TOKEN_JSON") as f:
-            token_env = f.read()
-    except FileNotFoundError:
-        token_env = None
+    creds = Credentials.from_authorized_user_file(TOKEN_FILE, SCOPES)
 
-    if token_env:
-        creds = Credentials.from_authorized_user_info(
-            json.loads(token_env), SCOPES
-        )
+    # Refrescar token si está expirado
+    if creds.expired and creds.refresh_token:
+        creds.refresh(Request())
+        with open(TOKEN_FILE, "w") as token_file:
+            token_file.write(creds.to_json())
 
-    # ---------- 2) LEER CREDENCIALES DESDE RENDER (Secret File) ----------
-    with open("/etc/secrets/GOOGLE_DRIVE_CREDENTIALS") as f:
-        client_json = json.loads(f.read())
-
-    # ---------- 3) MISMA LÓGICA OAuth QUE YA TENÍAS ----------
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_config(
-                client_json,
-                scopes=SCOPES,
-                redirect_uri="http://localhost:8080/"
-            )
-            creds = flow.run_local_server(port=8080)
-
-        # Guardamos el token SOLO para tu máquina local
-        with open("token_drive.json", "w") as token:
-            token.write(creds.to_json())
-
+    # Construir servicio normalmente (IPv4 ya está forzado por socket.getaddrinfo)
     return build("drive", "v3", credentials=creds)
 
-
-
+# ================================
+# Carpeta raíz
+# ================================
 def get_root_folder_id():
     service = get_drive_service()
 
     query = (
-        f"name='{settings.GOOGLE_DRIVE_ROOT_FOLDER}' "
+        f"name='{ROOT_FOLDER_NAME}' "
         "and mimeType='application/vnd.google-apps.folder' "
         "and trashed=false"
     )
@@ -69,7 +65,9 @@ def get_root_folder_id():
 
     return folders[0]["id"]
 
-
+# ================================
+# Crear carpeta
+# ================================
 def create_drive_folder(folder_name, parent_id=None):
     service = get_drive_service()
 
@@ -82,45 +80,21 @@ def create_drive_folder(folder_name, parent_id=None):
         "parents": [parent_id],
     }
 
-    folder = (
-        service.files()
-        .create(body=file_metadata, fields="id, webViewLink")
-        .execute()
-    )
+    folder = service.files().create(body=file_metadata, fields="id, webViewLink").execute()
+    return {"id": folder["id"], "url": folder["webViewLink"]}
 
-    return {
-        "id": folder["id"],
-        "url": folder["webViewLink"],
-    }
-
-
+# ================================
+# Subir archivo
+# ================================
 def upload_file_to_drive(file_obj, filename, folder_id):
     service = get_drive_service()
 
-    file_metadata = {
-        "name": filename,
-        "parents": [folder_id],
-    }
+    file_metadata = {"name": filename, "parents": [folder_id]}
+    media = MediaIoBaseUpload(io.BytesIO(file_obj.read()), mimetype=file_obj.content_type, resumable=True)
 
-    media = MediaIoBaseUpload(
-        io.BytesIO(file_obj.read()),
-        mimetype=file_obj.content_type,
-        resumable=True,
-    )
-
-    file = (
-        service.files()
-        .create(body=file_metadata, media_body=media, fields="id, webViewLink")
-        .execute()
-    )
+    file = service.files().create(body=file_metadata, media_body=media, fields="id, webViewLink").execute()
 
     # Hacer archivo público (lectura)
-    service.permissions().create(
-        fileId=file["id"],
-        body={"type": "anyone", "role": "reader"},
-    ).execute()
+    service.permissions().create(fileId=file["id"], body={"type": "anyone", "role": "reader"}).execute()
 
-    return {
-        "id": file["id"],
-        "url": file["webViewLink"],
-    }
+    return {"id": file["id"], "url": file["webViewLink"]}

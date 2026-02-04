@@ -1,76 +1,61 @@
 <!-- SIDEBAR -->
-        <aside class="w-56 min-h-screen bg-white py-6 px-4 shadow" x-data="{ openGestion: false }">
+<aside class="w-56 min-h-screen bg-white py-6 px-4 shadow">
+  <!-- OPCIONES -->
+  <ul class="space-y-2">
+    <!-- Dashboard -->
+    <li>
+      <a href="{% url 'dashboard' %}"
+        class="flex items-center gap-3 px-4 py-2 rounded-lg transition
+   {% if request.resolver_match.url_name == 'dashboard' %}
+          
+      bg-[#6A2973] text-white translate-x-1
 
-            <!-- OPCIONES -->
-            <ul class="space-y-2">
+        {% else %}
+          
+      hover:bg-[#6A2973] hover:text-white hover:translate-x-1
 
-                <!-- Dashboard -->
-                <li>
-                    <a href="{% url 'dashboard' %}" 
-                    class="flex items-center gap-3 px-4 py-2 rounded-lg transition 
-                            hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
-                        <i class="bi bi-graph-up text-lg"></i> Dashboard
-                    </a>
-                </li>
+        {% endif %}">
+        <i class="bi bi-graph-up text-lg"></i> Dashboard
+      </a>
+    </li>
 
-                <!-- Accidentes -->
-                <li>
-                    <a href="{% url 'accidentes' %}" 
-                    class="flex items-center gap-3 px-4 py-2 rounded-lg transition 
-                            hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
-                        <i class="bi bi-journal-bookmark text-lg"></i> Accidentes
-                    </a>
-                </li>
+    <!-- Accidentes -->
+    <li>
+      <a href="{% url 'accidentes' %}"
+        class="flex items-center gap-3 px-4 py-2 rounded-lg transition
+   {% if request.resolver_match.url_name == 'accidentes' %}
+          
+      bg-[#6A2973] text-white translate-x-1
 
-                <!-- GESTIÓN (con submenú) -->
-                <li>
-                    <button 
-                        @click="openGestion = !openGestion"
-                        class="w-full flex items-center justify-between px-4 py-2 rounded-lg transition 
-                            hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
-                        
-                        <div class="flex items-center gap-3">
-                            <i class="bi bi-folder text-lg"></i> 
-                            Gestión
-                        </div>
+        {% else %}
+          
+      hover:bg-[#6A2973] hover:text-white hover:translate-x-1
 
-                        <!-- Flecha -->
-                        <i :class="openGestion ? 'bi bi-chevron-up' : 'bi bi-chevron-down'"></i>
-                    </button>
+        {% endif %}">
+        <i class="bi bi-journal-bookmark text-lg"></i> Accidentes
+      </a>
+    </li>
 
-                    <!-- Submenú -->
-                    <ul 
-                        x-show="openGestion"
-                        x-transition 
-                        class="ml-1 mt-1 pl-4 space-y-2"
-                    >
-                        <li>
-                            <a href="#" 
-                            class="flex items-center gap-2 px-4 py-2 rounded-lg transition 
-                                    hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
-                                <i class="bi bi-person text-sm"></i> Conductores
-                            </a>
-                        </li>
+    <!-- GESTIÓN -->
+    <li>
+      <a href="{% url 'gestion' %}"
+        class="flex items-center gap-3 px-4 py-2 rounded-lg transition
+   {% if request.resolver_match.url_name == 'gestion' %}
+          
+      bg-[#6A2973] text-white translate-x-1
 
-                        <li>
-                            <a href="#" 
-                            class="flex items-center gap-2 px-4 py-2 rounded-lg transition 
-                                    hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
-                                <i class="bi bi-truck-front text-sm"></i> Autobuses
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+        {% else %}
+          
+      hover:bg-[#6A2973] hover:text-white hover:translate-x-1
 
-                <!-- Configuración -->
-                <li>
-                    <a href="#" 
-                    class="flex items-center gap-3 px-4 py-2 rounded-lg transition 
-                            hover:bg-[#6A2973] hover:text-white hover:translate-x-1">
-                        <i class="bi bi-gear text-lg"></i> Configuración
-                    </a>
-                </li>
+        {% endif %}">
+        <i class="bi bi-folder text-lg"></i> Gestión
+      </a>
+    </li>
 
-            </ul>
-
-        </aside>
+    <!-- Configuración -->
+    <li>
+      <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg transition hover:bg-[#6A2973] hover:text-white hover:translate-x-1"><i class="bi bi-gear text-lg"></i> Configuración</a>
+    </li>
+  </ul>
+</aside>

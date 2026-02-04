@@ -81,11 +81,12 @@ class Accidente(models.Model):
     carpeta_evidencia_final = models.URLField(null=True, blank=True)
 
     # ==== Campos que se llenan AL FINAL ====
-    proveedor = models.CharField(max_length=150, null=True, blank=True)
+    proveedor = models.ForeignKey('Proveedor', on_delete=models.SET_NULL,null=True,blank=True)
     costo = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     codigo_acc = models.CharField(max_length=30, unique=True, null=True, blank=True)
     comentarios_cierre = models.TextField(null=True, blank=True)
-
+    fecha_finalizado = models.DateTimeField(null=True, blank=True)
+    
     # ==== TUS ESTADOS ====
     ESTADOS = [
         ('EN_PROCESO', 'En proceso'),

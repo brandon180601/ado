@@ -2,16 +2,71 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from .models import *
 from django.utils.timezone import now
+from django.utils import timezone
 from .drive_utils import *
+from django.contrib.auth import authenticate, login
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
+from django.shortcuts import get_object_or_404
+from django.views.decorators.http import require_POST
+from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse
+import json
 
-def login(request):
+def login_view(request):
+    if request.method == "POST":
+        username = request.POST.get("username")
+        password = request.POST.get("password")
+
+        user = authenticate(request, username=username, password=password)
+
+        if user is not None:
+            login(request, user)
+            return redirect("dashboard")  # o tu dashboard
+        else:
+            messages.error(request, "Usuario o contraseña incorrectos")
     return render(request, 'ACC/login.html')
 
-def dashboard(request):
-    return render(request, 'ACC/dashboard.html')
+def logout_view(request):
+    if request.method == "POST":
+        logout(request)
+        return redirect("login")  # o la vista que quieras
 
+    return redirect("dashboard")
+
+@login_required
+def dashboard(request):
+    # Conteo de accidentes por tipo de autobús
+    accidentes_gl = Accidente.objects.filter(autobus__tipo='GL').count()
+    accidentes_pl = Accidente.objects.filter(autobus__tipo='PL').count()
+
+    # Conteo total de accidentes
+    total_accidentes = Accidente.objects.count()
+
+    context = {
+        'accidentes_gl': accidentes_gl,
+        'accidentes_pl': accidentes_pl,
+        'total_accidentes': total_accidentes,
+    }
+    return render(request, 'ACC/dashboard.html', context)
+
+@login_required
 def accidentes(request):
-    return render(request, 'ACC/accidentes.html')
+    accidentes = (
+        Accidente.objects
+        .select_related("autobus", "conductor", "tipo_dano")
+        .order_by("-fecha")
+    )
+
+    return render(request, "ACC/accidentes.html", {
+        "accidentes": accidentes
+    })
+
+@login_required
+def gestion(request):
+    return render(request, 'ACC/gestion.html')
 
 def buscar_autobus(request):
     economico = request.GET.get("economico", "").strip()
@@ -65,6 +120,12 @@ def listar_tipo_danio(request):
     )
     return JsonResponse({"danios": danios})
 
+def listar_proveedores(request):
+    proveedores = list(
+        Proveedor.objects.values("id_proveedor", "nombre")
+    )
+    return JsonResponse({"proveedores": proveedores})
+
 def registrar_accidente(request):
     if request.method != "POST":
         return JsonResponse({"error": "Solo POST permitido"}, status=400)
@@ -83,7 +144,7 @@ def registrar_accidente(request):
     descripcion = data["descripcion"]
 
     # === Crear nombre de carpeta ===
-    fecha = now().strftime("%d%m%Y")
+    fecha = timezone.localtime(timezone.now()).strftime("%d%m%Y")
     carpeta_base = f"ACC_{autobus.economico}_{fecha}"
     carpeta_inicial = f"{carpeta_base}_INICIAL"
 
@@ -142,3 +203,245 @@ def subir_evidencia(request):
         return JsonResponse({
             "error": f"Error al subir imágenes: {str(e)}"
         }, status=500)
+
+@login_required
+@require_POST
+def eliminar_accidente(request, accidente_id):
+    accidente = get_object_or_404(Accidente, id=accidente_id)
+
+    if accidente.estado == 'FINALIZADO':
+        return JsonResponse({
+            'success': False,
+            'error': 'No se puede eliminar un accidente finalizado'
+        })
+
+    accidente.delete()
+    return JsonResponse({'success': True})
+
+@csrf_exempt
+def asignar_proveedor(request, accidente_id):
+    if request.method != "POST":
+        return JsonResponse({"error": "Método no permitido"}, status=400)
+
+    try:
+        data = json.loads(request.body)
+        proveedor_id = data.get("proveedor")
+
+        accidente = Accidente.objects.get(id=accidente_id)
+
+        if accidente.estado != "EN_PROCESO":
+            return JsonResponse({"error": "Estado inválido"}, status=400)
+        
+        proveedor = Proveedor.objects.get(id_proveedor=proveedor_id)
+        accidente.proveedor = proveedor
+        accidente.estado = "EN_REPARACION"
+        accidente.save()
+
+        return JsonResponse({"success": True})
+
+    except Accidente.DoesNotExist:
+        return JsonResponse({"error": "Accidente no encontrado"}, status=404)
+
+    except Exception as e:
+        return JsonResponse({"error": str(e)}, status=500)
+
+@csrf_exempt
+def actualizar_accidente(request, accidente_id):
+    if request.method != "POST":
+        return JsonResponse({"error": "Método no permitido"}, status=405)
+
+    try:
+        data = json.loads(request.body)
+        accidente = get_object_or_404(Accidente, id=accidente_id)
+
+        # ================= AUTOBÚS =================
+        economico = data.get("economico")
+        if economico and economico != accidente.autobus.economico:
+            accidente.autobus = Autobus.objects.get(economico=economico)
+
+        # ================= CONDUCTOR =================
+        clave = data.get("clave_conductor")
+        if clave and clave != accidente.conductor.clave:
+            accidente.conductor = Conductor.objects.get(clave=clave)
+
+        # ================= TIPO DAÑO =================
+        tipo_dano_id = data.get("tipo_dano")
+        if tipo_dano_id is not None:
+            tipo_dano_id = int(tipo_dano_id)
+            if tipo_dano_id != accidente.tipo_dano_id:
+                accidente.tipo_dano_id = tipo_dano_id
+
+        # ================= TIPO CARGO =================
+        tipo_cargo_id = data.get("tipo_cargo")
+        if tipo_cargo_id is not None:
+            tipo_cargo_id = int(tipo_cargo_id)
+            if tipo_cargo_id != accidente.tipo_cargo_id:
+                accidente.tipo_cargo_id = tipo_cargo_id
+
+        # ================= PROVEEDOR =================
+        proveedor_id = data.get("proveedor")
+        if proveedor_id:
+            proveedor_id = int(proveedor_id)
+        else:
+            proveedor_id = None
+
+        if proveedor_id != accidente.proveedor_id:
+            accidente.proveedor_id = proveedor_id
+
+        # ================= DESCRIPCIÓN =================
+        descripcion = data.get("descripcion")
+        if descripcion is not None:
+            accidente.descripcion = descripcion
+
+        accidente.save()
+        return JsonResponse({"success": True})
+
+    except Autobus.DoesNotExist:
+        return JsonResponse({"error": "El autobús no existe"}, status=400)
+
+    except Conductor.DoesNotExist:
+        return JsonResponse({"error": "El conductor no existe"}, status=400)
+
+    except ValueError:
+        return JsonResponse({"error": "Datos inválidos"}, status=400)
+
+    except Exception as e:
+        return JsonResponse({"error": str(e)}, status=500)
+
+
+def detalle_accidente(request, accidente_id):
+    accidente = get_object_or_404(Accidente, id=accidente_id)
+
+    return JsonResponse({
+        "id": accidente.id,
+        "descripcion": accidente.descripcion,
+
+        "autobus": {
+            "economico": accidente.autobus.economico,
+            "tipo": accidente.autobus.tipo,
+            "seams": accidente.autobus.seams,
+            "no_obra": accidente.autobus.no_obra,
+            "serie": accidente.autobus.serie,
+            "placas": accidente.autobus.placas,
+        },
+
+        "conductor": {
+            "clave": accidente.conductor.clave,
+            "nombre": f"{accidente.conductor.nombres} {accidente.conductor.a_paterno} {accidente.conductor.a_materno}"
+        },
+
+        "tipo_dano_id": accidente.tipo_dano_id,
+        "tipo_cargo_id": accidente.tipo_cargo_id,
+        "proveedor_id": accidente.proveedor_id
+    })
+
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
+from django.utils import timezone
+from decimal import Decimal
+
+def finalizar_accidente(request, accidente_id):
+    if request.method != "POST":
+        return JsonResponse({"error": "Solo POST permitido"}, status=400)
+
+    accidente = get_object_or_404(Accidente, id=accidente_id)
+
+    # 🔒 No permitir doble finalización
+    if accidente.estado == "FINALIZADO":
+        return JsonResponse(
+            {"error": "Este accidente ya fue finalizado"},
+            status=400
+        )
+
+    data = request.POST
+    archivos = request.FILES.getlist("imagenes")
+
+    # ===== VALIDACIONES =====
+    campos_requeridos = [
+        "economico", "clave_conductor", "tipo_dano", "tipo_cargo",
+        "proveedor", "descripcion", "codigo_acc", "costo", "comentarios"
+    ]
+
+    for campo in campos_requeridos:
+        if not data.get(campo):
+            return JsonResponse(
+                {"error": f"Falta el campo {campo}"},
+                status=400
+            )
+
+    if not archivos:
+        return JsonResponse(
+            {"error": "Debes subir al menos una imagen"},
+            status=400
+        )
+
+    # ===== VALIDAR RELACIONES =====
+    try:
+        autobus = Autobus.objects.get(economico=data["economico"])
+        conductor = Conductor.objects.get(clave=data["clave_conductor"])
+        tipo_dano = Tipo_Dano.objects.get(id_tipo_dano=data["tipo_dano"])
+        tipo_cargo = Tipo_Cargo.objects.get(id_tipo_cargo=data["tipo_cargo"])
+        proveedor = Proveedor.objects.get(id_proveedor=data["proveedor"])
+    except Exception as e:
+        return JsonResponse(
+            {"error": f"Dato inválido: {str(e)}"},
+            status=400
+        )
+
+    # ===== VALIDAR CÓDIGO ÚNICO =====
+    codigo_acc = data["codigo_acc"].strip()
+
+    if Accidente.objects.exclude(id=accidente.id).filter(codigo_acc=codigo_acc).exists():
+        return JsonResponse(
+            {"error": "El código de accidente ya existe"},
+            status=400
+        )
+
+    # ===== CREAR CARPETA FINAL =====
+    carpeta_final = f"{accidente.carpeta_base}_FINAL"
+
+    try:
+        resultado_drive = create_drive_folder(carpeta_final)
+    except Exception as e:
+        return JsonResponse(
+            {"error": f"Error al crear carpeta en Drive: {str(e)}"},
+            status=500
+        )
+
+    # ===== SUBIR IMÁGENES =====
+    try:
+        for archivo in archivos:
+            upload_file_to_drive(
+                archivo,
+                archivo.name,
+                resultado_drive["id"]
+            )
+    except Exception as e:
+        return JsonResponse(
+            {"error": f"Error al subir imágenes: {str(e)}"},
+            status=500
+        )
+
+    # ===== ACTUALIZAR ACCIDENTE =====
+    accidente.autobus = autobus
+    accidente.conductor = conductor
+    accidente.tipo_dano = tipo_dano
+    accidente.tipo_cargo = tipo_cargo
+    accidente.proveedor = proveedor
+    accidente.descripcion = data["descripcion"]
+
+    accidente.codigo_acc = codigo_acc
+    accidente.costo = Decimal(data["costo"])
+    accidente.comentarios_cierre = data["comentarios"]
+    accidente.carpeta_evidencia_final = resultado_drive["url"]
+    accidente.fecha_finalizado = timezone.now()
+    accidente.estado = "FINALIZADO"
+
+    accidente.save()
+
+    return JsonResponse({
+        "success": True,
+        "mensaje": "Accidente finalizado correctamente"
+    })
+
+

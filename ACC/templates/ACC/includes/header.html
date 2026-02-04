@@ -13,7 +13,7 @@
                 @click="open = !open"
                 class="w-12 h-12 bg-[#00194F] text-white rounded-full flex items-center justify-center text-xl shadow"
             >
-                BS
+                {{ request.user.first_name|slice:":1" }}{{ request.user.last_name|slice:":1" }}
             </button>
 
             <!-- Ventana flotante -->
@@ -21,17 +21,21 @@
                 x-show="open" 
                 @click.outside="open = false"
                 x-transition
-                class="absolute right-0 mt-3 w-56 bg-white shadow-xl rounded-lg border p-4"
+                class="absolute right-0 mt-3 w-56 bg-white shadow-xl rounded-lg border p-4 z-50"
             >
-                <p class="font-semibold text-gray-800 text-center">Brandon Silva</p>
-                <p class="text-sm text-gray-500 text-center">brandon.silva@correo.com</p>
+                <p class="font-semibold text-gray-800 text-center">{{ request.user.get_full_name|default:request.user.username }}</p>
+                <p class="text-sm text-gray-500 text-center">{{ request.user.email }}</p>
 
+                <form method="POST" action="{% url 'logout' %}">
+                {% csrf_token %}
                 <button 
+                    type="submit"
                     class="w-full mt-4 bg-red-600 text-white py-2 rounded-lg hover:bg-red-700"
-                    onclick="window.location.href='/'"
                 >
                     Cerrar sesión
                 </button>
+            </form>
+
             </div>
 
         </div>

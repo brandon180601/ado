@@ -1,0 +1,70 @@
+{% load static %}
+{% load django_browser_reload %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accidentes</title>
+    {% include './includes/head.html' %}
+  </head>
+  <body class="bg-gradient-to-br from-[#f2f4f8] to-[#e9ecf1]">
+    {% include './includes/header.html' %}
+    <!-- LOADER GLOBAL -->
+    <div id="page-loader" class="fixed inset-0 bg-black/20 flex items-center justify-center z-[9999] transition-opacity duration-300">
+      <div class="loader"></div>
+    </div>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="flex">
+      {% include './includes/menu.html' %}
+
+      <!-- CUERPO PRINCIPAL -->
+      <main class="flex-1 pt-6 pr-6 pl-6">
+        <!-- ACCIDENTES DATOS -->
+        <div class="bg-white min-h-screen rounded-tl-xl rounded-tr-xl shadow p-6">
+          <!-- HEADER -->
+          <!-- HEADER -->
+          <div class="mb-10">
+            <h2 class="text-2xl font-semibold text-gray-800">Gestión de catalogos</h2>
+            {% comment %} <p class="text-gray-500 mt-1">Administra los catálogos del sistema</p> {% endcomment %}
+          </div>
+
+          <!-- TARJETAS -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
+            <!-- CARD AUTOBUSES -->
+            <a href="#" class="group">
+              <div class="w-64 h-64 bg-[#00194F] rounded-2xl shadow-lg flex flex-col items-center justify-center text-white transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-4 hover:ring-[#6A2973]/40">
+                <img src="{% static 'ACC/img/bus.png' %}" alt="Autobuses" class="w-20 mb-6 opacity-90 group-hover:scale-110 transition invert brightness-0" />
+
+                <h3 class="text-xl font-semibold">Autobuses</h3>
+                <p class="text-sm text-white/80 mt-1">Gestión de unidades</p>
+              </div>
+            </a>
+
+            <!-- CARD CONDUCTORES -->
+            <a href="#" class="group">
+              <div class="w-64 h-64 bg-[#00194F] rounded-2xl shadow-lg flex flex-col items-center justify-center text-white transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-4 hover:ring-[#6A2973]/40">
+                <img src="{% static 'ACC/img/conductores.png' %}" alt="Conductores" class="w-20 mb-6 opacity-90 group-hover:scale-110 transition invert brightness-0" />
+
+                <h3 class="text-xl font-semibold">Conductores</h3>
+                <p class="text-sm text-white/80 mt-1">Control de operadores</p>
+              </div>
+            </a>
+
+            <!-- CARD USUARIOS -->
+            <a href="#" class="group">
+              <div class="w-64 h-64 bg-[#00194F] rounded-2xl shadow-lg flex flex-col items-center justify-center text-white transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-4 hover:ring-[#6A2973]/40">
+                <img src="{% static 'ACC/img/user.png' %}" alt="Usuarios" class="w-20 mb-6 opacity-90 group-hover:scale-110 transition invert brightness-0" />
+
+                <h3 class="text-xl font-semibold">Usuarios</h3>
+                <p class="text-sm text-white/80 mt-1">Accesos y permisos</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+    {% include './includes/scripts.html' %}
+  </body>
+</html>

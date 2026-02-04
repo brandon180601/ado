@@ -28,7 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [os.environ.get("RENDER_EXTERNAL_HOSTNAME"),
     'localhost',
-    '127.0.0.1',]
+    '127.0.0.1',
+    '192.168.1.74',]
 
 
 # Application definition
@@ -64,7 +65,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -113,9 +114,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-mx'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Mexico_City'
 
 USE_I18N = True
 
@@ -141,10 +142,16 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# GOOGLE_DRIVE_CREDENTIALS = os.path.join(
-#     BASE_DIR, "credentials", "drive_client_secret.json"
-# )
+GOOGLE_DRIVE_CREDENTIALS = os.path.join(
+    BASE_DIR, "credentials", "drive_client_secret.json"
+)
 
-GOOGLE_DRIVE_CREDENTIALS = os.getenv("GOOGLE_DRIVE_CREDENTIALS")
+GOOGLE_DRIVE_TOKEN_FILE = BASE_DIR / "token_drive.json"
+
+# GOOGLE_DRIVE_CREDENTIALS = os.getenv("GOOGLE_DRIVE_CREDENTIALS")
 
 GOOGLE_DRIVE_ROOT_FOLDER = "ACCIDENTES_ADO"
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'dashboard'
+LOGOUT_REDIRECT_URL = 'login'

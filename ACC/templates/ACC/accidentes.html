@@ -8,12 +8,12 @@
     <title>Accidentes</title>
     {% include './includes/head.html' %}
   </head>
-  <body class="bg-[#f5f5f5]">
+  <body class="bg-gradient-to-br from-[#f2f4f8] to-[#e9ecf1]">
+    {% include './includes/header.html' %}
     <!-- LOADER GLOBAL -->
-    <div id="page-loader" class="fixed inset-0 bg-white flex items-center justify-center z-[9999] transition-opacity duration-300">
+    <div id="page-loader" class="fixed inset-0 bg-black/20 flex items-center justify-center z-[9999] transition-opacity duration-300">
       <div class="loader"></div>
     </div>
-    {% include './includes/header.html' %}
 
     <!-- CONTENEDOR PRINCIPAL -->
     <div class="flex">
@@ -98,91 +98,164 @@
               </thead>
 
               <tbody class="divide-y">
-                <tr class="hover:bg-gray-50">
-                  <td class="px-4 py-3">1</td>
-                  <td class="px-4 py-3">15/08/2024</td>
-                  <td class="px-4 py-3">8002</td>
-                  <td class="px-4 py-3">
-                    <span class="bg-purple-600 text-white px-2 py-1 rounded-full text-xs">GL</span>
-                  </td>
-                  <td class="px-4 py-3">Jorge García</td>
-                  <td class="px-4 py-3">
-                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs">En reparación</span>
-                  </td>
-                  <td class="px-4 py-3">—</td>
-                  <td class="px-4 py-3">—</td>
-                  <td class="px-4 py-3 flex justify-center gap-2">
-                    <!-- BOTON VER -->
-                    <button class="group text-gray-400 hover:text-[#00194F] transition">
-                      <i class="bi bi-eye group-hover:hidden text-lg"></i>
-                      <i class="bi bi-eye-fill hidden group-hover:inline text-lg"></i>
-                    </button>
-                    <!-- BOTON EDITAR -->
-                    <button class="text-gray-400 hover:text-yellow-500 transition"><i class="bi bi-pencil-square text-lg"></i></button>
-                    <!-- BOTON ELIMINAR -->
-                    <button class="group text-gray-400 hover:text-red-600 transition">
-                      <i class="bi bi-trash group-hover:hidden text-lg"></i>
-                      <i class="bi bi-trash-fill hidden group-hover:inline text-lg"></i>
-                    </button>
-                  </td>
-                </tr>
+                {% for acc in accidentes %}
+                  <tr class="hover:bg-gray-50">
+                    <!-- # -->
+                    <td class="px-4 py-3">{{ forloop.counter }}</td>
 
-                <tr class="hover:bg-gray-50">
-                  <td class="px-4 py-3">2</td>
-                  <td class="px-4 py-3">29/07/2024</td>
-                  <td class="px-4 py-3">7250</td>
-                  <td class="px-4 py-3">
-                    <span class="bg-blue-900 text-white px-2 py-1 rounded-full text-xs">PL</span>
-                  </td>
-                  <td class="px-4 py-3">Rubén Torres</td>
-                  <td class="px-4 py-3">
-                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs">Cerrado</span>
-                  </td>
-                  <td class="px-4 py-3">$28,500</td>
-                  <td class="px-4 py-3">ML-5465820</td>
-                  <td class="px-4 py-3 flex justify-center gap-2">
-                    <!-- BOTON VER -->
-                    <button class="group text-gray-400 hover:text-[#00194F] transition">
-                      <i class="bi bi-eye group-hover:hidden text-lg"></i>
-                      <i class="bi bi-eye-fill hidden group-hover:inline text-lg"></i>
-                    </button>
+                    <!-- Fecha -->
+                    <td class="px-4 py-3">{{ acc.fecha|date:'d/m/Y' }}</td>
 
-                    <!-- BOTÓN PDF -->
-                    <button class="group text-gray-400 hover:text-red-600 transition">
-                      <i class="bi bi-file-pdf group-hover:hidden text-lg"></i>
-                      <i class="bi bi-file-pdf-fill hidden group-hover:inline text-lg"></i>
-                    </button>
-                  </td>
-                </tr>
+                    <!-- Unidad -->
+                    <td class="px-4 py-3">{{ acc.autobus.economico }}</td>
 
-                <tr class="hover:bg-gray-50">
-                  <td class="px-4 py-3">3</td>
-                  <td class="px-4 py-3">10/08/2024</td>
-                  <td class="px-4 py-3">8001</td>
-                  <td class="px-4 py-3">
-                    <span class="bg-purple-600 text-white px-2 py-1 rounded-full text-xs">GL</span>
-                  </td>
-                  <td class="px-4 py-3">Jorge García</td>
-                  <td class="px-4 py-3">
-                    <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs">En proceso</span>
-                  </td>
-                  <td class="px-4 py-3">—</td>
-                  <td class="px-4 py-3">—</td>
-                  <td class="px-4 py-3 flex justify-center gap-2">
-                    <!-- BOTON VER -->
-                    <button class="group text-gray-400 hover:text-[#00194F] transition">
-                      <i class="bi bi-eye group-hover:hidden text-lg"></i>
-                      <i class="bi bi-eye-fill hidden group-hover:inline text-lg"></i>
-                    </button>
-                    <!-- BOTON EDITAR -->
-                    <button class="text-gray-400 hover:text-yellow-500 transition"><i class="bi bi-pencil-square text-lg"></i></button>
-                    <!-- BOTON ELIMINAR -->
-                    <button class="group text-gray-400 hover:text-red-600 transition">
-                      <i class="bi bi-trash group-hover:hidden text-lg"></i>
-                      <i class="bi bi-trash-fill hidden group-hover:inline text-lg"></i>
-                    </button>
-                  </td>
-                </tr>
+                    <!-- Tipo -->
+                    <td class="px-4 py-3">
+                      <span span
+                        class="text-white px-2 py-1 rounded-full text-xs{% if acc.autobus.tipo == 'GL' %}
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          bg-purple-600
+
+
+
+
+
+
+
+
+
+
+                        {% elif acc.autobus.tipo == 'PL' %}
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          bg-blue-900
+
+
+
+
+
+
+
+
+
+
+                        {% else %}
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          bg-gray-500
+
+
+
+
+
+
+
+
+
+
+
+
+                        {% endif %}">
+                        {{ acc.autobus.tipo }}
+                      </span>
+                    </td>
+                    <!-- Conductor -->
+                    <td class="px-4 py-3">{{ acc.conductor.nombres }} {{ acc.conductor.a_paterno }}</td>
+
+                    <!-- Estado -->
+                    <td class="px-4 py-3">
+                      {% if acc.estado == 'EN_REPARACION' %}
+                        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs">En reparación</span>
+                      {% elif acc.estado == 'FINALIZADO' %}
+                        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs">Finalizado</span>
+                      {% else %}
+                        <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs">En proceso</span>
+                      {% endif %}
+                    </td>
+
+                    <!-- Costo -->
+                    <td class="px-4 py-3">
+                      {% if acc.costo %}
+                        ${{ acc.costo|floatformat:2 }}
+                      {% else %}
+                        —
+                      {% endif %}
+                    </td>
+
+                    <!-- Código -->
+                    <td class="px-4 py-3">{{ acc.codigo_acc|default:'—' }}</td>
+
+                    <!-- Acciones -->
+                    <td class="px-4 py-3 flex justify-center gap-2">
+                      <!-- VER -->
+                      <button class="group text-gray-400 hover:text-[#00194F] transition">
+                        <i class="bi bi-eye group-hover:hidden text-lg"></i>
+                        <i class="bi bi-eye-fill hidden group-hover:inline text-lg"></i>
+                      </button>
+
+                      {% if acc.estado == 'EN_PROCESO' %}
+                        <!-- EDITAR → ASIGNAR PROVEEDOR -->
+                        <button class="text-gray-400 hover:text-yellow-500 transition" onclick="abrirModalProveedor(
+                          {{ acc.id }},
+                          '{{ acc.autobus.economico }}',
+                          '{{ acc.conductor.nombres }} {{ acc.conductor.a_paterno }} {{ acc.conductor.a_materno }}'
+                        )"><i class="bi bi-pencil-square text-lg"></i></button>
+
+                        <!-- ELIMINAR -->
+                        <button class="group text-gray-400 hover:text-red-600 transition" onclick="confirmarEliminar({{ acc.id }})">
+                          <i class="bi bi-trash group-hover:hidden text-lg"></i>
+                          <i class="bi bi-trash-fill hidden group-hover:inline text-lg"></i>
+                        </button>
+                      {% elif acc.estado == 'EN_REPARACION' %}
+                        <!-- EDITAR → MODAL EDITAR -->
+                        <button class="text-gray-400 hover:text-yellow-500 transition btn-editar" data-id="{{ acc.id }}" title="Editar accidente"><i class="bi bi-pencil-square text-lg"></i></button>
+
+                        <!-- ELIMINAR -->
+                        <button class="group text-gray-400 hover:text-red-600 transition" onclick="confirmarEliminar({{ acc.id }})">
+                          <i class="bi bi-trash group-hover:hidden text-lg"></i>
+                          <i class="bi bi-trash-fill hidden group-hover:inline text-lg"></i>
+                        </button>
+                      {% elif acc.estado == 'FINALIZADO' %}
+                        <!-- PDF -->
+                        <button class="group text-gray-400 hover:text-red-600 transition" onclick="descargarPDF({{ acc.id }})">
+                          <i class="bi bi-file-pdf group-hover:hidden text-lg"></i>
+                          <i class="bi bi-file-pdf-fill hidden group-hover:inline text-lg"></i>
+                        </button>
+                      {% endif %}
+                    </td>
+                  </tr>
+                {% empty %}
+                  <tr>
+                    <td colspan="9" class="text-center py-6 text-gray-400">No hay accidentes registrados</td>
+                  </tr>
+                {% endfor %}
               </tbody>
             </table>
 
@@ -228,74 +301,45 @@
               <div class="grid grid-cols-3 gap-4 mb-4">
                 <div>
                   <label class="block text-xs font-semibold text-gray-700 mb-1">Económico</label>
-                  <input id="economicoInput"
-                    class="border rounded px-3 py-2 text-sm w-full"
-                    placeholder="Económico" />
+                  <input id="economicoInput" class="border rounded px-3 py-2 text-sm w-full" placeholder="Económico" />
                 </div>
 
                 <div>
                   <label class="block text-xs font-semibold text-gray-700 mb-1">Tipo de unidad</label>
-                  <input id="tipoUnidad"
-                    class="border rounded px-3 py-2 text-sm w-full"
-                    placeholder="Tipo de unidad"
-                    readonly/>
+                  <input id="tipoUnidad" class="border rounded px-3 py-2 text-sm w-full bg-[#eeeeee]" placeholder="Tipo de unidad" readonly />
                 </div>
 
                 <div>
                   <label class="block text-xs font-semibold text-gray-700 mb-1">Seams</label>
-                  <input id="seams"
-                    class="border rounded px-3 py-2 text-sm w-full"
-                    placeholder="Seams"
-                    readonly/>
+                  <input id="seams" class="border rounded px-3 py-2 text-sm w-full bg-[#eeeeee]" placeholder="Seams" readonly />
                 </div>
 
                 <div>
                   <label class="block text-xs font-semibold text-gray-700 mb-1">Número de obra</label>
-                  <input id="noObra"
-                    class="border rounded px-3 py-2 text-sm w-full"
-                    placeholder="Número de obra"
-                    readonly/>
+                  <input id="noObra" class="border rounded px-3 py-2 text-sm w-full bg-[#eeeeee]" placeholder="Número de obra" readonly />
                 </div>
 
                 <div>
                   <label class="block text-xs font-semibold text-gray-700 mb-1">Número de serie</label>
-                  <input id="serie"
-                    class="border rounded px-3 py-2 text-sm w-full"
-                    placeholder="Número de serie"
-                    readonly/>
+                  <input id="serie" class="border rounded px-3 py-2 text-sm w-full bg-[#eeeeee]" placeholder="Número de serie" readonly />
                 </div>
 
                 <div>
                   <label class="block text-xs font-semibold text-gray-700 mb-1">Placas</label>
-                  <input id="placas"
-                    class="border rounded px-3 py-2 text-sm w-full"
-                    placeholder="Placas"
-                    readonly/>
+                  <input id="placas" class="border rounded px-3 py-2 text-sm w-full bg-[#eeeeee]" placeholder="Placas" readonly />
                 </div>
               </div>
 
               <h4 class="text-lg font-medium mb-4">Conductor</h4>
               <div class="mb-4">
-                <label class="block text-xs font-semibold text-gray-700 mb-1">
-                  Clave del conductor
-                </label>
-                <input 
-                  id="claveConductor"
-                  class="border rounded px-3 py-2 text-sm w-full"
-                  placeholder="Clave del conductor" />
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Clave del conductor</label>
+                <input id="claveConductor" class="border rounded px-3 py-2 text-sm w-full" placeholder="Clave del conductor" />
               </div>
 
               <div>
-                <label class="block text-xs font-semibold text-gray-700 mb-1">
-                  Nombre completo
-                </label>
-                <input 
-                  id="nombreConductor"
-                  class="border rounded px-3 py-2 text-sm w-full"
-                  placeholder="Nombre completo"
-                  readonly/>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Nombre completo</label>
+                <input id="nombreConductor" class="border rounded px-3 py-2 text-sm w-full bg-[#eeeeee]" placeholder="Nombre completo" readonly />
               </div>
-
             </div>
 
             <!-- BOTONES -->
@@ -311,24 +355,20 @@
               <h4 class="text-lg font-medium mb-4">Descripción</h4>
 
               <div class="grid grid-cols-2 gap-4 mb-4">
-              <div>
-                <label class="block text-xs font-semibold text-gray-700 mb-1">Daño</label>
-                <select id="tipoDanio"
-                class="border rounded px-3 py-2 text-sm w-full bg-white">
-                <option value="">-- Seleccionar daño --</option>
-                </select>
+                <div>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1">Daño</label>
+                  <select id="tipoDanio" class="border rounded px-3 py-2 text-sm w-full bg-white">
+                    <option value="">-- Seleccionar daño --</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-gray-700 mb-1">Tipo de cargo</label>
+                  <select id="tipoCargo" class="border rounded px-3 py-2 text-sm w-full bg-white">
+                    <option value="">-- Seleccionar cargo --</option>
+                  </select>
+                </div>
               </div>
-
-              <div>
-                <label class="block text-xs font-semibold text-gray-700 mb-1">Tipo de cargo</label>
-                <select id="tipoCargo"
-                  class="border rounded px-3 py-2 text-sm w-full bg-white">
-                  <option value="">-- Seleccionar cargo --</option>
-                </select>
-              </div>
-
-            </div>
-
 
               <textarea id="descripcionAccidente" class="border rounded px-3 py-2 text-sm w-full h-60" placeholder="Descripción del accidente"></textarea>
             </div>
@@ -347,7 +387,7 @@
               <h4 class="text-lg font-medium mb-4">Evidencia</h4>
 
               <!-- DROPZONE -->
-              <div id="dropzone" class="border-2 border-dashed rounded-lg min-h-[170px] max-h-[130px] flex flex-col items-center justify-center  text-gray-400 cursor-pointer hover:border-purple-600 hover:text-purple-700 transition">
+              <div id="dropzone" class="border-2 border-dashed rounded-lg min-h-[170px] max-h-[130px] flex flex-col items-center justify-center text-gray-400 cursor-pointer hover:border-purple-600 hover:text-purple-700 transition">
                 <i class="bi bi-cloud-arrow-up text-4xl"></i>
                 <p class="text-sm">Drag and drop o click para subir archivos</p>
               </div>
@@ -362,7 +402,6 @@
             <!-- BOTONES -->
             <div class="flex justify-end gap-3 mb-7">
               <button id="backTo2" class="bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded-lg w-[140px]">Anterior</button>
-
               <button id="btnAceptar" class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2 rounded-lg w-[140px]">Aceptar</button>
             </div>
           </div>
@@ -370,289 +409,331 @@
       </div>
     </div>
 
-    <script>
-      const modal = document.getElementById('modal')
-      
-      document.getElementById('openModal').onclick = () => modal.classList.remove('hidden')
-      document.getElementById('closeModal').onclick = () => modal.classList.add('hidden')
-      
-      const step1 = document.getElementById('step1')
-      const step2 = document.getElementById('step2')
-      const step3 = document.getElementById('step3')
-      
-      const step1Tab = document.getElementById('step1Tab')
-      const step2Tab = document.getElementById('step2Tab')
-      const step3Tab = document.getElementById('step3Tab')
-      
-      document.getElementById('toStep2').onclick = () => {
-        step1.classList.add('hidden')
-        step2.classList.remove('hidden')
-        step1Tab.classList.replace('bg-blue-900', 'bg-gray-300')
-        step1Tab.classList.replace('text-white', 'text-gray-600')
-        step2Tab.classList.replace('bg-gray-300', 'bg-blue-900')
-        step2Tab.classList.replace('text-gray-600', 'text-white')
-      }
-      
-      document.getElementById('toStep3').onclick = () => {
-        step2.classList.add('hidden')
-        step3.classList.remove('hidden')
-        step2Tab.classList.replace('bg-blue-900', 'bg-gray-300')
-        step2Tab.classList.replace('text-white', 'text-gray-600')
-        step3Tab.classList.replace('bg-gray-300', 'bg-blue-900')
-        step3Tab.classList.replace('text-gray-600', 'text-white')
-      }
-      
-      document.getElementById('backTo1').onclick = () => {
-        step2.classList.add('hidden')
-        step1.classList.remove('hidden')
-        step2Tab.classList.replace('bg-blue-900', 'bg-gray-300')
-        step2Tab.classList.replace('text-white', 'text-gray-600')
-        step1Tab.classList.replace('bg-gray-300', 'bg-blue-900')
-        step1Tab.classList.replace('text-gray-600', 'text-white')
-      }
-      
-      document.getElementById('backTo2').onclick = () => {
-        step3.classList.add('hidden')
-        step2.classList.remove('hidden')
-        step3Tab.classList.replace('bg-blue-900', 'bg-gray-300')
-        step3Tab.classList.replace('text-white', 'text-gray-600')
-        step2Tab.classList.replace('bg-gray-300', 'bg-blue-900')
-        step2Tab.classList.replace('text-gray-600', 'text-white')
-      }
-    </script>
-    <script>
-      // Ocultar loader al cargar la página
-      window.addEventListener('load', () => {
-        const loader = document.getElementById('page-loader')
-        if (!loader) return
-      
-        loader.classList.add('opacity-0')
-        setTimeout(() => (loader.style.display = 'none'), 300)
-      })
-      
-      // Mostrar loader al cambiar de página
-      document.querySelectorAll('a[href]').forEach((link) => {
-        link.addEventListener('click', () => {
-          const loader = document.getElementById('page-loader')
-          if (loader) loader.style.display = 'flex'
-        })
-      })
-    </script>
-    <script>
-      const dropzone = document.getElementById("dropzone");
-      const fileInput = document.getElementById("fileInput");
-      const preview = document.getElementById("preview");
+    <!-- MODAL ASIGNAR PROVEEDOR -->
+    <div id="modalProveedor" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+      <div class="bg-white w-full max-w-md rounded-xl shadow-lg px-4 py-1 relative">
+        <!-- HEADER -->
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-lg font-semibold">Asignar Proveedor</h3>
+          <button onclick="cerrarModalProveedor()" class="text-gray-400 hover:text-gray-600 text-3xl">&times;</button>
+        </div>
 
-      // CLICK abre explorador
-      dropzone.addEventListener("click", () => {
-        fileInput.click();
-      });
+        <!-- CONTENIDO -->
+        <div class="space-y-3 p-1">
+          <div>
+            <label class="text-xs font-semibold text-gray-700">Económico</label>
+            <input id="provEconomico" class="w-full border rounded px-3 py-2 text-sm bg-gray-100" readonly />
+          </div>
 
-      // ARCHIVOS SELECCIONADOS
-      fileInput.addEventListener("change", (e) => {
-        handleFiles(e.target.files);
-      });
+          <div>
+            <label class="text-xs font-semibold text-gray-700">Conductor</label>
+            <input id="provConductor" class="w-full border rounded px-3 py-2 text-sm bg-gray-100" readonly />
+          </div>
 
-      // DRAG & DROP
-      dropzone.addEventListener("dragover", (e) => {
-        e.preventDefault();
-        dropzone.classList.add("border-purple-600", "text-purple-700");
-      });
+          <div>
+            <label class="text-xs font-semibold text-gray-700">Proveedor</label>
+            <select id="proveedorSelect" class="border rounded px-3 py-2 text-sm w-full bg-white">
+              <option value="">-- Seleccionar proveedor --</option>
+            </select>
+          </div>
+        </div>
 
-      dropzone.addEventListener("dragleave", () => {
-        dropzone.classList.remove("border-purple-600", "text-purple-700");
-      });
+        <!-- BOTONES -->
+        <div class="flex justify-end gap-3 mb-4 mt-4">
+          <button onclick="cerrarModalProveedor()" class="bg-blue-900 text-white px-5 py-2 rounded-lg">Cancelar</button>
+          <button onclick="guardarProveedor()" class="bg-purple-700 text-white px-5 py-2 rounded-lg">Aceptar</button>
+        </div>
+      </div>
+    </div>
 
-      dropzone.addEventListener("drop", (e) => {
-        e.preventDefault();
-        dropzone.classList.remove("border-purple-600", "text-purple-700");
-        handleFiles(e.dataTransfer.files);
-      });
+    <!-- MODAL EDITAR ACCIDENTE -->
+    <div id="modalEditarAccidente" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+      <div class="bg-white w-full max-w-2xl rounded-xl shadow-lg px-6 py-4 relative">
+        <!-- HEADER -->
+        <div class="flex justify-between items-center border-b pb-3 mb-3">
+          <h3 class="text-xl font-semibold">Detalles del accidente</h3>
+          <button onclick="cerrarModalEditar()" class="text-gray-400 hover:text-gray-600 text-3xl leading-none">&times;</button>
+        </div>
 
-      function handleFiles(files) {
-        [...files].forEach(file => {
-          if (!file.type.startsWith("image/")) return;
+        <!-- TABS -->
+        <div class="flex border-b mb-6">
+          <button class="tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-blue-900 text-blue-900" onclick="mostrarTabAccidente('tab-datos', this)">Datos básicos</button>
+          <button class="tab-btn px-4 py-2 text-sm font-semibold text-gray-500" onclick="mostrarTabAccidente('tab-cierre', this)">Cierre del accidente</button>
+        </div>
 
-          const reader = new FileReader();
-          reader.onload = (e) => {
-            const div = document.createElement("div");
-            div.className = "relative group";
+        <!-- ================= DATOS BÁSICOS ================= -->
+        <div id="tab-datos" class="space-y-6">
+          <!-- UNIDAD -->
+          <div>
+            <h4 class="font-semibold text-sm text-gray-700 mb-2">Unidad</h4>
+            <div class="grid grid-cols-3 gap-4">
+              <input id="editEconomico" class="border rounded px-3 py-2 text-sm" placeholder="Económico" />
+              <input id="editTipoUnidad" class="border rounded px-3 py-2 text-sm bg-gray-100" placeholder="Tipo unidad" readonly />
+              <input id="editSeams" class="border rounded px-3 py-2 text-sm bg-gray-100" placeholder="Seams" readonly />
+              <input id="editNoObra" class="border rounded px-3 py-2 text-sm bg-gray-100" placeholder="Número de obra" readonly />
+              <input id="editSerie" class="border rounded px-3 py-2 text-sm bg-gray-100" placeholder="Serie" readonly />
+              <input id="editPlacas" class="border rounded px-3 py-2 text-sm bg-gray-100" placeholder="Placas" readonly />
+            </div>
+          </div>
 
-            div.innerHTML = `
-              <img src="${e.target.result}"
-                  class="w-full h-32 object-cover rounded-lg border"/>
+          <!-- CONDUCTOR -->
+          <div>
+            <h4 class="font-semibold text-sm text-gray-700 mb-2">Conductor</h4>
+            <input id="editClaveConductor" class="border rounded px-3 py-2 text-sm w-full mb-2" placeholder="Clave del conductor" />
+            <input id="editNombreConductor" class="border rounded px-3 py-2 text-sm w-full bg-gray-100" placeholder="Nombre completo" readonly />
+          </div>
 
-              <button
-                class="absolute top-1 right-1 bg-red-600 text-white rounded-full w-6 h-6
-                      flex items-center justify-center text-xs opacity-0 group-hover:opacity-100
-                      transition"
-              >
-                &times;
-              </button>
-            `;
+          <!-- DAÑO -->
+          <div>
+            <h4 class="font-semibold text-sm text-gray-700 mb-2">Detalle del daño</h4>
+            <div class="grid grid-cols-3 gap-4">
+              <select id="editTipoDanio" class="border rounded px-3 py-2 text-sm"></select>
+              <select id="editTipoCargo" class="border rounded px-3 py-2 text-sm"></select>
+              <select id="editProveedor" class="border rounded px-3 py-2 text-sm"></select>
+            </div>
+          </div>
 
-            // ELIMINAR IMAGEN
-            div.querySelector("button").addEventListener("click", () => {
-              div.remove();
-            });
+          <!-- DESCRIPCIÓN -->
+          <div>
+            <h4 class="font-semibold text-sm text-gray-700 mb-2">Descripción</h4>
+            <textarea id="editDescripcion" class="border rounded px-3 py-2 text-sm w-full h-28"></textarea>
+          </div>
+        </div>
 
-            preview.appendChild(div);
-          };
+        <!-- ================= CIERRE ACCIDENTE ================= -->
+        <div id="tab-cierre" class="hidden flex flex-col space-y-4">
+          <!-- ALERTA -->
+          {% comment %} <div class="bg-yellow-50 border border-yellow-300 rounded-lg p-4 text-sm text-yellow-800">⚠️ Al finalizar el accidente no se podrán modificar los datos.</div> {% endcomment %}
 
-          reader.readAsDataURL(file);
-        });
-      }
-    </script>
-    <script>
-      const economicoInput = document.getElementById("economicoInput");
-      economicoInput.addEventListener("blur", function () {
-        const economico = this.value.trim();
+          <div class="grid grid-cols-2 gap-4 mb-2">
+            <!-- CÓDIGO ACCIDENTE -->
+            <div>
+              <label class="text-sm font-semibold text-gray-700">Código de Accidente</label>
 
-        if (!economico) return;
+              <div class="flex mt-1">
+                <span class="inline-flex items-center px-3 border border-r-0 rounded-l bg-gray-100 text-sm text-gray-600">ML-</span>
 
-        fetch(`/buscar-autobus/?economico=${economico}`)
-          .then(response => response.json())
-          .then(data => {
-            if (data.existe) {
-              document.getElementById("tipoUnidad").value = data.tipo_unidad;
-              document.getElementById("noObra").value = data.no_obra;
-              document.getElementById("serie").value = data.serie;
-              document.getElementById("seams").value = data.seams;
-              document.getElementById("placas").value = data.placas;
-            } else {
-              document.getElementById("tipoUnidad").value = "";
-              document.getElementById("noObra").value = "";
-              document.getElementById("serie").value = "";
-              document.getElementById("seams").value = "";
-              document.getElementById("placas").value = "";
-            }
-          });
-      });
-      const claveInput = document.getElementById("claveConductor");
+                <input id="finalCodigo" type="text" class="border rounded-r px-3 py-2 text-sm w-full" placeholder="19080601" />
+              </div>
+            </div>
+            <!-- COSTO TOTAL -->
+            <div>
+              <label class="text-sm font-semibold text-gray-700">Costo total <span class="text-xs text-gray-500">(MXN)</span></label>
 
-      claveInput.addEventListener("blur", function () {
-        const clave = this.value.trim();
+              <div class="relative mt-1">
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-sm">$</span>
 
-        if (!clave) return;
+                <input id="finalCosto" type="number" step="0.01" min="0" class="border rounded pl-8 pr-3 py-2 text-sm w-full" placeholder="0.00" />
+              </div>
+            </div>
+          </div>
 
-        fetch(`/buscar-conductor/?clave=${clave}`)
-          .then(response => response.json())
-          .then(data => {
-            if (data.existe) {
-              document.getElementById("nombreConductor").value = data.nombre_completo;
-            } else {
-              document.getElementById("nombreConductor").value = "";
-            }
-          });
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-      fetch("/listar-tipo-cargo/")
-        .then(response => response.json())
-        .then(data => {
-          const select = document.getElementById("tipoCargo");
+          <!-- EVIDENCIA (DROPZONE) -->
+          <div>
+            <label class="text-sm font-semibold text-gray-700 mb-2 block">Evidencia</label>
 
-          data.cargos.forEach(cargo => {
-            const option = document.createElement("option");
-            option.value = cargo.id_tipo_cargo;
-            option.textContent = cargo.descripcion;
-            select.appendChild(option);
-          });
-        });
-        // ---- Cargar Tipo de Daño ----
-        fetch("/listar-tipo-danio/")
-        .then(response => response.json())
-        .then(data => {
-          const selectDanio = document.getElementById("tipoDanio");
-          
-          data.danios.forEach(danio => {
-            const option = document.createElement("option");
-            option.value = danio.id_tipo_dano;
-            option.textContent = danio.descripcion;
-            selectDanio.appendChild(option);
-          });
-        });
-      });
-    </script>
+            <div id="dropzoneFinal" class="border-2 border-dashed rounded-lg min-h-[130px] flex flex-col items-center justify-center text-gray-400 cursor-pointer hover:border-purple-600 hover:text-purple-700 transition">
+              <i class="bi bi-cloud-arrow-up text-4xl"></i>
+              <p class="text-sm mt-2">Drag and drop o click para subir archivos</p>
+            </div>
+
+            <input type="file" id="fileInputFinal" multiple accept="image/*" class="hidden" />
+
+            <div id="previewFinal" class="grid grid-cols-4 gap-4 mt-4 max-h-[130px] overflow-y-auto pr-1"></div>
+          </div>
+
+          <!-- COMENTARIOS -->
+          <div>
+            <label class="text-sm font-semibold text-gray-700">Comentarios</label>
+            <textarea id="finalComentarios" class="border rounded px-3 py-2 text-sm w-full h-40" placeholder="Comentarios finales del accidente"></textarea>
+          </div>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="flex justify-end gap-3 mt-6 mb-3">
+          <button onclick="cerrarModalEditar()" class="bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded-lg">Cancelar</button>
+
+          <button id="btnGuardarEditar" onclick="actualizarAccidente()" class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2 rounded-lg opacity-50 cursor-not-allowed" disabled>Guardar</button>
+
+          <button onclick="confirmarFinalizarAccidente()" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg hidden" id="btnFinalizarAccidente">Finalizar</button>
+        </div>
+      </div>
+    </div>
+
+    {% include './includes/scripts.html' %}
     <script>
       function getCSRFToken() {
-      return document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+        return document.querySelector('meta[name="csrf-token"]').getAttribute('content')
       }
-
-    async function registrarAccidente() {
-      console.log("Daño:", document.getElementById("tipoDanio").value);
-      console.log("Cargo:", document.getElementById("tipoCargo").value);
-
-      const datos = new FormData();
       
-      datos.append("economico", document.getElementById("economicoInput").value);
-      datos.append("clave_conductor", document.getElementById("claveConductor").value);
-      datos.append("tipo_dano", document.getElementById("tipoDanio").value);
-      datos.append("tipo_cargo", document.getElementById("tipoCargo").value);
-      datos.append("descripcion", document.querySelector("textarea").value);
-
-      const response = await fetch("/registrar-accidente/", {
-        method: "POST",
-        headers: {
-          "X-CSRFToken": getCSRFToken()
-        },
-        body: datos
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        window.folderId = data.folder_id;
-        window.accidenteId = data.accidente_id;
-        return true;
-      } else {
-        Swal.fire("Error", data.error, "error");
-        return false;
+      /* ===================== VALIDACIONES ===================== */
+      
+      function validarStep1() {
+        const economico = document.getElementById('economicoInput')
+        const clave = document.getElementById('claveConductor')
+      
+        if (!economico.value.trim() || !clave.value.trim()) {
+          Swal.fire({
+            icon: 'warning',
+            title: 'Campos incompletos',
+            text: 'Completa los datos de la unidad y el conductor',
+            confirmButtonColor: '#6A2973'
+          })
+          return false
+        }
+        return true
       }
-    }
-
-
-    async function subirImagenes() {
-      const formData = new FormData();
-      formData.append("folder_id", window.folderId);
-
-      const files = document.getElementById("fileInput").files;
-
-      for (let file of files) {
-        formData.append("imagenes", file);
+      
+      function validarStep2() {
+        const tipoDanio = document.getElementById('tipoDanio')
+        const tipoCargo = document.getElementById('tipoCargo')
+        const descripcion = document.getElementById('descripcionAccidente')
+      
+        if (!tipoDanio.value || !tipoCargo.value || !descripcion.value.trim()) {
+          Swal.fire({
+            icon: 'warning',
+            title: 'Información incompleta',
+            text: 'Completa todos los campos de la descripción',
+            confirmButtonColor: '#6A2973'
+          })
+          return false
+        }
+        return true
       }
-
-      const response = await fetch("/subir-evidencia/", {
-        method: "POST",
-        headers: {
-        "X-CSRFToken": getCSRFToken()
-         },
-        body: formData
-      });
-
-      return await response.json();
-    }
-
-    document.getElementById("btnAceptar").addEventListener("click", async function() {
-
-      const creado = await registrarAccidente();
-
-      if (!creado) return;
-
-      await subirImagenes();
-
-      Swal.fire({
-        icon: "success",
-        title: "¡Registro creado!",
-        text: "El accidente y su evidencia fueron guardados correctamente.",
-        confirmButtonColor: "#6b21a8"
-      }).then(() => {
-        location.reload(); // o cierra el modal
-      });
-
-    });
-
+      
+      function validarStep3() {
+        const files = document.getElementById('fileInput').files
+      
+        if (files.length === 0) {
+          Swal.fire({
+            icon: 'warning',
+            title: 'Evidencia requerida',
+            text: 'Debes subir al menos una imagen',
+            confirmButtonColor: '#6A2973'
+          })
+          return false
+        }
+        return true
+      }
+      
+      /* ===================== REGISTRO ===================== */
+      
+      async function registrarAccidente() {
+        const datos = new FormData()
+      
+        datos.append('economico', document.getElementById('economicoInput').value)
+        datos.append('clave_conductor', document.getElementById('claveConductor').value)
+        datos.append('tipo_dano', document.getElementById('tipoDanio').value)
+        datos.append('tipo_cargo', document.getElementById('tipoCargo').value)
+        datos.append('descripcion', document.getElementById('descripcionAccidente').value)
+      
+        const response = await fetch('/registrar-accidente/', {
+          method: 'POST',
+          headers: {
+            'X-CSRFToken': getCSRFToken()
+          },
+          body: datos
+        })
+      
+        const data = await response.json()
+      
+        if (response.ok) {
+          window.folderId = data.folder_id
+          window.accidenteId = data.accidente_id
+          return true
+        } else {
+          Swal.fire('Error', data.error, 'error')
+          return false
+        }
+      }
+      
+      /* ===================== SUBIR IMÁGENES ===================== */
+      
+      async function subirImagenes() {
+        const formData = new FormData()
+        formData.append('folder_id', window.folderId)
+      
+        const files = document.getElementById('fileInput').files
+        for (let file of files) {
+          formData.append('imagenes', file)
+        }
+      
+        const response = await fetch('/subir-evidencia/', {
+          method: 'POST',
+          headers: {
+            'X-CSRFToken': getCSRFToken()
+          },
+          body: formData
+        })
+      
+        return await response.json()
+      }
+      
+      /* ===================== BOTÓN FINAL ===================== */
+      
+      document.getElementById('btnAceptar').addEventListener('click', async function () {
+        // 🔒 VALIDACIONES ANTES DE TODO
+        if (!validarStep1() || !validarStep2() || !validarStep3()) return
+      
+        try {
+          mostrarLoader()
+      
+          const creado = await registrarAccidente()
+          if (!creado) {
+            ocultarLoader()
+            return
+          }
+      
+          await subirImagenes()
+      
+          ocultarLoader()
+      
+          Swal.fire({
+            icon: 'success',
+            title: '¡Registro creado!',
+            text: 'El accidente y su evidencia fueron guardados correctamente.',
+            timer: 2500,
+            showConfirmButton: false
+          }).then(() => {
+            location.reload()
+          })
+        } catch (error) {
+          console.error(error)
+          ocultarLoader()
+          Swal.fire('Error', 'Ocurrió un problema al guardar', 'error')
+        }
+      })
     </script>
+    <SCript>
+      function mostrarTabAccidente(tabId, btn) {
+        // Ocultar tabs
+        document.querySelectorAll('#modalEditarAccidente [id^="tab-"]').forEach((tab) => {
+          tab.classList.add('hidden')
+        })
+      
+        document.getElementById(tabId).classList.remove('hidden')
+      
+        // Reset botones de pestañas
+        document.querySelectorAll('.tab-btn').forEach((b) => {
+          b.classList.remove('border-b-2', 'border-blue-900', 'text-blue-900')
+          b.classList.add('text-gray-500')
+        })
+      
+        // Activar pestaña actual (FIX DE LA LÍNEA AZUL)
+        btn.classList.add('border-b-2', 'border-blue-900', 'text-blue-900')
+        btn.classList.remove('text-gray-500')
+      
+        const btnGuardar = document.getElementById('btnGuardarEditar')
+        const btnFinalizar = document.getElementById('btnFinalizarAccidente')
+      
+        if (tabId === 'tab-cierre') {
+          btnGuardar.classList.add('hidden')
+          btnFinalizar.classList.remove('hidden')
+        } else {
+          btnGuardar.classList.remove('hidden')
+          btnFinalizar.classList.add('hidden')
+        }
+      }
+    </SCript>
   </body>
 </html>

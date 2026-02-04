@@ -3,100 +3,5300 @@
     "model": "ACC.conductor",
     "pk": 1,
     "fields": {
-      "clave": "100001",
-      "nombres": "Juan",
-      "a_paterno": "Ramírez",
-      "a_materno": "López"
+      "clave": "1121260",
+      "nombres": "MIGUEL ANGEL",
+      "a_paterno": "BOLAÑOS",
+      "a_materno": "CAMPOS"
     }
   },
   {
     "model": "ACC.conductor",
     "pk": 2,
     "fields": {
-      "clave": "100002",
-      "nombres": "Carlos",
-      "a_paterno": "Hernández",
-      "a_materno": "Martínez"
+      "clave": "1030927",
+      "nombres": "ESTEBAN ADAN",
+      "a_paterno": "ZAYAS",
+      "a_materno": "JIMENEZ"
     }
   },
   {
     "model": "ACC.conductor",
     "pk": 3,
     "fields": {
-      "clave": "100003",
-      "nombres": "Miguel",
-      "a_paterno": "Torres",
-      "a_materno": "Gómez"
+      "clave": "1198766",
+      "nombres": "JESUS",
+      "a_paterno": "GALLARDO",
+      "a_materno": "CARDENAZ"
     }
   },
   {
     "model": "ACC.conductor",
     "pk": 4,
     "fields": {
-      "clave": "100004",
-      "nombres": "Luis",
-      "a_paterno": "Pérez",
-      "a_materno": "Sánchez"
+      "clave": "1217517",
+      "nombres": "JAIME",
+      "a_paterno": "GUILLERMO",
+      "a_materno": "MOLINA"
     }
   },
   {
     "model": "ACC.conductor",
     "pk": 5,
     "fields": {
-      "clave": "100005",
-      "nombres": "Andrés",
-      "a_paterno": "Morales",
-      "a_materno": "Castro"
+      "clave": "1390686",
+      "nombres": "CARLOS ENRIQUE",
+      "a_paterno": "GARFIAS",
+      "a_materno": "TRUJILLO"
     }
   },
   {
     "model": "ACC.conductor",
     "pk": 6,
     "fields": {
-      "clave": "100006",
-      "nombres": "José",
-      "a_paterno": "Vázquez",
-      "a_materno": "Ruiz"
+      "clave": "1311379",
+      "nombres": "JOSE JUAN",
+      "a_paterno": "HUERTA",
+      "a_materno": "VALENCIA"
     }
   },
   {
     "model": "ACC.conductor",
     "pk": 7,
     "fields": {
-      "clave": "100007",
-      "nombres": "Ricardo",
-      "a_paterno": "Mendoza",
-      "a_materno": "Flores"
+      "clave": "1364416",
+      "nombres": "ISAHIT",
+      "a_paterno": "LUJAN",
+      "a_materno": "HERNANDEZ"
     }
   },
   {
     "model": "ACC.conductor",
     "pk": 8,
     "fields": {
-      "clave": "100008",
-      "nombres": "Roberto",
-      "a_paterno": "Salazar",
-      "a_materno": "Núñez"
+      "clave": "1356328",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "VELAZQUEZ"
     }
   },
   {
     "model": "ACC.conductor",
     "pk": 9,
     "fields": {
-      "clave": "100009",
-      "nombres": "Fernando",
-      "a_paterno": "Ortega",
-      "a_materno": "Cruz"
+      "clave": "1367311",
+      "nombres": "EMMANUEL",
+      "a_paterno": "LOPEZ",
+      "a_materno": "CHAVARRIA"
     }
   },
   {
     "model": "ACC.conductor",
     "pk": 10,
     "fields": {
-      "clave": "100010",
-      "nombres": "Daniel",
-      "a_paterno": "Rivas",
-      "a_materno": "Jiménez"
+      "clave": "1366258",
+      "nombres": "JULIO",
+      "a_paterno": "GABRIEL",
+      "a_materno": "ALARCON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 11,
+    "fields": {
+      "clave": "1370105",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "AGUIRRE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 12,
+    "fields": {
+      "clave": "1369380",
+      "nombres": "LEONEL",
+      "a_paterno": "LOPEZ",
+      "a_materno": "FLORES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 13,
+    "fields": {
+      "clave": "1287259",
+      "nombres": "EDGAR DANIEL",
+      "a_paterno": "ZARATE",
+      "a_materno": "ZAVALETA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 14,
+    "fields": {
+      "clave": "1316522",
+      "nombres": "JORGE LUIS",
+      "a_paterno": "OVANDO",
+      "a_materno": "LARA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 15,
+    "fields": {
+      "clave": "1321789",
+      "nombres": "ARTURO",
+      "a_paterno": "BAUTISTA",
+      "a_materno": "NORIEGA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 16,
+    "fields": {
+      "clave": "1343932",
+      "nombres": "MARTIN",
+      "a_paterno": "AGUILAR",
+      "a_materno": "NARCISO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 17,
+    "fields": {
+      "clave": "1320459",
+      "nombres": "MAURICIO",
+      "a_paterno": "MUÑOZ",
+      "a_materno": "VALENCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 18,
+    "fields": {
+      "clave": "1324869",
+      "nombres": "FERNANDO",
+      "a_paterno": "DIAZ",
+      "a_materno": "VARGAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 19,
+    "fields": {
+      "clave": "1337164",
+      "nombres": "MAURICIO",
+      "a_paterno": "PAZ",
+      "a_materno": "GARCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 20,
+    "fields": {
+      "clave": "1326724",
+      "nombres": "ANDRES MAURICIO",
+      "a_paterno": "DE",
+      "a_materno": "JESUS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 21,
+    "fields": {
+      "clave": "1337220",
+      "nombres": "JUAN ANTONIO",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "BOBADILLA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 22,
+    "fields": {
+      "clave": "1316165",
+      "nombres": "GERARDO",
+      "a_paterno": "REYES",
+      "a_materno": "ALVARADO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 23,
+    "fields": {
+      "clave": "1346297",
+      "nombres": "JOEL FELIPE",
+      "a_paterno": "CASTRO",
+      "a_materno": "PIEDRA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 24,
+    "fields": {
+      "clave": "1319660",
+      "nombres": "ANGEL",
+      "a_paterno": "RIVERA",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 25,
+    "fields": {
+      "clave": "1322804",
+      "nombres": "ARTURO",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "SANTIAGO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 26,
+    "fields": {
+      "clave": "1345386",
+      "nombres": "OMAR DE JESUS",
+      "a_paterno": "SANDOVAL",
+      "a_materno": "DOMINGUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 27,
+    "fields": {
+      "clave": "1346690",
+      "nombres": "JOSE FELIX",
+      "a_paterno": "RAMIREZ",
+      "a_materno": "NANCO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 28,
+    "fields": {
+      "clave": "1331320",
+      "nombres": "MARIO DAVID",
+      "a_paterno": "CORDERO",
+      "a_materno": "PADILLA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 29,
+    "fields": {
+      "clave": "1295729",
+      "nombres": "MOISES",
+      "a_paterno": "LOPEZ",
+      "a_materno": "VERDUGO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 30,
+    "fields": {
+      "clave": "1023046",
+      "nombres": "JUAN DAVID",
+      "a_paterno": "MILLAN",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 31,
+    "fields": {
+      "clave": "1309227",
+      "nombres": "RAMON",
+      "a_paterno": "VALDES",
+      "a_materno": "RIZO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 32,
+    "fields": {
+      "clave": "1295400",
+      "nombres": "BASILIO",
+      "a_paterno": "CASTILLO",
+      "a_materno": "CORONA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 33,
+    "fields": {
+      "clave": "1305720",
+      "nombres": "JORGE RAFAEL",
+      "a_paterno": "JIMENEZ",
+      "a_materno": "MONTEJO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 34,
+    "fields": {
+      "clave": "1311223",
+      "nombres": "ALEJANDRO",
+      "a_paterno": "GOMEZ",
+      "a_materno": "SALINAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 35,
+    "fields": {
+      "clave": "1304280",
+      "nombres": "JUAN ARMANDO",
+      "a_paterno": "MONTES",
+      "a_materno": "CELIS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 36,
+    "fields": {
+      "clave": "1305122",
+      "nombres": "JUAN CARLOS",
+      "a_paterno": "LIMA",
+      "a_materno": "RODRIGUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 37,
+    "fields": {
+      "clave": "1304429",
+      "nombres": "JUAN CARLOS",
+      "a_paterno": "CRUZ",
+      "a_materno": "ALVARADO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 38,
+    "fields": {
+      "clave": "1310858",
+      "nombres": "EFREN",
+      "a_paterno": "LANDERO",
+      "a_materno": "LUCAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 39,
+    "fields": {
+      "clave": "1313051",
+      "nombres": "JOSE JUAN",
+      "a_paterno": "MONROY",
+      "a_materno": "TOMAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 40,
+    "fields": {
+      "clave": "1308759",
+      "nombres": "JAVIER",
+      "a_paterno": "MELO",
+      "a_materno": "ALCANTARA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 41,
+    "fields": {
+      "clave": "1309419",
+      "nombres": "RAFAEL",
+      "a_paterno": "VENEGAS",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 42,
+    "fields": {
+      "clave": "1299741",
+      "nombres": "ROSARIO DE LA",
+      "a_paterno": "CRUZ",
+      "a_materno": "SANCHEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 43,
+    "fields": {
+      "clave": "1288628",
+      "nombres": "JUAN CARLOS",
+      "a_paterno": "MORAN",
+      "a_materno": "HERRERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 44,
+    "fields": {
+      "clave": "1294685",
+      "nombres": "SIMPLICIO JOSE",
+      "a_paterno": "VAZQUEZ",
+      "a_materno": "JUAREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 45,
+    "fields": {
+      "clave": "1291894",
+      "nombres": "DAVID",
+      "a_paterno": "GOMEZ",
+      "a_materno": "MENDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 46,
+    "fields": {
+      "clave": "1286512",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "REYES",
+      "a_materno": "BLANCO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 47,
+    "fields": {
+      "clave": "1290576",
+      "nombres": "CARLOS",
+      "a_paterno": "VILLASEÑOR",
+      "a_materno": "LAGUNA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 48,
+    "fields": {
+      "clave": "1291961",
+      "nombres": "JUAN ALEJANDRO",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "SOTO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 49,
+    "fields": {
+      "clave": "1286598",
+      "nombres": "ALFRED ADLER",
+      "a_paterno": "ESTEVA",
+      "a_materno": "LOZADA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 50,
+    "fields": {
+      "clave": "1286421",
+      "nombres": "JOSE GILBERTO",
+      "a_paterno": "CHAVEZ",
+      "a_materno": "SANCHEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 51,
+    "fields": {
+      "clave": "1285572",
+      "nombres": "JESUS DAVID",
+      "a_paterno": "MATEOS",
+      "a_materno": "RODRIGUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 52,
+    "fields": {
+      "clave": "1293468",
+      "nombres": "FERNANDO",
+      "a_paterno": "LOYO",
+      "a_materno": "USCANGA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 53,
+    "fields": {
+      "clave": "1292381",
+      "nombres": "LUIS ANTONIO",
+      "a_paterno": "ARELLANO",
+      "a_materno": "CORDERO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 54,
+    "fields": {
+      "clave": "1276280",
+      "nombres": "ROBERTO",
+      "a_paterno": "VAZQUEZ",
+      "a_materno": "GABRIEL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 55,
+    "fields": {
+      "clave": "1272089",
+      "nombres": "CARLOS",
+      "a_paterno": "JIMENEZ",
+      "a_materno": "OVANDO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 56,
+    "fields": {
+      "clave": "1202622",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "GARCIA",
+      "a_materno": "URIBE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 57,
+    "fields": {
+      "clave": "1273465",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "LOPEZ",
+      "a_materno": "GUZMAN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 58,
+    "fields": {
+      "clave": "1271848",
+      "nombres": "CRESENCIO",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 59,
+    "fields": {
+      "clave": "1030708",
+      "nombres": "ISRAEL",
+      "a_paterno": "CERVANTES",
+      "a_materno": "MORALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 60,
+    "fields": {
+      "clave": "1264899",
+      "nombres": "GILBERTO",
+      "a_paterno": "BOZIERE",
+      "a_materno": "ELVIRA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 61,
+    "fields": {
+      "clave": "1267843",
+      "nombres": "BENITO",
+      "a_paterno": "RIVERA",
+      "a_materno": "SANCHEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 62,
+    "fields": {
+      "clave": "1262041",
+      "nombres": "DANIEL ANTONIO",
+      "a_paterno": "PEECH",
+      "a_materno": "ABAN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 63,
+    "fields": {
+      "clave": "1256676",
+      "nombres": "AUGUSTO PAULINO",
+      "a_paterno": "VILLALOBOS",
+      "a_materno": "NUÑEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 64,
+    "fields": {
+      "clave": "1265484",
+      "nombres": "COSME",
+      "a_paterno": "GARCIA",
+      "a_materno": "ORTEGA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 65,
+    "fields": {
+      "clave": "1265580",
+      "nombres": "ALEJO",
+      "a_paterno": "VELASCO",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 66,
+    "fields": {
+      "clave": "1265503",
+      "nombres": "JOSE",
+      "a_paterno": "ABARCA",
+      "a_materno": "PITA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 67,
+    "fields": {
+      "clave": "1265471",
+      "nombres": "RICARDO",
+      "a_paterno": "JUAREZ",
+      "a_materno": "RUIZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 68,
+    "fields": {
+      "clave": "1262677",
+      "nombres": "JORGE LUIS",
+      "a_paterno": "TORRES",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 69,
+    "fields": {
+      "clave": "1266352",
+      "nombres": "ISMAEL",
+      "a_paterno": "DIAZ",
+      "a_materno": "GARCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 70,
+    "fields": {
+      "clave": "1258107",
+      "nombres": "CARLOS ALBERTO",
+      "a_paterno": "GARCIA",
+      "a_materno": "RICARDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 71,
+    "fields": {
+      "clave": "1184392",
+      "nombres": "GILBERTO",
+      "a_paterno": "LUNA",
+      "a_materno": "RAMIREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 72,
+    "fields": {
+      "clave": "1263765",
+      "nombres": "RENE",
+      "a_paterno": "CALDERON",
+      "a_materno": "FLORES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 73,
+    "fields": {
+      "clave": "1255089",
+      "nombres": "GELACIO",
+      "a_paterno": "VAZQUEZ",
+      "a_materno": "DECTOR"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 74,
+    "fields": {
+      "clave": "1259069",
+      "nombres": "HERNAN",
+      "a_paterno": "CRUZ",
+      "a_materno": "CASTILLEJOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 75,
+    "fields": {
+      "clave": "1249573",
+      "nombres": "JORGE ARTURO",
+      "a_paterno": "ALFARO",
+      "a_materno": "GUILLEN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 76,
+    "fields": {
+      "clave": "1247207",
+      "nombres": "RUBEN",
+      "a_paterno": "ORTIZ",
+      "a_materno": "FRAGOSO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 77,
+    "fields": {
+      "clave": "1247137",
+      "nombres": "JOSE",
+      "a_paterno": "FLORES",
+      "a_materno": "CONTRERAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 78,
+    "fields": {
+      "clave": "1248282",
+      "nombres": "LUIS ARNOLDO",
+      "a_paterno": "BARRIOS",
+      "a_materno": "GIRON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 79,
+    "fields": {
+      "clave": "1247907",
+      "nombres": "EDGAR",
+      "a_paterno": "RODRIGUEZ",
+      "a_materno": "CANDANEDO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 80,
+    "fields": {
+      "clave": "1242869",
+      "nombres": "JUAN ALBERTO",
+      "a_paterno": "NERI",
+      "a_materno": "AVILA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 81,
+    "fields": {
+      "clave": "1244475",
+      "nombres": "JOSE ARMANDO",
+      "a_paterno": "DOMINGUEZ",
+      "a_materno": "SANDOVAL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 82,
+    "fields": {
+      "clave": "1240375",
+      "nombres": "MIGUEL ANGEL",
+      "a_paterno": "REYES",
+      "a_materno": "DOMINGUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 83,
+    "fields": {
+      "clave": "1234624",
+      "nombres": "IGNACIO",
+      "a_paterno": "GONZALEZ",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 84,
+    "fields": {
+      "clave": "1230004",
+      "nombres": "SILVIO",
+      "a_paterno": "AGUIRRE",
+      "a_materno": "GALO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 85,
+    "fields": {
+      "clave": "1227713",
+      "nombres": "ADOLFO",
+      "a_paterno": "CUSTODIO",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 86,
+    "fields": {
+      "clave": "1215381",
+      "nombres": "LUIS GUILLERMO",
+      "a_paterno": "MENDEZ",
+      "a_materno": "CHAN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 87,
+    "fields": {
+      "clave": "1221083",
+      "nombres": "JOSE DE JESUS",
+      "a_paterno": "CANO",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 88,
+    "fields": {
+      "clave": "1218323",
+      "nombres": "MARCO ANTONIO",
+      "a_paterno": "VASQUEZ",
+      "a_materno": "VASQUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 89,
+    "fields": {
+      "clave": "1220016",
+      "nombres": "GONZALO",
+      "a_paterno": "CASTILLO",
+      "a_materno": "RODRIGUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 90,
+    "fields": {
+      "clave": "1220688",
+      "nombres": "RODOLFO",
+      "a_paterno": "RAMOS",
+      "a_materno": "MIRON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 91,
+    "fields": {
+      "clave": "1221151",
+      "nombres": "FELIPE",
+      "a_paterno": "MIRANDA",
+      "a_materno": "SANTIAGO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 92,
+    "fields": {
+      "clave": "1227273",
+      "nombres": "MANUEL",
+      "a_paterno": "MEDINA",
+      "a_materno": "LANDERO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 93,
+    "fields": {
+      "clave": "1203286",
+      "nombres": "PASTOR VICENTE",
+      "a_paterno": "ELMES",
+      "a_materno": "QUEVEDO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 94,
+    "fields": {
+      "clave": "1202974",
+      "nombres": "JULIO CESAR",
+      "a_paterno": "TEXPAN",
+      "a_materno": "SANDOVAL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 95,
+    "fields": {
+      "clave": "1202506",
+      "nombres": "JUAN CARLOS",
+      "a_paterno": "ENRIQUEZ",
+      "a_materno": "HERRERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 96,
+    "fields": {
+      "clave": "1202167",
+      "nombres": "JOSE ANTONIO",
+      "a_paterno": "CONTRERAS",
+      "a_materno": "POZOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 97,
+    "fields": {
+      "clave": "1200287",
+      "nombres": "NORBERTO",
+      "a_paterno": "URBINA",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 98,
+    "fields": {
+      "clave": "1173598",
+      "nombres": "WILVER MARLO",
+      "a_paterno": "LEAL",
+      "a_materno": "DIONICIO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 99,
+    "fields": {
+      "clave": "1201725",
+      "nombres": "ALBERTO ANGEL",
+      "a_paterno": "SANCHEZ",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 100,
+    "fields": {
+      "clave": "1199811",
+      "nombres": "RUSSEL ANTONIO",
+      "a_paterno": "CHAN",
+      "a_materno": "MAY"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 101,
+    "fields": {
+      "clave": "1198657",
+      "nombres": "DANIEL",
+      "a_paterno": "CAPORAL",
+      "a_materno": "MELENDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 102,
+    "fields": {
+      "clave": "1213680",
+      "nombres": "GREGORIO",
+      "a_paterno": "LIMON",
+      "a_materno": "CASTELLANOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 103,
+    "fields": {
+      "clave": "1213848",
+      "nombres": "JORGE GUILLERMO",
+      "a_paterno": "PEÑA",
+      "a_materno": "GONZALEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 104,
+    "fields": {
+      "clave": "1200097",
+      "nombres": "PRIMO",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "ALVAREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 105,
+    "fields": {
+      "clave": "1195669",
+      "nombres": "JUAN MANUEL",
+      "a_paterno": "TABOADA",
+      "a_materno": "ABURTO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 106,
+    "fields": {
+      "clave": "1195674",
+      "nombres": "HOMERO ARISTOTELES",
+      "a_paterno": "DELGADO",
+      "a_materno": "AGUSTIN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 107,
+    "fields": {
+      "clave": "1183183",
+      "nombres": "ALBERTO",
+      "a_paterno": "VALDIVIA",
+      "a_materno": "SUAREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 108,
+    "fields": {
+      "clave": "1003419",
+      "nombres": "ROBERTO",
+      "a_paterno": "RODRIGUEZ",
+      "a_materno": "CONDE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 109,
+    "fields": {
+      "clave": "1186417",
+      "nombres": "PEDRO DE LA",
+      "a_paterno": "ROSA",
+      "a_materno": "ARJONA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 110,
+    "fields": {
+      "clave": "1186533",
+      "nombres": "RAUL MARIO",
+      "a_paterno": "ORDOÑEZ",
+      "a_materno": "PATIÑO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 111,
+    "fields": {
+      "clave": "1190854",
+      "nombres": "JORGE",
+      "a_paterno": "LARA",
+      "a_materno": "BARREDA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 112,
+    "fields": {
+      "clave": "1191023",
+      "nombres": "SERGIO EDWIN",
+      "a_paterno": "ORTIZ",
+      "a_materno": "GUERRERO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 113,
+    "fields": {
+      "clave": "1188483",
+      "nombres": "AURELIO",
+      "a_paterno": "CANCHE",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 114,
+    "fields": {
+      "clave": "1186924",
+      "nombres": "RUBEN",
+      "a_paterno": "RUIZ",
+      "a_materno": "PUEBLA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 115,
+    "fields": {
+      "clave": "1174815",
+      "nombres": "JOSE PEDRO",
+      "a_paterno": "SALCEDO",
+      "a_materno": "SANCHEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 116,
+    "fields": {
+      "clave": "1174351",
+      "nombres": "RAFAEL",
+      "a_paterno": "BARUCH",
+      "a_materno": "FRIAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 117,
+    "fields": {
+      "clave": "1177199",
+      "nombres": "VICENTE",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "TRUJEQUE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 118,
+    "fields": {
+      "clave": "1041839",
+      "nombres": "MARIO",
+      "a_paterno": "SOSA",
+      "a_materno": "ORTEGA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 119,
+    "fields": {
+      "clave": "1041486",
+      "nombres": "DELFINO",
+      "a_paterno": "ROMAN",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 120,
+    "fields": {
+      "clave": "1061806",
+      "nombres": "VICENTE",
+      "a_paterno": "CORSINO",
+      "a_materno": "PACHECO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 121,
+    "fields": {
+      "clave": "1165991",
+      "nombres": "ELIEZER",
+      "a_paterno": "GONZALEZ",
+      "a_materno": "ALARCON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 122,
+    "fields": {
+      "clave": "1168836",
+      "nombres": "EDGAR",
+      "a_paterno": "MENDOZA",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 123,
+    "fields": {
+      "clave": "1181099",
+      "nombres": "MARGARITO",
+      "a_paterno": "CARREON",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 124,
+    "fields": {
+      "clave": "1178536",
+      "nombres": "ENRIQUE ISIDRO",
+      "a_paterno": "SERNA",
+      "a_materno": "MONTAÑEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 125,
+    "fields": {
+      "clave": "1183136",
+      "nombres": "IRVING JAMIT",
+      "a_paterno": "TALANGO",
+      "a_materno": "GARCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 126,
+    "fields": {
+      "clave": "1176673",
+      "nombres": "GONZALO ENRIQUE",
+      "a_paterno": "YERBES",
+      "a_materno": "BARREDO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 127,
+    "fields": {
+      "clave": "1182614",
+      "nombres": "MARCO ANTONIO",
+      "a_paterno": "GARCIA",
+      "a_materno": "FLORES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 128,
+    "fields": {
+      "clave": "1181834",
+      "nombres": "ANTERO",
+      "a_paterno": "ECHAVARRIA",
+      "a_materno": "FRANCO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 129,
+    "fields": {
+      "clave": "1121539",
+      "nombres": "RAFAEL",
+      "a_paterno": "ROBLES",
+      "a_materno": "ZAMORA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 130,
+    "fields": {
+      "clave": "1170597",
+      "nombres": "JUAN CARLOS DE LA",
+      "a_paterno": "CRUZ",
+      "a_materno": "GARCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 131,
+    "fields": {
+      "clave": "1062197",
+      "nombres": "HERIBERTO",
+      "a_paterno": "ONOFRE",
+      "a_materno": "BARRERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 132,
+    "fields": {
+      "clave": "1051315",
+      "nombres": "ABRAHAM",
+      "a_paterno": "AVILA",
+      "a_materno": "GONZALEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 133,
+    "fields": {
+      "clave": "1050367",
+      "nombres": "JOAQUIN",
+      "a_paterno": "HUERTA",
+      "a_materno": "CONTRERAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 134,
+    "fields": {
+      "clave": "1010719",
+      "nombres": "MARIO",
+      "a_paterno": "ARROYO",
+      "a_materno": "BAEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 135,
+    "fields": {
+      "clave": "1171071",
+      "nombres": "JUAN",
+      "a_paterno": "CRISOSTOMO",
+      "a_materno": "ONOFRE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 136,
+    "fields": {
+      "clave": "1167070",
+      "nombres": "EDGAR",
+      "a_paterno": "PORTILLO",
+      "a_materno": "ROCHA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 137,
+    "fields": {
+      "clave": "1032895",
+      "nombres": "JESUS",
+      "a_paterno": "GALAVIZ",
+      "a_materno": "ARGUELLO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 138,
+    "fields": {
+      "clave": "1161336",
+      "nombres": "SAUL",
+      "a_paterno": "MARIN",
+      "a_materno": "CENTENO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 139,
+    "fields": {
+      "clave": "1061295",
+      "nombres": "EDGAR",
+      "a_paterno": "FERRER",
+      "a_materno": "CARMONA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 140,
+    "fields": {
+      "clave": "1092328",
+      "nombres": "JORGE LUIS",
+      "a_paterno": "CHACON",
+      "a_materno": "BARRIENTOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 141,
+    "fields": {
+      "clave": "1041064",
+      "nombres": "JULIO CESAR",
+      "a_paterno": "AGUILAR",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 142,
+    "fields": {
+      "clave": "1121321",
+      "nombres": "VICTOR JESUS",
+      "a_paterno": "GARCIA",
+      "a_materno": "LUNA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 143,
+    "fields": {
+      "clave": "1166681",
+      "nombres": "OSCAR",
+      "a_paterno": "QUINTERO",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 144,
+    "fields": {
+      "clave": "1171294",
+      "nombres": "JOSE GUADALUPE",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "RAMIREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 145,
+    "fields": {
+      "clave": "1003009",
+      "nombres": "ALFREDO",
+      "a_paterno": "PAVON",
+      "a_materno": "SANTANA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 146,
+    "fields": {
+      "clave": "1165053",
+      "nombres": "MARCOS ALFONSO",
+      "a_paterno": "VALENCIA",
+      "a_materno": "RIOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 147,
+    "fields": {
+      "clave": "1092327",
+      "nombres": "HECTOR SILVESTRE",
+      "a_paterno": "JOSE",
+      "a_materno": "PENAGOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 148,
+    "fields": {
+      "clave": "1091110",
+      "nombres": "RAMIRO ENRIQUE",
+      "a_paterno": "BEZAREZ",
+      "a_materno": "ESPAÑA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 149,
+    "fields": {
+      "clave": "1092242",
+      "nombres": "JAVIER AMILCAR",
+      "a_paterno": "DOMINGUEZ",
+      "a_materno": "ANGEL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 150,
+    "fields": {
+      "clave": "1022362",
+      "nombres": "CIRO AURELIANO",
+      "a_paterno": "CRUZ",
+      "a_materno": "AGUIRRE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 151,
+    "fields": {
+      "clave": "1215522",
+      "nombres": "FERNANDO BALDEMAR",
+      "a_paterno": "VEGA",
+      "a_materno": "GALVAN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 152,
+    "fields": {
+      "clave": "1151117",
+      "nombres": "RAMON",
+      "a_paterno": "PINACHO",
+      "a_materno": "SANCHEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 153,
+    "fields": {
+      "clave": "1011113",
+      "nombres": "RAUL ALFONSO",
+      "a_paterno": "LOPEZ",
+      "a_materno": "OROPEZA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 154,
+    "fields": {
+      "clave": "1164841",
+      "nombres": "AGUSTIN",
+      "a_paterno": "MENDOZA",
+      "a_materno": "SIMON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 155,
+    "fields": {
+      "clave": "1011851",
+      "nombres": "MIGUEL ANGEL",
+      "a_paterno": "BARRANCO",
+      "a_materno": "ESPEJEL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 156,
+    "fields": {
+      "clave": "1169671",
+      "nombres": "OCTAVIO",
+      "a_paterno": "SAAVEDRA",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 157,
+    "fields": {
+      "clave": "1023343",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "LOPEZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 158,
+    "fields": {
+      "clave": "1023221",
+      "nombres": "VICTOR DAVID",
+      "a_paterno": "LOPEZ",
+      "a_materno": "RAMIREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 159,
+    "fields": {
+      "clave": "1042286",
+      "nombres": "JOSE MANUEL",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 160,
+    "fields": {
+      "clave": "1121559",
+      "nombres": "VICTOR MANUEL",
+      "a_paterno": "CRUZ",
+      "a_materno": "CASTAÑON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 161,
+    "fields": {
+      "clave": "1023352",
+      "nombres": "JAVIER NORBERTO",
+      "a_paterno": "LOPEZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 162,
+    "fields": {
+      "clave": "1121404",
+      "nombres": "RODOLFO",
+      "a_paterno": "OLIVAREZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 163,
+    "fields": {
+      "clave": "1375877",
+      "nombres": "JESE ROMEO",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "OSORIO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 164,
+    "fields": {
+      "clave": "1356110",
+      "nombres": "UZIEL EFRAIN",
+      "a_paterno": "CUREÑO",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 165,
+    "fields": {
+      "clave": "1344855",
+      "nombres": "MOISES",
+      "a_paterno": "MARIN",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 166,
+    "fields": {
+      "clave": "1335709",
+      "nombres": "ELVER",
+      "a_paterno": "ROMERO",
+      "a_materno": "RAMIREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 167,
+    "fields": {
+      "clave": "1331664",
+      "nombres": "MAURICIO ROBERTO",
+      "a_paterno": "GONZALEZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 168,
+    "fields": {
+      "clave": "1328376",
+      "nombres": "JOSECARLOS",
+      "a_paterno": "VITE",
+      "a_materno": "ESCAMILLA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 169,
+    "fields": {
+      "clave": "1321461",
+      "nombres": "ISAIAS MARTINEZ DE",
+      "a_paterno": "LA",
+      "a_materno": "CRUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 170,
+    "fields": {
+      "clave": "1347388",
+      "nombres": "ELIHU ALBERTO",
+      "a_paterno": "ORTIZ",
+      "a_materno": "MORALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 171,
+    "fields": {
+      "clave": "1354526",
+      "nombres": "MIGUEL",
+      "a_paterno": "MORENO",
+      "a_materno": "DOMINGUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 172,
+    "fields": {
+      "clave": "1325244",
+      "nombres": "PEDRO ALONSO",
+      "a_paterno": "ORTIZ",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 173,
+    "fields": {
+      "clave": "1329577",
+      "nombres": "ISRAEL",
+      "a_paterno": "TORRES",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 174,
+    "fields": {
+      "clave": "1351350",
+      "nombres": "LUIS ALBERTO",
+      "a_paterno": "GALVEZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 175,
+    "fields": {
+      "clave": "1337208",
+      "nombres": "RODRIGO",
+      "a_paterno": "ROSAS",
+      "a_materno": "MORALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 176,
+    "fields": {
+      "clave": "1320389",
+      "nombres": "HERNAN",
+      "a_paterno": "POTENSIANO",
+      "a_materno": "NARVAEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 177,
+    "fields": {
+      "clave": "1347086",
+      "nombres": "DAVID",
+      "a_paterno": "ALVARADO",
+      "a_materno": "MONTIEL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 178,
+    "fields": {
+      "clave": "1315914",
+      "nombres": "SAUL",
+      "a_paterno": "GUZMAN",
+      "a_materno": "NAMORADO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 179,
+    "fields": {
+      "clave": "1319653",
+      "nombres": "ISAAC",
+      "a_paterno": "JIMENEZ",
+      "a_materno": "CRUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 180,
+    "fields": {
+      "clave": "1313300",
+      "nombres": "MARCELINO",
+      "a_paterno": "ALDUCIN",
+      "a_materno": "HUERTA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 181,
+    "fields": {
+      "clave": "1307518",
+      "nombres": "ALBERTO",
+      "a_paterno": "SANTIAGO",
+      "a_materno": "PASCUAL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 182,
+    "fields": {
+      "clave": "1310005",
+      "nombres": "RAFAEL",
+      "a_paterno": "GALEANA",
+      "a_materno": "WALDERATH"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 183,
+    "fields": {
+      "clave": "1284571",
+      "nombres": "LUIS DE JESUS",
+      "a_paterno": "ROMAN",
+      "a_materno": "BAUTISTA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 184,
+    "fields": {
+      "clave": "1281954",
+      "nombres": "CESAR",
+      "a_paterno": "SANGEADO",
+      "a_materno": "GONZALEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 185,
+    "fields": {
+      "clave": "1300044",
+      "nombres": "JOSE MANUEL",
+      "a_paterno": "VENTURA",
+      "a_materno": "IXMATLAHUA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 186,
+    "fields": {
+      "clave": "1287525",
+      "nombres": "JOSE JUAN",
+      "a_paterno": "NEGRETE",
+      "a_materno": "SANCHEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 187,
+    "fields": {
+      "clave": "1288012",
+      "nombres": "HUMBERTO",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "MORALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 188,
+    "fields": {
+      "clave": "1294680",
+      "nombres": "JOSE EDGAR",
+      "a_paterno": "ROJAS",
+      "a_materno": "VERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 189,
+    "fields": {
+      "clave": "1288901",
+      "nombres": "JAVIER",
+      "a_paterno": "LOPEZ",
+      "a_materno": "MIL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 190,
+    "fields": {
+      "clave": "1291481",
+      "nombres": "JAVIER",
+      "a_paterno": "CASTILLEJOS",
+      "a_materno": "SUAREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 191,
+    "fields": {
+      "clave": "1280440",
+      "nombres": "RAFAEL",
+      "a_paterno": "MORALES",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 192,
+    "fields": {
+      "clave": "1286767",
+      "nombres": "FILEMON DEL CARMEN",
+      "a_paterno": "GAMAS",
+      "a_materno": "MONTEJO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 193,
+    "fields": {
+      "clave": "1279903",
+      "nombres": "ERNESTO",
+      "a_paterno": "BERISTAIN",
+      "a_materno": "LOZADA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 194,
+    "fields": {
+      "clave": "1275147",
+      "nombres": "CESAR HALEY",
+      "a_paterno": "LOPEZ",
+      "a_materno": "ESCOBAR"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 195,
+    "fields": {
+      "clave": "1272156",
+      "nombres": "EFRAIN DE LA CRUZ DE",
+      "a_paterno": "LA",
+      "a_materno": "ROSA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 196,
+    "fields": {
+      "clave": "1270935",
+      "nombres": "JOSE FABIAN",
+      "a_paterno": "DZIB",
+      "a_materno": "JIMENEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 197,
+    "fields": {
+      "clave": "1270477",
+      "nombres": "FLAVIO GUILLERMO",
+      "a_paterno": "VERGARA",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 198,
+    "fields": {
+      "clave": "1264028",
+      "nombres": "ALVARO",
+      "a_paterno": "SALAS",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 199,
+    "fields": {
+      "clave": "1070873",
+      "nombres": "MIGUEL ANGEL",
+      "a_paterno": "ROMERO",
+      "a_materno": "ESPINOSA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 200,
+    "fields": {
+      "clave": "1265538",
+      "nombres": "ERNESTO",
+      "a_paterno": "LORENCES",
+      "a_materno": "PEDROTTI"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 201,
+    "fields": {
+      "clave": "1258405",
+      "nombres": "CHRISTIAN ARTURO",
+      "a_paterno": "ORTIZ",
+      "a_materno": "GUERRERO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 202,
+    "fields": {
+      "clave": "1265564",
+      "nombres": "RICARDO",
+      "a_paterno": "GALICIA",
+      "a_materno": "UMEGIDO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 203,
+    "fields": {
+      "clave": "1258322",
+      "nombres": "NICANOR",
+      "a_paterno": "LUNA",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 204,
+    "fields": {
+      "clave": "1250041",
+      "nombres": "MANUEL",
+      "a_paterno": "GOMEZ",
+      "a_materno": "GUEVARA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 205,
+    "fields": {
+      "clave": "1264726",
+      "nombres": "DELFINO",
+      "a_paterno": "MORALES",
+      "a_materno": "AGUILAR"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 206,
+    "fields": {
+      "clave": "1260974",
+      "nombres": "ANTONIO",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 207,
+    "fields": {
+      "clave": "1251011",
+      "nombres": "ABRAHAM",
+      "a_paterno": "CEBALLOS",
+      "a_materno": "CEBALLOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 208,
+    "fields": {
+      "clave": "1260765",
+      "nombres": "JOAQUIN",
+      "a_paterno": "COLORADO",
+      "a_materno": "ROSAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 209,
+    "fields": {
+      "clave": "1259352",
+      "nombres": "EPIFANIO DEL",
+      "a_paterno": "CARMEN",
+      "a_materno": "ANDRES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 210,
+    "fields": {
+      "clave": "1268044",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "VARGAS",
+      "a_materno": "ZAVALETA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 211,
+    "fields": {
+      "clave": "1253985",
+      "nombres": "FELIPE",
+      "a_paterno": "OLIVARES",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 212,
+    "fields": {
+      "clave": "1245636",
+      "nombres": "OSCAR",
+      "a_paterno": "GUZMAN",
+      "a_materno": "SUAREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 213,
+    "fields": {
+      "clave": "1242121",
+      "nombres": "RENE",
+      "a_paterno": "BARREDA",
+      "a_materno": "LOZANO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 214,
+    "fields": {
+      "clave": "1248199",
+      "nombres": "JUAN",
+      "a_paterno": "ALVAREZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 215,
+    "fields": {
+      "clave": "1247134",
+      "nombres": "GUSTAVO",
+      "a_paterno": "MENDEZ",
+      "a_materno": "GONZALEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 216,
+    "fields": {
+      "clave": "1249087",
+      "nombres": "FRANCISCO",
+      "a_paterno": "DOMINGUEZ",
+      "a_materno": "SANDOVAL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 217,
+    "fields": {
+      "clave": "1248691",
+      "nombres": "PABLO",
+      "a_paterno": "SANCHEZ",
+      "a_materno": "REYES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 218,
+    "fields": {
+      "clave": "1248037",
+      "nombres": "JUAN",
+      "a_paterno": "SANCHEZ",
+      "a_materno": "VILLA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 219,
+    "fields": {
+      "clave": "1239787",
+      "nombres": "FIDEL",
+      "a_paterno": "CASTRO",
+      "a_materno": "JUAREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 220,
+    "fields": {
+      "clave": "1239656",
+      "nombres": "GUSTAVO ENRIQUE",
+      "a_paterno": "TZEL",
+      "a_materno": "SIMA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 221,
+    "fields": {
+      "clave": "1236095",
+      "nombres": "NEREO HONORATO",
+      "a_paterno": "MORALES",
+      "a_materno": "HERRERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 222,
+    "fields": {
+      "clave": "1239965",
+      "nombres": "ERICK",
+      "a_paterno": "ROMAN",
+      "a_materno": "VAZQUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 223,
+    "fields": {
+      "clave": "1232525",
+      "nombres": "ROBERTO",
+      "a_paterno": "ELIZALDE",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 224,
+    "fields": {
+      "clave": "1232526",
+      "nombres": "FRANCISCO",
+      "a_paterno": "NERIA",
+      "a_materno": "GALBES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 225,
+    "fields": {
+      "clave": "1231252",
+      "nombres": "GERALDO RAFAEL",
+      "a_paterno": "MACIAS",
+      "a_materno": "ROSALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 226,
+    "fields": {
+      "clave": "1219213",
+      "nombres": "RAFAEL OSWALDO",
+      "a_paterno": "LOZANO",
+      "a_materno": "SALAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 227,
+    "fields": {
+      "clave": "1224633",
+      "nombres": "FELICIANO",
+      "a_paterno": "CAN",
+      "a_materno": "TUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 228,
+    "fields": {
+      "clave": "1215472",
+      "nombres": "GUSTAVO",
+      "a_paterno": "BALDERAS",
+      "a_materno": "MALDONADO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 229,
+    "fields": {
+      "clave": "1227589",
+      "nombres": "ARMANDO",
+      "a_paterno": "JUAREZ",
+      "a_materno": "LUNA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 230,
+    "fields": {
+      "clave": "1227588",
+      "nombres": "RUBEN",
+      "a_paterno": "GUTIERREZ",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 231,
+    "fields": {
+      "clave": "1221257",
+      "nombres": "DAMASO",
+      "a_paterno": "PINEDA",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 232,
+    "fields": {
+      "clave": "1198713",
+      "nombres": "ANGEL",
+      "a_paterno": "ABAD",
+      "a_materno": "RAMIREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 233,
+    "fields": {
+      "clave": "1215112",
+      "nombres": "JESUS",
+      "a_paterno": "PONCE",
+      "a_materno": "MARCELINO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 234,
+    "fields": {
+      "clave": "1202179",
+      "nombres": "JUAN",
+      "a_paterno": "ORDOÑEZ",
+      "a_materno": "LANDEROS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 235,
+    "fields": {
+      "clave": "1202011",
+      "nombres": "JORGE ARTURO",
+      "a_paterno": "BELLO",
+      "a_materno": "MATA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 236,
+    "fields": {
+      "clave": "1214504",
+      "nombres": "RAFAEL",
+      "a_paterno": "HUERTA",
+      "a_materno": "CORONA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 237,
+    "fields": {
+      "clave": "1205730",
+      "nombres": "ISABEL",
+      "a_paterno": "MACEDO",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 238,
+    "fields": {
+      "clave": "1206719",
+      "nombres": "VICTOR HUGO",
+      "a_paterno": "GOMEZ",
+      "a_materno": "RIVERO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 239,
+    "fields": {
+      "clave": "1203200",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "DIAZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 240,
+    "fields": {
+      "clave": "1271844",
+      "nombres": "ENRIQUE",
+      "a_paterno": "SALAS",
+      "a_materno": "SALAZAR"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 241,
+    "fields": {
+      "clave": "1200722",
+      "nombres": "SERGIO AUSENCIO",
+      "a_paterno": "GONZALEZ",
+      "a_materno": "RUIZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 242,
+    "fields": {
+      "clave": "1021081",
+      "nombres": "FILIBERTO",
+      "a_paterno": "ZARATE",
+      "a_materno": "LUNA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 243,
+    "fields": {
+      "clave": "1271481",
+      "nombres": "ISMAEL",
+      "a_paterno": "CONTRERAS",
+      "a_materno": "HURTADO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 244,
+    "fields": {
+      "clave": "1192987",
+      "nombres": "ANDRES",
+      "a_paterno": "PEREZ",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 245,
+    "fields": {
+      "clave": "1189413",
+      "nombres": "VICTOR HUGO",
+      "a_paterno": "NAVARRO",
+      "a_materno": "FERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 246,
+    "fields": {
+      "clave": "1187442",
+      "nombres": "ISAIAS",
+      "a_paterno": "REYES",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 247,
+    "fields": {
+      "clave": "1184408",
+      "nombres": "JORGE",
+      "a_paterno": "TREJO",
+      "a_materno": "FLORES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 248,
+    "fields": {
+      "clave": "1178705",
+      "nombres": "ESTEBAN",
+      "a_paterno": "GONZALEZ",
+      "a_materno": "PIÑA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 249,
+    "fields": {
+      "clave": "1162780",
+      "nombres": "MARIO ARTEMIO",
+      "a_paterno": "MENA",
+      "a_materno": "CAN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 250,
+    "fields": {
+      "clave": "1179282",
+      "nombres": "OMAR",
+      "a_paterno": "GUTIERREZ",
+      "a_materno": "HUERTA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 251,
+    "fields": {
+      "clave": "1000953",
+      "nombres": "HILARIO IGNACIO",
+      "a_paterno": "CARVAJAL",
+      "a_materno": "MENDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 252,
+    "fields": {
+      "clave": "1031624",
+      "nombres": "AMADO",
+      "a_paterno": "ORTIZ",
+      "a_materno": "DOMINGUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 253,
+    "fields": {
+      "clave": "1021974",
+      "nombres": "EDGAR",
+      "a_paterno": "REYES",
+      "a_materno": "RAMIREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 254,
+    "fields": {
+      "clave": "1170289",
+      "nombres": "MIGUEL ANGEL",
+      "a_paterno": "MALDONADO",
+      "a_materno": "AGUILAR"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 255,
+    "fields": {
+      "clave": "1160396",
+      "nombres": "SEBASTIAN SALVADOR",
+      "a_paterno": "MOSQUEDA",
+      "a_materno": "DIAZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 256,
+    "fields": {
+      "clave": "1176961",
+      "nombres": "MARCOS",
+      "a_paterno": "LOPEZ",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 257,
+    "fields": {
+      "clave": "1181820",
+      "nombres": "EDUARDO",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "AVILA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 258,
+    "fields": {
+      "clave": "1032177",
+      "nombres": "EDUARDO",
+      "a_paterno": "SANCHEZ",
+      "a_materno": "MARROQUIN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 259,
+    "fields": {
+      "clave": "1160275",
+      "nombres": "SALVADOR SAN",
+      "a_paterno": "LUIS",
+      "a_materno": "SANCHEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 260,
+    "fields": {
+      "clave": "1042500",
+      "nombres": "CRISTO JAVIER",
+      "a_paterno": "CRUZ",
+      "a_materno": "ALARCON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 261,
+    "fields": {
+      "clave": "1010966",
+      "nombres": "ARMANDO",
+      "a_paterno": "CABRERA",
+      "a_materno": "MANRIQUE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 262,
+    "fields": {
+      "clave": "1002503",
+      "nombres": "ABEL",
+      "a_paterno": "CORTES",
+      "a_materno": "FLORES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 263,
+    "fields": {
+      "clave": "1091381",
+      "nombres": "JESUS",
+      "a_paterno": "LLAVEN",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 264,
+    "fields": {
+      "clave": "1091187",
+      "nombres": "SILVERIO",
+      "a_paterno": "PEREZ",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 265,
+    "fields": {
+      "clave": "1171486",
+      "nombres": "ARTURO",
+      "a_paterno": "MANCILLA",
+      "a_materno": "ZOLANO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 266,
+    "fields": {
+      "clave": "1021909",
+      "nombres": "DANIEL",
+      "a_paterno": "DIAZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 267,
+    "fields": {
+      "clave": "1161498",
+      "nombres": "JORGE ARTURO",
+      "a_paterno": "CUENCA",
+      "a_materno": "VIVANCO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 268,
+    "fields": {
+      "clave": "1162976",
+      "nombres": "JUAN DIEGO",
+      "a_paterno": "JIMENEZ",
+      "a_materno": "RAMIREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 269,
+    "fields": {
+      "clave": "1237699",
+      "nombres": "JOSE",
+      "a_paterno": "GOMEZ",
+      "a_materno": "GUTIERREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 270,
+    "fields": {
+      "clave": "1388678",
+      "nombres": "JOSE ALFREDO",
+      "a_paterno": "CARMONA",
+      "a_materno": "VERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 271,
+    "fields": {
+      "clave": "1359632",
+      "nombres": "ALEJANDRO",
+      "a_paterno": "TELLEZ",
+      "a_materno": "MEJIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 272,
+    "fields": {
+      "clave": "1356242",
+      "nombres": "FRANCISCO JAVIER",
+      "a_paterno": "RAMOS",
+      "a_materno": "HIDALGO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 273,
+    "fields": {
+      "clave": "1355571",
+      "nombres": "BILLY HOLLIVER",
+      "a_paterno": "MARQUEZ",
+      "a_materno": "BARRAGAN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 274,
+    "fields": {
+      "clave": "1372497",
+      "nombres": "CARLOS DAVID",
+      "a_paterno": "REYES",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 275,
+    "fields": {
+      "clave": "1371081",
+      "nombres": "ANDRES",
+      "a_paterno": "LOPEZ",
+      "a_materno": "MORENO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 276,
+    "fields": {
+      "clave": "1372998",
+      "nombres": "JOSE ESTEBAN DE LOS",
+      "a_paterno": "SANTOS",
+      "a_materno": "MORALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 277,
+    "fields": {
+      "clave": "1356211",
+      "nombres": "RAUL",
+      "a_paterno": "AQUINO",
+      "a_materno": "JUAREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 278,
+    "fields": {
+      "clave": "1373780",
+      "nombres": "SANTIAGO",
+      "a_paterno": "DOMINGUEZ",
+      "a_materno": "ARIAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 279,
+    "fields": {
+      "clave": "1369127",
+      "nombres": "ISAIAS",
+      "a_paterno": "LOPEZ",
+      "a_materno": "ULIN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 280,
+    "fields": {
+      "clave": "1351444",
+      "nombres": "OSCAR",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "SANTIAGO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 281,
+    "fields": {
+      "clave": "1341624",
+      "nombres": "OMAR FRANCISCO",
+      "a_paterno": "RUANO",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 282,
+    "fields": {
+      "clave": "1353947",
+      "nombres": "JUAN PABLO",
+      "a_paterno": "RIOS",
+      "a_materno": "COTE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 283,
+    "fields": {
+      "clave": "1325986",
+      "nombres": "ALEJANDRO",
+      "a_paterno": "QUIROZ",
+      "a_materno": "ARELLANO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 284,
+    "fields": {
+      "clave": "1322707",
+      "nombres": "GUSTAVO",
+      "a_paterno": "PEREZ",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 285,
+    "fields": {
+      "clave": "1327127",
+      "nombres": "JOSE EDUARDO",
+      "a_paterno": "AGUILAR",
+      "a_materno": "SOTO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 286,
+    "fields": {
+      "clave": "1323107",
+      "nombres": "ALVARO MOISES",
+      "a_paterno": "LARA",
+      "a_materno": "OSORIO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 287,
+    "fields": {
+      "clave": "1353817",
+      "nombres": "ISRAEL",
+      "a_paterno": "RAMOS",
+      "a_materno": "FERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 288,
+    "fields": {
+      "clave": "1306732",
+      "nombres": "GONZALO",
+      "a_paterno": "CASTILLO",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 289,
+    "fields": {
+      "clave": "1295644",
+      "nombres": "FRANCISCO JAVIER",
+      "a_paterno": "MARAÑON",
+      "a_materno": "VALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 290,
+    "fields": {
+      "clave": "1308287",
+      "nombres": "ROSENDO JUAN",
+      "a_paterno": "REYES",
+      "a_materno": "CRUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 291,
+    "fields": {
+      "clave": "1306459",
+      "nombres": "JAVIER",
+      "a_paterno": "ROSALES",
+      "a_materno": "REYES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 292,
+    "fields": {
+      "clave": "1297768",
+      "nombres": "VICTOR",
+      "a_paterno": "GARAY",
+      "a_materno": "RODRIGUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 293,
+    "fields": {
+      "clave": "1301073",
+      "nombres": "JOSE MANUEL LAZARO",
+      "a_paterno": "DEL",
+      "a_materno": "OLMO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 294,
+    "fields": {
+      "clave": "1296207",
+      "nombres": "JOSE FRANCISCO",
+      "a_paterno": "OLGUIN",
+      "a_materno": "ESCUDERO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 295,
+    "fields": {
+      "clave": "1299944",
+      "nombres": "ARMANDO",
+      "a_paterno": "ALFARO",
+      "a_materno": "ARRIETA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 296,
+    "fields": {
+      "clave": "1279486",
+      "nombres": "MANUEL DE JESUS",
+      "a_paterno": "DURAN",
+      "a_materno": "MENDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 297,
+    "fields": {
+      "clave": "1284944",
+      "nombres": "FERNANDO",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "SOLIS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 298,
+    "fields": {
+      "clave": "1278952",
+      "nombres": "DANIEL",
+      "a_paterno": "MENDOZA",
+      "a_materno": "ROSALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 299,
+    "fields": {
+      "clave": "1278946",
+      "nombres": "ROGELIO",
+      "a_paterno": "ERAZO",
+      "a_materno": "NAJERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 300,
+    "fields": {
+      "clave": "1280412",
+      "nombres": "TOMAS",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "GONZALEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 301,
+    "fields": {
+      "clave": "1280338",
+      "nombres": "LUIS FERNANDO",
+      "a_paterno": "HIDALGO",
+      "a_materno": "TADEO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 302,
+    "fields": {
+      "clave": "1278266",
+      "nombres": "JOSE SABINO",
+      "a_paterno": "MENDEZ",
+      "a_materno": "PAREDES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 303,
+    "fields": {
+      "clave": "1276681",
+      "nombres": "GILBERTO ANTONIO",
+      "a_paterno": "GONZALEZ",
+      "a_materno": "CRUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 304,
+    "fields": {
+      "clave": "1275244",
+      "nombres": "HECTOR JAVIER",
+      "a_paterno": "MAZARIEGOS",
+      "a_materno": "CHACON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 305,
+    "fields": {
+      "clave": "1271560",
+      "nombres": "SALVADOR",
+      "a_paterno": "NARVAEZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 306,
+    "fields": {
+      "clave": "1274550",
+      "nombres": "UBALDO DE LA",
+      "a_paterno": "CRUZ",
+      "a_materno": "XOCHIHUA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 307,
+    "fields": {
+      "clave": "1163788",
+      "nombres": "SERGIO",
+      "a_paterno": "JAIMES",
+      "a_materno": "BARCENAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 308,
+    "fields": {
+      "clave": "1191178",
+      "nombres": "JULIO CESAR",
+      "a_paterno": "AGUIRRE",
+      "a_materno": "ESPERANZA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 309,
+    "fields": {
+      "clave": "1258281",
+      "nombres": "ALBERTO",
+      "a_paterno": "VAZQUEZ",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 310,
+    "fields": {
+      "clave": "1268126",
+      "nombres": "JUAN DE DIOS DE LOS",
+      "a_paterno": "SANTOS",
+      "a_materno": "ORTIZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 311,
+    "fields": {
+      "clave": "1264270",
+      "nombres": "JESUS",
+      "a_paterno": "RIVERA",
+      "a_materno": "MONTIEL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 312,
+    "fields": {
+      "clave": "1267395",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "ZEPEDA",
+      "a_materno": "ESPINOSA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 313,
+    "fields": {
+      "clave": "1265591",
+      "nombres": "JUAN CARLOS",
+      "a_paterno": "MORALES",
+      "a_materno": "PALE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 314,
+    "fields": {
+      "clave": "1263929",
+      "nombres": "PEDRO",
+      "a_paterno": "PEREZ",
+      "a_materno": "MENDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 315,
+    "fields": {
+      "clave": "1265543",
+      "nombres": "FELIX ENRIQUE",
+      "a_paterno": "PEREZ",
+      "a_materno": "ALVAREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 316,
+    "fields": {
+      "clave": "1257195",
+      "nombres": "EDUARDO",
+      "a_paterno": "CHAVEZ",
+      "a_materno": "OLIVOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 317,
+    "fields": {
+      "clave": "1265601",
+      "nombres": "EDGAR",
+      "a_paterno": "SANDOVAL",
+      "a_materno": "ALVAREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 318,
+    "fields": {
+      "clave": "1266693",
+      "nombres": "NEIL ARMSTRONG",
+      "a_paterno": "CHAVEZ",
+      "a_materno": "LUNA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 319,
+    "fields": {
+      "clave": "1266251",
+      "nombres": "ROBERTO",
+      "a_paterno": "RIVERA",
+      "a_materno": "CASTILLO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 320,
+    "fields": {
+      "clave": "1268303",
+      "nombres": "BRAULIO JUAN",
+      "a_paterno": "GARCIA",
+      "a_materno": "RUIZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 321,
+    "fields": {
+      "clave": "1031297",
+      "nombres": "CIRILO",
+      "a_paterno": "BENITEZ",
+      "a_materno": "RIVERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 322,
+    "fields": {
+      "clave": "1262487",
+      "nombres": "ARTURO",
+      "a_paterno": "ACEVEDO",
+      "a_materno": "RAMOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 323,
+    "fields": {
+      "clave": "1262058",
+      "nombres": "EVERARDO",
+      "a_paterno": "GOMEZ",
+      "a_materno": "RIVERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 324,
+    "fields": {
+      "clave": "1245616",
+      "nombres": "MAURICIO",
+      "a_paterno": "GONZALEZ",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 325,
+    "fields": {
+      "clave": "1245284",
+      "nombres": "JUAN DAVID",
+      "a_paterno": "REYNAGA",
+      "a_materno": "RUIZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 326,
+    "fields": {
+      "clave": "1247148",
+      "nombres": "ROBERTO OLIVER",
+      "a_paterno": "FLORES",
+      "a_materno": "SANCHEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 327,
+    "fields": {
+      "clave": "1242883",
+      "nombres": "MISAEL",
+      "a_paterno": "TORRES",
+      "a_materno": "RAMIREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 328,
+    "fields": {
+      "clave": "1243492",
+      "nombres": "ANTONIO",
+      "a_paterno": "TRINIDAD",
+      "a_materno": "CACERES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 329,
+    "fields": {
+      "clave": "1238064",
+      "nombres": "ANDRES",
+      "a_paterno": "CARBAJAL",
+      "a_materno": "PINEDA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 330,
+    "fields": {
+      "clave": "1241383",
+      "nombres": "JUAN MANUEL",
+      "a_paterno": "LEZAMA",
+      "a_materno": "LEON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 331,
+    "fields": {
+      "clave": "1238443",
+      "nombres": "RAUL",
+      "a_paterno": "OLMEDO",
+      "a_materno": "LUQUEÑO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 332,
+    "fields": {
+      "clave": "1238441",
+      "nombres": "JAVIER",
+      "a_paterno": "DURAN",
+      "a_materno": "CLAVERIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 333,
+    "fields": {
+      "clave": "1221427",
+      "nombres": "FERNANDO",
+      "a_paterno": "ORTEGA",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 334,
+    "fields": {
+      "clave": "1216275",
+      "nombres": "RAFAEL",
+      "a_paterno": "SALDIVAR",
+      "a_materno": "CORREA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 335,
+    "fields": {
+      "clave": "1218334",
+      "nombres": "PEDRO",
+      "a_paterno": "INES",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 336,
+    "fields": {
+      "clave": "1216484",
+      "nombres": "ESAU",
+      "a_paterno": "VALLEJO",
+      "a_materno": "PEÑA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 337,
+    "fields": {
+      "clave": "1221092",
+      "nombres": "ELOY",
+      "a_paterno": "PULIDO",
+      "a_materno": "VAZQUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 338,
+    "fields": {
+      "clave": "1216513",
+      "nombres": "JOSE FERNANDO ISAAC",
+      "a_paterno": "ARENAS",
+      "a_materno": "VAZQUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 339,
+    "fields": {
+      "clave": "1216418",
+      "nombres": "JOSE",
+      "a_paterno": "SERRANO",
+      "a_materno": "MORENO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 340,
+    "fields": {
+      "clave": "1199280",
+      "nombres": "JOSE MANUEL",
+      "a_paterno": "VARGAS",
+      "a_materno": "MURILLO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 341,
+    "fields": {
+      "clave": "1202176",
+      "nombres": "MARIO",
+      "a_paterno": "GARCIA",
+      "a_materno": "REYES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 342,
+    "fields": {
+      "clave": "1200274",
+      "nombres": "JULIO CESAR",
+      "a_paterno": "NARCIA",
+      "a_materno": "VAZQUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 343,
+    "fields": {
+      "clave": "1214499",
+      "nombres": "FILIBERTO",
+      "a_paterno": "JIMENEZ",
+      "a_materno": "CASTILLO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 344,
+    "fields": {
+      "clave": "1205022",
+      "nombres": "CLAUDIO ALBERTO",
+      "a_paterno": "RONZON",
+      "a_materno": "PALANCARES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 345,
+    "fields": {
+      "clave": "1200099",
+      "nombres": "CRISOFORO",
+      "a_paterno": "CORTES",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 346,
+    "fields": {
+      "clave": "1271688",
+      "nombres": "GERARDO",
+      "a_paterno": "BOTELLO",
+      "a_materno": "SANCHEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 347,
+    "fields": {
+      "clave": "1206483",
+      "nombres": "MARIO",
+      "a_paterno": "LOPEZ",
+      "a_materno": "OSORIO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 348,
+    "fields": {
+      "clave": "1201617",
+      "nombres": "LEONARDO",
+      "a_paterno": "MORALES",
+      "a_materno": "CUATEPOTZO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 349,
+    "fields": {
+      "clave": "1022766",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "ROSAS",
+      "a_materno": "LEON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 350,
+    "fields": {
+      "clave": "1196794",
+      "nombres": "GUILLERMO DEL",
+      "a_paterno": "ANGEL",
+      "a_materno": "CRUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 351,
+    "fields": {
+      "clave": "1023246",
+      "nombres": "ROMAN",
+      "a_paterno": "VICTORIA",
+      "a_materno": "REYES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 352,
+    "fields": {
+      "clave": "1191822",
+      "nombres": "JOSE CARLOS",
+      "a_paterno": "URIOSTEGUI",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 353,
+    "fields": {
+      "clave": "1003764",
+      "nombres": "JESUS HIRAM",
+      "a_paterno": "GALLARDO",
+      "a_materno": "GONZALEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 354,
+    "fields": {
+      "clave": "1150388",
+      "nombres": "SANTOS",
+      "a_paterno": "LAGUNAS",
+      "a_materno": "GARCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 355,
+    "fields": {
+      "clave": "1184048",
+      "nombres": "EDGAR",
+      "a_paterno": "ALCANTARA",
+      "a_materno": "CRUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 356,
+    "fields": {
+      "clave": "1187109",
+      "nombres": "JOSE EUSEBIO",
+      "a_paterno": "ARAGON",
+      "a_materno": "LAPA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 357,
+    "fields": {
+      "clave": "1190863",
+      "nombres": "FELIPE",
+      "a_paterno": "HIPOLITO",
+      "a_materno": "DECTOR"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 358,
+    "fields": {
+      "clave": "1162860",
+      "nombres": "NELSON ENRIQUE",
+      "a_paterno": "DOMINGUEZ",
+      "a_materno": "OSORIO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 359,
+    "fields": {
+      "clave": "1165876",
+      "nombres": "MANUEL ANTONIO",
+      "a_paterno": "RAMOS",
+      "a_materno": "GONZALEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 360,
+    "fields": {
+      "clave": "1179084",
+      "nombres": "FELIPE CARLOS",
+      "a_paterno": "SOLANO",
+      "a_materno": "URBAN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 361,
+    "fields": {
+      "clave": "1161476",
+      "nombres": "JOSE ENRIQUE",
+      "a_paterno": "ESPINOZA",
+      "a_materno": "BAZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 362,
+    "fields": {
+      "clave": "1121324",
+      "nombres": "ENRIQUE",
+      "a_paterno": "SANCHEZ",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 363,
+    "fields": {
+      "clave": "1121542",
+      "nombres": "ROMAN MANUEL",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 364,
+    "fields": {
+      "clave": "1183520",
+      "nombres": "MARIO ALBERTO DE LA",
+      "a_paterno": "CRUZ",
+      "a_materno": "AQUINO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 365,
+    "fields": {
+      "clave": "1183495",
+      "nombres": "JOSE ALEJANDRO",
+      "a_paterno": "RODRIGUEZ",
+      "a_materno": "LOZANO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 366,
+    "fields": {
+      "clave": "1175615",
+      "nombres": "RIGOBERTO",
+      "a_paterno": "MACEDA",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 367,
+    "fields": {
+      "clave": "1010303",
+      "nombres": "JOSE ALFREDO",
+      "a_paterno": "CORTES",
+      "a_materno": "VAZQUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 368,
+    "fields": {
+      "clave": "1182175",
+      "nombres": "BULMARO",
+      "a_paterno": "CASTILLEJOS",
+      "a_materno": "RAMOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 369,
+    "fields": {
+      "clave": "1051358",
+      "nombres": "ARTURO RAYMUNDO",
+      "a_paterno": "SANCHEZ",
+      "a_materno": "CASTILLO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 370,
+    "fields": {
+      "clave": "1041386",
+      "nombres": "ALFREDO",
+      "a_paterno": "SALAZAR",
+      "a_materno": "MORALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 371,
+    "fields": {
+      "clave": "1121606",
+      "nombres": "MANUEL DE JESUS",
+      "a_paterno": "ROSALES",
+      "a_materno": "FRANCO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 372,
+    "fields": {
+      "clave": "1032419",
+      "nombres": "FERNANDO",
+      "a_paterno": "VARGAS",
+      "a_materno": "MORALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 373,
+    "fields": {
+      "clave": "1090996",
+      "nombres": "JUAN ANTONIO",
+      "a_paterno": "GOMEZ",
+      "a_materno": "SANTIAGO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 374,
+    "fields": {
+      "clave": "1162170",
+      "nombres": "JOSE MANUEL",
+      "a_paterno": "LOPEZ",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 375,
+    "fields": {
+      "clave": "1169080",
+      "nombres": "JAIME",
+      "a_paterno": "CARRILLO",
+      "a_materno": "DIAZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 376,
+    "fields": {
+      "clave": "1162106",
+      "nombres": "JOSE ALFREDO",
+      "a_paterno": "GUERRERO",
+      "a_materno": "MONROY"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 377,
+    "fields": {
+      "clave": "1110071",
+      "nombres": "TOMAS",
+      "a_paterno": "MIRANDA",
+      "a_materno": "GARCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 378,
+    "fields": {
+      "clave": "1348773",
+      "nombres": "HERIBERTO",
+      "a_paterno": "AVILA",
+      "a_materno": "VELEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 379,
+    "fields": {
+      "clave": "1320004",
+      "nombres": "RAUL",
+      "a_paterno": "FLORES",
+      "a_materno": "RODELAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 380,
+    "fields": {
+      "clave": "1310660",
+      "nombres": "CESAR",
+      "a_paterno": "JULIAN",
+      "a_materno": "LUIS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 381,
+    "fields": {
+      "clave": "1301159",
+      "nombres": "MISRRAYN",
+      "a_paterno": "ALCANTAR",
+      "a_materno": "MONTOYA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 382,
+    "fields": {
+      "clave": "1289213",
+      "nombres": "JOSE MARCOS",
+      "a_paterno": "GONZALEZ",
+      "a_materno": "ARENAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 383,
+    "fields": {
+      "clave": "1281366",
+      "nombres": "DAVID",
+      "a_paterno": "SANCHEZ",
+      "a_materno": "SORIANO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 384,
+    "fields": {
+      "clave": "1283467",
+      "nombres": "SAMUEL",
+      "a_paterno": "RAMON",
+      "a_materno": "ROSAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 385,
+    "fields": {
+      "clave": "1276920",
+      "nombres": "JUAN CARLOS",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "TRINIDAD"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 386,
+    "fields": {
+      "clave": "1251815",
+      "nombres": "EMILIO",
+      "a_paterno": "VELAZQUEZ",
+      "a_materno": "ESCOBAR"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 387,
+    "fields": {
+      "clave": "1267939",
+      "nombres": "ROQUE",
+      "a_paterno": "ALVAREZ",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 388,
+    "fields": {
+      "clave": "1264670",
+      "nombres": "DANIEL",
+      "a_paterno": "ORTIZ",
+      "a_materno": "MIGUEL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 389,
+    "fields": {
+      "clave": "1264251",
+      "nombres": "OMAR",
+      "a_paterno": "GARCIA",
+      "a_materno": "VARGAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 390,
+    "fields": {
+      "clave": "1265413",
+      "nombres": "ROBERTO",
+      "a_paterno": "RIVERA",
+      "a_materno": "RAMIREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 391,
+    "fields": {
+      "clave": "1261483",
+      "nombres": "ALBERTO",
+      "a_paterno": "DAMIAN",
+      "a_materno": "PACHECO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 392,
+    "fields": {
+      "clave": "1261172",
+      "nombres": "FRANCISCO",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "AQUINO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 393,
+    "fields": {
+      "clave": "1261369",
+      "nombres": "ISAAC",
+      "a_paterno": "CORTES",
+      "a_materno": "MEZA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 394,
+    "fields": {
+      "clave": "1255088",
+      "nombres": "MARCO ANTONIO",
+      "a_paterno": "SALGADO",
+      "a_materno": "CASTAÑEDA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 395,
+    "fields": {
+      "clave": "1249575",
+      "nombres": "REYES",
+      "a_paterno": "LUNA",
+      "a_materno": "TREJO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 396,
+    "fields": {
+      "clave": "1242295",
+      "nombres": "JUAN SACRAMENTO",
+      "a_paterno": "RAMIREZ",
+      "a_materno": "NANCO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 397,
+    "fields": {
+      "clave": "1243135",
+      "nombres": "JOSE MARTIN",
+      "a_paterno": "GOMEZ",
+      "a_materno": "URQUIZA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 398,
+    "fields": {
+      "clave": "1244493",
+      "nombres": "FRANCISCO",
+      "a_paterno": "HIDALGO",
+      "a_materno": "GARCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 399,
+    "fields": {
+      "clave": "1243275",
+      "nombres": "AGUSTIN",
+      "a_paterno": "RODRIGUEZ",
+      "a_materno": "ROMERO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 400,
+    "fields": {
+      "clave": "1243276",
+      "nombres": "MIGUEL ANGEL",
+      "a_paterno": "DOMINGUEZ",
+      "a_materno": "ARGUETA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 401,
+    "fields": {
+      "clave": "1243496",
+      "nombres": "PRIMITIVO",
+      "a_paterno": "ROBLES",
+      "a_materno": "MATIAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 402,
+    "fields": {
+      "clave": "1240495",
+      "nombres": "JANIX",
+      "a_paterno": "COLORADO",
+      "a_materno": "SOLIS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 403,
+    "fields": {
+      "clave": "1238271",
+      "nombres": "JOSE LIDIO",
+      "a_paterno": "GONZALEZ",
+      "a_materno": "MORA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 404,
+    "fields": {
+      "clave": "1239613",
+      "nombres": "JORGE",
+      "a_paterno": "MURILLO",
+      "a_materno": "VALENZUELA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 405,
+    "fields": {
+      "clave": "1241764",
+      "nombres": "EDUARDO",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "GARCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 406,
+    "fields": {
+      "clave": "1241760",
+      "nombres": "ALVARO",
+      "a_paterno": "MALDONADO",
+      "a_materno": "CORRO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 407,
+    "fields": {
+      "clave": "1238450",
+      "nombres": "JOSE SAMUEL",
+      "a_paterno": "GUTIERREZ",
+      "a_materno": "SOLANO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 408,
+    "fields": {
+      "clave": "1233843",
+      "nombres": "CESAR",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "COBOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 409,
+    "fields": {
+      "clave": "1197364",
+      "nombres": "JOSE ANGEL",
+      "a_paterno": "ARIAS",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 410,
+    "fields": {
+      "clave": "1233745",
+      "nombres": "JOSUE RAYMUNDO",
+      "a_paterno": "SALAS",
+      "a_materno": "MADRIGAL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 411,
+    "fields": {
+      "clave": "1271672",
+      "nombres": "JUAN FRANCISCO",
+      "a_paterno": "ROMERO",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 412,
+    "fields": {
+      "clave": "1230798",
+      "nombres": "JESUS MANUEL",
+      "a_paterno": "ESTRADA",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 413,
+    "fields": {
+      "clave": "1219115",
+      "nombres": "JUAN ANTONIO",
+      "a_paterno": "PEREZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 414,
+    "fields": {
+      "clave": "1220686",
+      "nombres": "SABINO",
+      "a_paterno": "CORTES",
+      "a_materno": "SANTOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 415,
+    "fields": {
+      "clave": "1217365",
+      "nombres": "VICTOR MANUEL",
+      "a_paterno": "RUIZ",
+      "a_materno": "PUEBLA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 416,
+    "fields": {
+      "clave": "1205746",
+      "nombres": "MARCOS OMAR",
+      "a_paterno": "BALLINAS",
+      "a_materno": "LOPEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 417,
+    "fields": {
+      "clave": "1204335",
+      "nombres": "MIGUEL MARIO",
+      "a_paterno": "ESPINOZA",
+      "a_materno": "ARAGON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 418,
+    "fields": {
+      "clave": "1201500",
+      "nombres": "MIGUEL",
+      "a_paterno": "ARROYO",
+      "a_materno": "PAREDES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 419,
+    "fields": {
+      "clave": "1202180",
+      "nombres": "ELEAZAR",
+      "a_paterno": "ROMERO",
+      "a_materno": "RUIZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 420,
+    "fields": {
+      "clave": "1215013",
+      "nombres": "MARIO",
+      "a_paterno": "RODRIGUEZ",
+      "a_materno": "ORTIZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 421,
+    "fields": {
+      "clave": "1203810",
+      "nombres": "JOSE JUAN",
+      "a_paterno": "VALENCIA",
+      "a_materno": "SANDOVAL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 422,
+    "fields": {
+      "clave": "1200268",
+      "nombres": "FRANCISCO DANIEL",
+      "a_paterno": "JUAREZ",
+      "a_materno": "GUILLEN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 423,
+    "fields": {
+      "clave": "1211947",
+      "nombres": "JULIO CESAR",
+      "a_paterno": "MENDEZ",
+      "a_materno": "GONZALEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 424,
+    "fields": {
+      "clave": "1215108",
+      "nombres": "JOSE ALVARO",
+      "a_paterno": "ARENAS",
+      "a_materno": "PESTAÑA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 425,
+    "fields": {
+      "clave": "1201221",
+      "nombres": "SAMUEL",
+      "a_paterno": "PONCE",
+      "a_materno": "SALAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 426,
+    "fields": {
+      "clave": "1206480",
+      "nombres": "RAFAEL",
+      "a_paterno": "VEGA",
+      "a_materno": "AGUSTIN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 427,
+    "fields": {
+      "clave": "1201642",
+      "nombres": "ROBERTO",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "QUEVEDO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 428,
+    "fields": {
+      "clave": "1164071",
+      "nombres": "MIGUEL ANGEL",
+      "a_paterno": "CONTRERAS",
+      "a_materno": "BAIZABAL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 429,
+    "fields": {
+      "clave": "1195601",
+      "nombres": "MIGUEL",
+      "a_paterno": "GUEIXPAL",
+      "a_materno": "REYES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 430,
+    "fields": {
+      "clave": "1195541",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "JAVIER",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 431,
+    "fields": {
+      "clave": "1195127",
+      "nombres": "RICARDO",
+      "a_paterno": "AGUIRRE",
+      "a_materno": "SEGOVIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 432,
+    "fields": {
+      "clave": "1194002",
+      "nombres": "ERNESTO",
+      "a_paterno": "ESTEVEZ",
+      "a_materno": "JIMENEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 433,
+    "fields": {
+      "clave": "1192452",
+      "nombres": "REFUGIO",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "QUEVEDO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 434,
+    "fields": {
+      "clave": "1183828",
+      "nombres": "ANTONIO",
+      "a_paterno": "CORDOVA",
+      "a_materno": "UZCANGA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 435,
+    "fields": {
+      "clave": "1175633",
+      "nombres": "SANTOS DEL CARMEN",
+      "a_paterno": "CASTILLO",
+      "a_materno": "PECH"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 436,
+    "fields": {
+      "clave": "1185418",
+      "nombres": "CIRO",
+      "a_paterno": "RAMIREZ",
+      "a_materno": "CARMONA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 437,
+    "fields": {
+      "clave": "1190250",
+      "nombres": "JORGE LUIS",
+      "a_paterno": "SOSA",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 438,
+    "fields": {
+      "clave": "1184339",
+      "nombres": "JESUS",
+      "a_paterno": "CAJIJA",
+      "a_materno": "ORDOÑEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 439,
+    "fields": {
+      "clave": "1188510",
+      "nombres": "ORLANDO",
+      "a_paterno": "JIMENEZ",
+      "a_materno": "CENTENO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 440,
+    "fields": {
+      "clave": "1186927",
+      "nombres": "RUBEN",
+      "a_paterno": "CAZARES",
+      "a_materno": "ORDOÑEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 441,
+    "fields": {
+      "clave": "1001507",
+      "nombres": "JAIME",
+      "a_paterno": "GARCIA",
+      "a_materno": "GUZMAN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 442,
+    "fields": {
+      "clave": "1178087",
+      "nombres": "CARLOS ERNESTO",
+      "a_paterno": "GREENE",
+      "a_materno": "OYOSA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 443,
+    "fields": {
+      "clave": "1165582",
+      "nombres": "DOROTEO",
+      "a_paterno": "PRADO",
+      "a_materno": "TOSCANO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 444,
+    "fields": {
+      "clave": "1031623",
+      "nombres": "JOSE ANTONIO",
+      "a_paterno": "PEREZ",
+      "a_materno": "ANDRADE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 445,
+    "fields": {
+      "clave": "1001282",
+      "nombres": "ARMANDO",
+      "a_paterno": "CRUZ",
+      "a_materno": "JAIMES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 446,
+    "fields": {
+      "clave": "1165090",
+      "nombres": "FLORENTINO",
+      "a_paterno": "MIGUEL",
+      "a_materno": "LARA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 447,
+    "fields": {
+      "clave": "1040530",
+      "nombres": "LUCIANO",
+      "a_paterno": "CRUZ",
+      "a_materno": "MENDOZA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 448,
+    "fields": {
+      "clave": "1041265",
+      "nombres": "ABELARDO DEL",
+      "a_paterno": "VALLE",
+      "a_materno": "RIVERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 449,
+    "fields": {
+      "clave": "1010720",
+      "nombres": "DAVID",
+      "a_paterno": "RAMIREZ",
+      "a_materno": "MORALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 450,
+    "fields": {
+      "clave": "1175457",
+      "nombres": "RAUL",
+      "a_paterno": "FLORES",
+      "a_materno": "JUAREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 451,
+    "fields": {
+      "clave": "1181196",
+      "nombres": "MANUEL PASCUAL",
+      "a_paterno": "CEL",
+      "a_materno": "YAM"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 452,
+    "fields": {
+      "clave": "1150321",
+      "nombres": "ISRAEL",
+      "a_paterno": "HERNANDEZ",
+      "a_materno": "DURAN"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 453,
+    "fields": {
+      "clave": "1166641",
+      "nombres": "ROBERTO LAWRENSE",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 454,
+    "fields": {
+      "clave": "1011298",
+      "nombres": "JOSE DE JESUS",
+      "a_paterno": "ALCALA",
+      "a_materno": "ROSALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 455,
+    "fields": {
+      "clave": "1121280",
+      "nombres": "ABRAHAM",
+      "a_paterno": "GALLARDO",
+      "a_materno": "VALENCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 456,
+    "fields": {
+      "clave": "1177677",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "CARMONA",
+      "a_materno": "MUÑOZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 457,
+    "fields": {
+      "clave": "1175030",
+      "nombres": "ALVARO",
+      "a_paterno": "CASTRO",
+      "a_materno": "HERRERA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 458,
+    "fields": {
+      "clave": "1179741",
+      "nombres": "CARLOS ANTONIO",
+      "a_paterno": "GARCIA",
+      "a_materno": "CASAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 459,
+    "fields": {
+      "clave": "1162038",
+      "nombres": "ARTURO",
+      "a_paterno": "TORRES",
+      "a_materno": "GOMEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 460,
+    "fields": {
+      "clave": "1184720",
+      "nombres": "OSCAR FELIX",
+      "a_paterno": "MORALES",
+      "a_materno": "SANTIAGO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 461,
+    "fields": {
+      "clave": "1175027",
+      "nombres": "LUCIO",
+      "a_paterno": "CORTES",
+      "a_materno": "MORALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 462,
+    "fields": {
+      "clave": "1183251",
+      "nombres": "AMADO",
+      "a_paterno": "PEREZ",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 463,
+    "fields": {
+      "clave": "1173771",
+      "nombres": "RICARDO",
+      "a_paterno": "MANRIQUEZ",
+      "a_materno": "MONROY"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 464,
+    "fields": {
+      "clave": "1121042",
+      "nombres": "EUSEBIO RAMIRO",
+      "a_paterno": "FLORES",
+      "a_materno": "FLORES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 465,
+    "fields": {
+      "clave": "1121604",
+      "nombres": "CARLOS ANTONIO",
+      "a_paterno": "CORONADO",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 466,
+    "fields": {
+      "clave": "1172441",
+      "nombres": "ANTONIO",
+      "a_paterno": "AGUILAR",
+      "a_materno": "CRUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 467,
+    "fields": {
+      "clave": "1167356",
+      "nombres": "ORLANDO CRUZ",
+      "a_paterno": "GUTIERREZ",
+      "a_materno": "PERALTA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 468,
+    "fields": {
+      "clave": "1172145",
+      "nombres": "CARLOS",
+      "a_paterno": "COLLADO",
+      "a_materno": "USCANGA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 469,
+    "fields": {
+      "clave": "1061402",
+      "nombres": "GONZALO",
+      "a_paterno": "MALDONADO",
+      "a_materno": "ORTIZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 470,
+    "fields": {
+      "clave": "1022539",
+      "nombres": "ROBERTO CARLOS",
+      "a_paterno": "SANCHEZ",
+      "a_materno": "SORIANO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 471,
+    "fields": {
+      "clave": "1181061",
+      "nombres": "ISIDRO",
+      "a_paterno": "MACEDO",
+      "a_materno": "BERNAL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 472,
+    "fields": {
+      "clave": "1163235",
+      "nombres": "MARCOS",
+      "a_paterno": "ORTIZ",
+      "a_materno": "HEREDIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 473,
+    "fields": {
+      "clave": "1032323",
+      "nombres": "JOSE MANUEL",
+      "a_paterno": "FLORES",
+      "a_materno": "RENTERIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 474,
+    "fields": {
+      "clave": "1031601",
+      "nombres": "RENE",
+      "a_paterno": "RAMOS",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 475,
+    "fields": {
+      "clave": "1031245",
+      "nombres": "EMILIANO JAVIER",
+      "a_paterno": "MARTINEZ",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 476,
+    "fields": {
+      "clave": "1070997",
+      "nombres": "JORGE ALBERTO",
+      "a_paterno": "CEBALLOS",
+      "a_materno": "GONGORA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 477,
+    "fields": {
+      "clave": "1070373",
+      "nombres": "FERNANDO EMILIANO",
+      "a_paterno": "ESCOBAR",
+      "a_materno": "MAY"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 478,
+    "fields": {
+      "clave": "1001061",
+      "nombres": "JOSE ANTONIO",
+      "a_paterno": "FLORES",
+      "a_materno": "MONROY"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 479,
+    "fields": {
+      "clave": "1121484",
+      "nombres": "ROBERTO",
+      "a_paterno": "VILCHIS",
+      "a_materno": "GONZALEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 480,
+    "fields": {
+      "clave": "1162095",
+      "nombres": "SOSTENES",
+      "a_paterno": "BONILLA",
+      "a_materno": "PAREDES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 481,
+    "fields": {
+      "clave": "1168289",
+      "nombres": "JOEL IGNACIO",
+      "a_paterno": "DIAZ",
+      "a_materno": "GASCA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 482,
+    "fields": {
+      "clave": "1121391",
+      "nombres": "ARTURO",
+      "a_paterno": "ALDAZABA",
+      "a_materno": "AGUIRRE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 483,
+    "fields": {
+      "clave": "1171743",
+      "nombres": "JOSE ALFREDO",
+      "a_paterno": "RODRIGUEZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 484,
+    "fields": {
+      "clave": "1041184",
+      "nombres": "CRUZ",
+      "a_paterno": "MORALES",
+      "a_materno": "PALMEROS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 485,
+    "fields": {
+      "clave": "1003403",
+      "nombres": "CRUZ ARSENIO",
+      "a_paterno": "CORTES",
+      "a_materno": "CRUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 486,
+    "fields": {
+      "clave": "1010249",
+      "nombres": "JAVIER",
+      "a_paterno": "TORRES",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 487,
+    "fields": {
+      "clave": "1001602",
+      "nombres": "GUILLERMO",
+      "a_paterno": "GOMEZ",
+      "a_materno": "ZAMORA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 488,
+    "fields": {
+      "clave": "1171285",
+      "nombres": "JOSE GUADALUPE",
+      "a_paterno": "COLORADO",
+      "a_materno": "OSORIO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 489,
+    "fields": {
+      "clave": "1171696",
+      "nombres": "MIGUEL ANGEL",
+      "a_paterno": "SERNA",
+      "a_materno": "SOLIS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 490,
+    "fields": {
+      "clave": "1171524",
+      "nombres": "CESAR HORACIO",
+      "a_paterno": "ESTRADA",
+      "a_materno": "LONGARES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 491,
+    "fields": {
+      "clave": "1012001",
+      "nombres": "GUILLERMO",
+      "a_paterno": "LOPEZ",
+      "a_materno": "CRUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 492,
+    "fields": {
+      "clave": "1011597",
+      "nombres": "JOSE ERNESTO",
+      "a_paterno": "SANCHEZ",
+      "a_materno": "PEREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 493,
+    "fields": {
+      "clave": "1165597",
+      "nombres": "CECILIO",
+      "a_paterno": "ESCAMILLA",
+      "a_materno": "ISLAS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 494,
+    "fields": {
+      "clave": "1011693",
+      "nombres": "JOSE JULIO CESAR",
+      "a_paterno": "LEMUS",
+      "a_materno": "CRUZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 495,
+    "fields": {
+      "clave": "1011618",
+      "nombres": "MIGUEL ANGEL",
+      "a_paterno": "CHABLE",
+      "a_materno": "SANCHEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 496,
+    "fields": {
+      "clave": "1110018",
+      "nombres": "OSCAR JOSE",
+      "a_paterno": "SANCHEZ",
+      "a_materno": "SANTOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 497,
+    "fields": {
+      "clave": "1162096",
+      "nombres": "FELIX VIDAL",
+      "a_paterno": "JUAREZ",
+      "a_materno": "RAMIREZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 498,
+    "fields": {
+      "clave": "1121579",
+      "nombres": "JUAN CARLOS",
+      "a_paterno": "REYNA",
+      "a_materno": "LEYVA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 499,
+    "fields": {
+      "clave": "1169797",
+      "nombres": "SERGIO",
+      "a_paterno": "VELAZQUEZ",
+      "a_materno": "ZAMUDIO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 500,
+    "fields": {
+      "clave": "1121608",
+      "nombres": "PABLO",
+      "a_paterno": "GONZALEZ",
+      "a_materno": "JIMENEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 501,
+    "fields": {
+      "clave": "1121317",
+      "nombres": "GREGORIO",
+      "a_paterno": "COLIN",
+      "a_materno": "JIMENEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 502,
+    "fields": {
+      "clave": "1171744",
+      "nombres": "ISMAEL",
+      "a_paterno": "LICONA",
+      "a_materno": "CASTAÑEDA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 503,
+    "fields": {
+      "clave": "1167576",
+      "nombres": "GENARO",
+      "a_paterno": "SOBAL",
+      "a_materno": "MORALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 504,
+    "fields": {
+      "clave": "1165663",
+      "nombres": "OSCAR SAUL",
+      "a_paterno": "CANCHOLA",
+      "a_materno": "GARCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 505,
+    "fields": {
+      "clave": "1368231",
+      "nombres": "DENNYS",
+      "a_paterno": "VAZQUEZ",
+      "a_materno": "REYNA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 506,
+    "fields": {
+      "clave": "1348577",
+      "nombres": "JERSON RAFAEL",
+      "a_paterno": "OCAMPO",
+      "a_materno": "RODRIGUEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 507,
+    "fields": {
+      "clave": "1281998",
+      "nombres": "CRYSTIAN",
+      "a_paterno": "UGALDE",
+      "a_materno": "OLIVO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 508,
+    "fields": {
+      "clave": "1356120",
+      "nombres": "CESAR",
+      "a_paterno": "MISS",
+      "a_materno": "SANTOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 509,
+    "fields": {
+      "clave": "1255529",
+      "nombres": "JOSE JUAN",
+      "a_paterno": "LOPEZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 510,
+    "fields": {
+      "clave": "1407250",
+      "nombres": "GIOVANNI",
+      "a_paterno": "RIVERA",
+      "a_materno": "POZOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 511,
+    "fields": {
+      "clave": "1235697",
+      "nombres": "ALVARO",
+      "a_paterno": "CARRERA",
+      "a_materno": "ROMERO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 512,
+    "fields": {
+      "clave": "1259958",
+      "nombres": "JOSE AZAEL",
+      "a_paterno": "ESCAMILLA",
+      "a_materno": "PALACIOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 513,
+    "fields": {
+      "clave": "1286414",
+      "nombres": "ANDRES",
+      "a_paterno": "GARCIA",
+      "a_materno": "PASCUAL"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 514,
+    "fields": {
+      "clave": "1350236",
+      "nombres": "RODRIGO",
+      "a_paterno": "QUEVEDO",
+      "a_materno": "GARCIA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 515,
+    "fields": {
+      "clave": "1259370",
+      "nombres": "BEJAMIN",
+      "a_paterno": "JUAREZ",
+      "a_materno": "LUNA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 516,
+    "fields": {
+      "clave": "1410035",
+      "nombres": "VICTOR ANTONIO",
+      "a_paterno": "JUAREZ",
+      "a_materno": "BENITEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 517,
+    "fields": {
+      "clave": "1366138",
+      "nombres": "JOSE MANUEL",
+      "a_paterno": "NERIA",
+      "a_materno": "CORDOVA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 518,
+    "fields": {
+      "clave": "1360093",
+      "nombres": "GABRIEL",
+      "a_paterno": "CASTRO",
+      "a_materno": "HERNANDEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 519,
+    "fields": {
+      "clave": "1218229",
+      "nombres": "ISRAEL",
+      "a_paterno": "CONTRERAS",
+      "a_materno": "VALVERDE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 520,
+    "fields": {
+      "clave": "1238517",
+      "nombres": "JORGE ANTONIO",
+      "a_paterno": "SEGUNDO",
+      "a_materno": "GONZALEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 521,
+    "fields": {
+      "clave": "1276026",
+      "nombres": "JOSE LUIS",
+      "a_paterno": "CUEVAS",
+      "a_materno": "SALGADO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 522,
+    "fields": {
+      "clave": "1290561",
+      "nombres": "MIGUEL SILVESTRE",
+      "a_paterno": "GALVAN",
+      "a_materno": "URBINA"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 523,
+    "fields": {
+      "clave": "1184359",
+      "nombres": "JAVIER",
+      "a_paterno": "MATA",
+      "a_materno": "GALLEGOS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 524,
+    "fields": {
+      "clave": "1210937",
+      "nombres": "MARCO ANTONIO",
+      "a_paterno": "ROMERO",
+      "a_materno": "SIMON"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 525,
+    "fields": {
+      "clave": "1247681",
+      "nombres": "OCTAVIO",
+      "a_paterno": "ALANIZ",
+      "a_materno": "BASAVE"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 526,
+    "fields": {
+      "clave": "1195634",
+      "nombres": "GERARDO",
+      "a_paterno": "DOMINGUEZ",
+      "a_materno": "MARTINEZ"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 527,
+    "fields": {
+      "clave": "1268988",
+      "nombres": "MARCOS",
+      "a_paterno": "ISLAS",
+      "a_materno": "ROSALES"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 528,
+    "fields": {
+      "clave": "1359062",
+      "nombres": "ADOLFO",
+      "a_paterno": "BALCAZAR",
+      "a_materno": "TABLEROS"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 529,
+    "fields": {
+      "clave": "1221510",
+      "nombres": "ENRIQUE",
+      "a_paterno": "FLORES",
+      "a_materno": "MORENO"
+    }
+  },
+  {
+    "model": "ACC.conductor",
+    "pk": 530,
+    "fields": {
+      "clave": "1162991",
+      "nombres": "JOSE",
+      "a_paterno": "ROSAS",
+      "a_materno": "LEON"
     }
   }
 ]

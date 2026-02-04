@@ -1,39 +1,93 @@
 [
-  {
-    "model": "ACC.tipo_cargo",
-    "pk": 1,
-    "fields": {
-      "descripcion": "WR"
+    {
+        "model": "ACC.tipo_dano",
+        "pk": 1,
+        "fields": {
+            "descripcion": "Frente"
+        }
+    },
+    {
+        "model": "ACC.tipo_dano",
+        "pk": 2,
+        "fields": {
+            "descripcion": "Parte trasera"
+        }
+    },
+    {
+        "model": "ACC.tipo_dano",
+        "pk": 3,
+        "fields": {
+            "descripcion": "Parte superior"
+        }
+    },
+    {
+        "model": "ACC.tipo_dano",
+        "pk": 4,
+        "fields": {
+            "descripcion": "Costado derecho"
+        }
+    },
+    {
+        "model": "ACC.tipo_dano",
+        "pk": 5,
+        "fields": {
+            "descripcion": "Costado izquierdo"
+        }
+    },
+    {
+        "model": "ACC.tipo_dano",
+        "pk": 6,
+        "fields": {
+            "descripcion": "Ventanilla"
+        }
+    },
+    {
+        "model": "ACC.tipo_dano",
+        "pk": 7,
+        "fields": {
+            "descripcion": "Parabrisas"
+        }
+    },
+    {
+        "model": "ACC.tipo_cargo",
+        "pk": 1,
+        "fields": {
+            "descripcion": "WR"
+        }
+    },
+    {
+        "model": "ACC.tipo_cargo",
+        "pk": 2,
+        "fields": {
+            "descripcion": "WG"
+        }
+    },
+    {
+        "model": "ACC.tipo_cargo",
+        "pk": 3,
+        "fields": {
+            "descripcion": "WJ"
+        }
+    },
+    {
+        "model": "ACC.proveedor",
+        "pk": 1,
+        "fields": {
+            "nombre": "ADO"
+        }
+    },
+    {
+        "model": "ACC.proveedor",
+        "pk": 2,
+        "fields": {
+            "nombre": "SERMAG"
+        }
+    },
+    {
+        "model": "ACC.proveedor",
+        "pk": 3,
+        "fields": {
+            "nombre": "BACANDA"
+        }
     }
-  },
-  {
-    "model": "ACC.tipo_cargo",
-    "pk": 2,
-    "fields": {
-      "descripcion": "WJ"
-    }
-  },
-
-  {
-    "model": "ACC.proveedor",
-    "pk": 1,
-    "fields": {
-      "nombre": "ADO"
-    }
-  },
-  {
-    "model": "ACC.proveedor",
-    "pk": 2,
-    "fields": {
-      "nombre": "SERMAG"
-    }
-  },
-  {
-    "model": "ACC.proveedor",
-    "pk": 3,
-    "fields": {
-      "nombre": "BACANDA"
-    }
-  }
 ]
-
