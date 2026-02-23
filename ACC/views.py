@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import *
-from django.utils.timezone import now
 from django.utils import timezone
 from .drive_utils import *
 from django.contrib.auth import authenticate, login
@@ -14,9 +13,9 @@ from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 from decimal import Decimal
-from googleapiclient.discovery import build
-from google.oauth2 import service_account
-from django.conf import settings
+from django.core.paginator import Paginator
+from django.db.models import Q
+from django.utils.dateparse import parse_date
 import json
 
 def login_view(request):
@@ -58,15 +57,72 @@ def dashboard(request):
 
 @login_required
 def accidentes(request):
-    accidentes = (
-        Accidente.objects
-        .select_related("autobus", "conductor", "tipo_dano")
-        .order_by("-fecha")
-    )
+    # --- Consulta base ---
+    accidentes = Accidente.objects.select_related(
+        "autobus", "conductor", "tipo_dano"
+    ).all()
 
-    return render(request, "ACC/accidentes.html", {
-        "accidentes": accidentes
-    })
+    # --- FILTROS ---
+    # Estado
+    estado = request.GET.get("estado")
+    if estado and estado != "TODOS":
+        accidentes = accidentes.filter(estado=estado)
+
+    # Tipo de unidad
+    tipo = request.GET.get("tipo")
+    if tipo and tipo != "TODOS":
+        accidentes = accidentes.filter(autobus__tipo=tipo)
+
+    # Rango de fechas
+    fecha_desde = request.GET.get("fecha_desde")
+    fecha_hasta = request.GET.get("fecha_hasta")
+    if fecha_desde:
+        fecha_desde_obj = parse_date(fecha_desde)
+        if fecha_desde_obj:
+            accidentes = accidentes.filter(fecha__gte=fecha_desde_obj)
+    if fecha_hasta:
+        fecha_hasta_obj = parse_date(fecha_hasta)
+        if fecha_hasta_obj:
+            accidentes = accidentes.filter(fecha__lte=fecha_hasta_obj)
+
+    # Búsqueda por unidad, conductor o código
+    q = request.GET.get("q")
+    if q:
+        accidentes = accidentes.filter(
+            Q(autobus__economico__icontains=q) |
+            Q(conductor__nombres__icontains=q) |
+            Q(conductor__a_paterno__icontains=q) |
+            Q(conductor__a_materno__icontains=q) |
+            Q(codigo_acc__icontains=q)
+        )
+
+    # --- PAGINACIÓN ---
+    mostrar = request.GET.get("mostrar", 50)  # valor predeterminado
+    try:
+        mostrar = int(mostrar)
+    except ValueError:
+        mostrar = 50
+
+    # Mostrar todos si se pone 0
+    if mostrar == 0:
+        page_obj = accidentes
+    else:
+        paginator = Paginator(accidentes.order_by("-fecha"), mostrar)
+        page_number = request.GET.get("page")
+        page_obj = paginator.get_page(page_number)
+
+    context = {
+        "accidentes": page_obj,
+        "paginator": paginator if mostrar != 0 else None,
+        "estado": estado or "TODOS",
+        "tipo": tipo or "TODOS",
+        "fecha_desde": fecha_desde or "",
+        "fecha_hasta": fecha_hasta or "",
+        "mostrar": mostrar,
+        "q": q or "",
+    }
+
+    return render(request, "ACC/accidentes.html", context)
 
 @login_required
 def gestion(request):
@@ -448,5 +504,4 @@ def finalizar_accidente(request, accidente_id):
         "success": True,
         "mensaje": "Accidente finalizado correctamente"
     })
-
 

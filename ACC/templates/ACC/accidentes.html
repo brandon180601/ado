@@ -43,41 +43,49 @@
 
           <!-- FILTROS -->
           <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-6">
-            <div class="flex flex-wrap items-center gap-4">
-              <div class="flex items-center gap-2 text-sm text-gray-600">
-                <span>Mostrar</span>
-                <select class="border rounded-md px-2 py-1 text-sm">
-                  <option>10</option>
-                  <option>25</option>
-                  <option>50</option>
-                </select>
-                <span>registros</span>
+            <form method="get" class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-6">
+              <div class="flex flex-wrap items-center gap-4">
+                  <!-- Mostrar registros -->
+                  <div class="flex items-center gap-2 text-sm text-gray-600">
+                      <span>Mostrar</span>
+                      <select name="mostrar" class="border rounded-md px-2 py-1 text-sm" onchange="this.form.submit()">
+                          <option value="50" {% if mostrar == 50 %}selected{% endif %}>50</option>
+                          <option value="100" {% if mostrar == 100 %}selected{% endif %}>100</option>
+                          <option value="150" {% if mostrar == 150 %}selected{% endif %}>150</option>
+                          <option value="0" {% if mostrar == 0 %}selected{% endif %}>Todos</option>
+                      </select>
+                      <span>registros</span>
+                  </div>
+
+                  <!-- Estado -->
+                  <select name="estado" class="border rounded-md px-3 py-2 text-sm" onchange="this.form.submit()">
+                      <option value="TODOS" {% if estado == "TODOS" %}selected{% endif %}>Todos</option>
+                      <option value="EN_PROCESO" {% if estado == "EN_PROCESO" %}selected{% endif %}>En proceso</option>
+                      <option value="EN_REPARACION" {% if estado == "EN_REPARACION" %}selected{% endif %}>En reparación</option>
+                      <option value="FINALIZADO" {% if estado == "FINALIZADO" %}selected{% endif %}>Cerrado</option>
+                  </select>
+
+                  <!-- Tipo unidad -->
+                  <select name="tipo" class="border rounded-md px-3 py-2 text-sm" onchange="this.form.submit()">
+                      <option value="TODOS" {% if tipo == "TODOS" %}selected{% endif %}>Todos</option>
+                      <option value="GL" {% if tipo == "GL" %}selected{% endif %}>GL</option>
+                      <option value="PL" {% if tipo == "PL" %}selected{% endif %}>PL</option>
+                  </select>
+
+                  <!-- Fecha -->
+                  <div class="flex items-center gap-2 text-sm text-gray-600">
+                      <input type="date" name="fecha_desde" value="{{ fecha_desde }}" class="border rounded-md px-2 py-1 text-sm">
+                      <span>a</span>
+                      <input type="date" name="fecha_hasta" value="{{ fecha_hasta }}" class="border rounded-md px-2 py-1 text-sm">
+                  </div>
               </div>
 
-              <select class="border rounded-md px-3 py-2 text-sm">
-                <option>Estado</option>
-                <option>En proceso</option>
-                <option>En reparación</option>
-                <option>Cerrado</option>
-              </select>
-
-              <select class="border rounded-md px-3 py-2 text-sm">
-                <option>Tipo unidad</option>
-                <option>GL</option>
-                <option>PL</option>
-              </select>
-
-              <select class="border rounded-md px-3 py-2 text-sm">
-                <option>Fecha</option>
-                <option>Últimos 7 días</option>
-                <option>Últimos 30 días</option>
-              </select>
-            </div>
-
-            <div class="relative">
-              <i class="bi bi-search absolute left-3 top-2 text-gray-400"></i>
-              <input type="text" placeholder="Buscar unidad o conductor..." class="border rounded-lg pl-10 pr-4 py-2 text-sm w-64" />
-            </div>
+              <!-- Busqueda -->
+              <div class="relative">
+                  <i class="bi bi-search absolute left-3 top-2 text-gray-400"></i>
+                  <input type="text" name="q" placeholder="Buscar unidad o conductor..." value="{{ q }}" class="border rounded-lg pl-10 pr-4 py-2 text-sm w-64" />
+              </div>
+            </form>
           </div>
 
           <!-- TABLA -->
@@ -114,103 +122,15 @@
                       <span span
                         class="text-white px-2 py-1 rounded-full text-xs{% if acc.autobus.tipo == 'GL' %}
                           
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
                           bg-purple-600
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                         {% elif acc.autobus.tipo == 'PL' %}
                           
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
                           bg-blue-900
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                         {% else %}
                           
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
                           bg-gray-500
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                         {% endif %}">
                         {{ acc.autobus.tipo }}
@@ -291,13 +211,35 @@
 
             <!-- PAGINACIÓN -->
             <div class="flex items-center justify-between px-4 py-3 text-sm text-gray-600">
-              <span>Mostrando 1 a 3 de 10 registros</span>
-
+              {% if paginator %}
+                  <span>
+                      Mostrando {{ accidentes.start_index }} a {{ accidentes.end_index }} de {{ accidentes.paginator.count }} registros
+                  </span>
+              {% else %}
+                  <span>
+                      Mostrando 1 {{ accidentes|length }} de {{ accidentes|length }} registros
+                  </span>
+              {% endif %}
               <div class="flex gap-2">
-                <button class="border px-3 py-1 rounded-md">Previo</button>
-                <button class="bg-purple-700 text-white px-3 py-1 rounded-md">1</button>
-                <button class="border px-3 py-1 rounded-md">2</button>
-                <button class="border px-3 py-1 rounded-md">Siguiente</button>
+                  {% if accidentes.has_previous %}
+                      <a href="?{% for key,value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ accidentes.previous_page_number }}" class="border px-3 py-1 rounded-md">Previo</a>
+                  {% else %}
+                      <span class="border px-3 py-1 rounded-md text-gray-300">Previo</span>
+                  {% endif %}
+
+                  {% for num in accidentes.paginator.page_range %}
+                      {% if accidentes.number == num %}
+                          <span class="bg-purple-700 text-white px-3 py-1 rounded-md">{{ num }}</span>
+                      {% elif num >= accidentes.number|add:'-2' and num <= accidentes.number|add:'2' %}
+                          <a href="?{% for key,value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ num }}" class="border px-3 py-1 rounded-md">{{ num }}</a>
+                      {% endif %}
+                  {% endfor %}
+
+                  {% if accidentes.has_next %}
+                      <a href="?{% for key,value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ accidentes.next_page_number }}" class="border px-3 py-1 rounded-md">Siguiente</a>
+                  {% else %}
+                      <span class="border px-3 py-1 rounded-md text-gray-300">Siguiente</span>
+                  {% endif %}
               </div>
             </div>
           </div>
@@ -663,14 +605,17 @@
       
           if (data.success) {
             Swal.fire({
-              icon: 'success',
-              title: '¡Registro creado!',
-              timer: 2500,
-              showConfirmButton: false
-            }).then(() => location.reload())
-          } else {
-            Swal.fire('Error', data.error, 'error')
-          }
+                icon: 'success',
+                title: '¡Registro creado!',
+                timer: 2500,
+                showConfirmButton: false
+            }).then(() => {
+                // recarga la página sin parámetros GET
+                window.location.href = window.location.origin + window.location.pathname;
+            })
+        } else {
+            Swal.fire('Error', data.error, 'error');
+        }
         } catch (err) {
           console.error(err)
           ocultarLoader()
@@ -678,7 +623,6 @@
         }
       })
     </script>
-
     <SCript>
       function mostrarTabAccidente(tabId, btn) {
         // Ocultar tabs
