@@ -6,6 +6,7 @@ from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseUpload
+from google_auth_oauthlib.flow import InstalledAppFlow
 
 # ================================
 # Forzar que todas las conexiones usen IPv4
@@ -23,27 +24,46 @@ socket.getaddrinfo = getaddrinfo_ipv4
 SCOPES = ["https://www.googleapis.com/auth/drive"]
 TOKEN_FILE = str(settings.GOOGLE_DRIVE_TOKEN_FILE)  # Asegúrate de que esto existe
 ROOT_FOLDER_NAME = str(settings.GOOGLE_DRIVE_ROOT_FOLDER)  # Nombre de tu carpeta raíz
+CREDENTIALS_FILE = settings.GOOGLE_DRIVE_CREDENTIALS
 
 # ================================
 # Servicio de Google Drive
 # ================================
 def get_drive_service():
     """
-    Devuelve un servicio de Google Drive usando token OAuth.
+    Devuelve un servicio autenticado de Google Drive.
+    Si no existe token, lo genera automáticamente.
     """
-    if not os.path.exists(TOKEN_FILE):
-        raise Exception(f"No se encontró token en {TOKEN_FILE}. Ejecuta obtener_token.py primero.")
 
-    creds = Credentials.from_authorized_user_file(TOKEN_FILE, SCOPES)
+    creds = None
 
-    # Refrescar token si está expirado
-    if creds.expired and creds.refresh_token:
-        creds.refresh(Request())
-        with open(TOKEN_FILE, "w") as token_file:
-            token_file.write(creds.to_json())
+    # 1️⃣ Si existe token, lo cargamos
+    if os.path.exists(TOKEN_FILE):
+        creds = Credentials.from_authorized_user_file(TOKEN_FILE, SCOPES)
 
-    # Construir servicio normalmente (IPv4 ya está forzado por socket.getaddrinfo)
-    return build("drive", "v3", credentials=creds)
+    # 2️⃣ Si no hay credenciales válidas, generarlas
+    if not creds or not creds.valid:
+
+        # Si el token existe pero expiró → refrescar
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+
+        else:
+            # Si no existe token → crear flujo nuevo
+            flow = InstalledAppFlow.from_client_secrets_file(
+                CREDENTIALS_FILE,
+                SCOPES
+            )
+            creds = flow.run_local_server(port=0)
+
+        # Guardar token nuevo o actualizado
+        with open(TOKEN_FILE, "w") as token:
+            token.write(creds.to_json())
+
+    # 3️⃣ Construir servicio
+    service = build("drive", "v3", credentials=creds)
+
+    return service
 
 # ================================
 # Carpeta raíz

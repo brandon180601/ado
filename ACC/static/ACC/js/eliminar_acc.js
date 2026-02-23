@@ -16,6 +16,9 @@ function confirmarEliminar(accidenteId) {
 }
 
 function eliminarAccidente(accidenteId) {
+    if (typeof mostrarLoader === "function") {
+        mostrarLoader()
+    }
     fetch(`/accidente/eliminar/${accidenteId}/`, {
         method: 'POST',
         headers: {
@@ -24,6 +27,9 @@ function eliminarAccidente(accidenteId) {
     })
         .then((res) => res.json())
         .then((data) => {
+            if (typeof ocultarLoader === "function") {
+                ocultarLoader()
+            }
             if (data.success) {
                 Swal.fire({
                     icon: 'success',

@@ -78,6 +78,7 @@ class Accidente(models.Model):
     # ==== Carpetas Drive ====
     carpeta_base = models.CharField(max_length=100)
     carpeta_evidencia_inicial = models.URLField()
+    carpeta_evidencia_inicial_id = models.CharField(max_length=255, null=True, blank=True)
     carpeta_evidencia_final = models.URLField(null=True, blank=True)
 
     # ==== Campos que se llenan AL FINAL ====

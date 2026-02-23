@@ -14,6 +14,9 @@ from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 from decimal import Decimal
+from googleapiclient.discovery import build
+from google.oauth2 import service_account
+from django.conf import settings
 import json
 
 def login_view(request):
@@ -164,6 +167,7 @@ def registrar_accidente(request):
         descripcion=data["descripcion"],
         carpeta_base=carpeta_base,
         carpeta_evidencia_inicial=resultado_drive["url"],
+        carpeta_evidencia_inicial_id=resultado_drive["id"],
         estado="EN_PROCESO"
     )
 
@@ -179,10 +183,26 @@ def registrar_accidente(request):
         "accidente_id": accidente.id
     })
 
+def delete_drive_folder(folder_id):
+
+    service = get_drive_service()
+
+    service.files().delete(
+        fileId=folder_id
+    ).execute()
+
+    return True
 
 @login_required
 @require_POST
 def eliminar_accidente(request, accidente_id):
+
+    if request.method != "POST":
+        return JsonResponse({
+            'success': False,
+            'error': 'Método no permitido'
+        }, status=405)
+
     accidente = get_object_or_404(Accidente, id=accidente_id)
 
     if accidente.estado == 'FINALIZADO':
@@ -191,8 +211,23 @@ def eliminar_accidente(request, accidente_id):
             'error': 'No se puede eliminar un accidente finalizado'
         })
 
+    # eliminar carpeta inicial
+    try:
+        if accidente.carpeta_evidencia_inicial_id:
+            delete_drive_folder(accidente.carpeta_evidencia_inicial_id)
+
+    except Exception as e:
+        return JsonResponse({
+            'success': False,
+            'error': f'Error eliminando carpeta inicial: {str(e)}'
+        })
+
+    # eliminar registro
     accidente.delete()
-    return JsonResponse({'success': True})
+
+    return JsonResponse({
+        'success': True
+    })
 
 @csrf_exempt
 def asignar_proveedor(request, accidente_id):
