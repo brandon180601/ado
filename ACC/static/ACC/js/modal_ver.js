@@ -1,4 +1,17 @@
+// =========================
+// VARIABLES GLOBALES
+// =========================
+
+let imagenesAccidente = []
+let indiceImagen = 0
+
+
+// =========================
+// VER ACCIDENTE
+// =========================
+
 function verAccidente(id) {
+
     fetch(`/accidente/vista/${id}/`)
         .then(response => response.json())
         .then(data => {
@@ -43,7 +56,7 @@ function verAccidente(id) {
 
 
             // =========================
-            // DESCRIPCION
+            // DESCRIPCIÓN
             // =========================
 
             document.getElementById("ver_descripcion").innerText = data.descripcion
@@ -80,53 +93,119 @@ function verAccidente(id) {
             let estado = data.estado
 
             if (estado === "EN_PROCESO") {
+
                 estadoBadge.innerText = "En proceso"
-                estadoBadge.className = "bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs"
+
+                estadoBadge.className =
+                    "bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs"
+
             }
             else if (estado === "EN_REPARACION") {
+
                 estadoBadge.innerText = "En reparación"
-                estadoBadge.className = "bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs"
+
+                estadoBadge.className =
+                    "bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs"
+
             }
             else if (estado === "FINALIZADO") {
+
                 estadoBadge.innerText = "Finalizado"
-                estadoBadge.className = "bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs"
+
+                estadoBadge.className =
+                    "bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs"
+
             }
 
 
-            // // =========================
-            // // TIPO DAÑO
-            // // =========================
-
-            // document.getElementById("ver_tipo_dano").innerText = data.tipo_dano
-
-
-            // // =========================
-            // // TIPO CARGO
-            // // =========================
-
-            // document.getElementById("ver_tipo_cargo").innerText = data.tipo_cargo
             // =========================
-            // IMAGEN (SI EXISTE)
+            // IMAGENES DESDE DRIVE
             // =========================
 
-            if (data.imagen) {
-                document.getElementById("ver_imagen").src = data.imagen
+            imagenesAccidente = data.imagenes || []
 
-                document.getElementById("ver_imagen").classList.remove("hidden")
+            indiceImagen = 0
 
-                document.getElementById("sin_imagen").classList.add("hidden")
-            }
-            else {
-                document.getElementById("ver_imagen").classList.add("hidden")
-
-                document.getElementById("sin_imagen").classList.remove("hidden")
-            }
+            mostrarImagenActual()
 
         })
         .catch(error => {
+
             console.error("Error:", error)
+
             alert("Error al cargar el accidente")
+
         })
+
+}
+
+
+
+// =========================
+// MOSTRAR IMAGEN ACTUAL
+// =========================
+
+function mostrarImagenActual() {
+
+    const img = document.getElementById("ver_imagen")
+
+    const sin = document.getElementById("sin_imagen")
+
+
+    if (imagenesAccidente.length === 0) {
+
+        img.classList.add("hidden")
+
+        sin.classList.remove("hidden")
+
+        return
+
+    }
+
+    img.src = imagenesAccidente[indiceImagen].url
+
+    img.classList.remove("hidden")
+
+    sin.classList.add("hidden")
+
+}
+
+
+
+// =========================
+// SIGUIENTE IMAGEN
+// =========================
+
+function siguienteImagen() {
+
+    if (imagenesAccidente.length === 0) return
+
+    indiceImagen++
+
+    if (indiceImagen >= imagenesAccidente.length)
+        indiceImagen = 0
+
+    mostrarImagenActual()
+
+}
+
+
+
+// =========================
+// IMAGEN ANTERIOR
+// =========================
+
+function anteriorImagen() {
+
+    if (imagenesAccidente.length === 0) return
+
+    indiceImagen--
+
+    if (indiceImagen < 0)
+        indiceImagen = imagenesAccidente.length - 1
+
+    mostrarImagenActual()
+
 }
 
 
@@ -136,9 +215,11 @@ function verAccidente(id) {
 // =========================
 
 function cerrarModalVer() {
+
     const modal = document.getElementById("modalVerAccidente")
 
     modal.classList.remove("flex")
 
     modal.classList.add("hidden")
+
 }

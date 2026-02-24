@@ -644,17 +644,24 @@
                 Fotos del incidente
               </h3>
 
-              <div class="bg-gray-100 rounded-lg h-[220px] flex items-center justify-center">
-
+              <div class="bg-gray-100 rounded-lg h-[220px] flex items-center justify-center relative">
+                <!-- Botón anterior -->
+                <button onclick="anteriorImagen()"
+                    class="absolute left-2 bg-white shadow px-2 py-1 rounded">
+                    ‹
+                </button>
                 <img id="ver_imagen"
                     class="max-h-[200px] rounded-lg hidden">
-
                 <span id="sin_imagen"
-                      class="text-gray-400 text-sm">
-                  Sin evidencia
+                    class="text-gray-400 text-sm">
+                    Sin evidencia
                 </span>
-
-              </div>
+                <!-- Botón siguiente -->
+                <button onclick="siguienteImagen()"
+                    class="absolute right-2 bg-white shadow px-2 py-1 rounded">
+                    ›
+                </button>
+            </div>
 
             </div>
 

@@ -519,15 +519,49 @@ def finalizar_accidente(request, accidente_id):
         "mensaje": "Accidente finalizado correctamente"
     })
 
+def get_drive_images(folder_id):
+
+    service = get_drive_service()
+
+    results = service.files().list(
+        q=f"'{folder_id}' in parents and mimeType contains 'image/' and trashed=false",
+        fields="files(id, name, mimeType)",
+        orderBy="createdTime asc"
+    ).execute()
+
+    files = results.get("files", [])
+
+    imagenes = []
+
+    for file in files:
+
+        imagenes.append({
+            "id": file["id"],
+            "nombre": file["name"],
+            "url": f"https://lh3.googleusercontent.com/d/{file['id']}=w1200"
+        })
+
+    return imagenes
+
 def vista_accidente(request, accidente_id):
 
-    accidente = get_object_or_404(Accidente.objects.select_related(
-        'autobus',
-        'conductor',
-        'tipo_dano',
-        'tipo_cargo',
-        'proveedor'
-    ), id=accidente_id)
+    accidente = get_object_or_404(
+        Accidente.objects.select_related(
+            'autobus',
+            'conductor',
+            'tipo_dano',
+            'tipo_cargo',
+            'proveedor'
+        ),
+        id=accidente_id
+    )
+
+    imagenes = []
+
+    if accidente.carpeta_evidencia_inicial_id:
+        imagenes = get_drive_images(
+            accidente.carpeta_evidencia_inicial_id
+        )
 
     return JsonResponse({
 
@@ -538,6 +572,8 @@ def vista_accidente(request, accidente_id):
         "descripcion": accidente.descripcion,
 
         "estado": accidente.estado,
+
+        "imagenes": imagenes,
 
         "autobus": {
             "economico": accidente.autobus.economico,
