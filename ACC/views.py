@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from .models import *
 from django.utils import timezone
+from django.utils.timezone import now
 from .drive_utils import *
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
@@ -62,6 +63,12 @@ def accidentes(request):
         "autobus", "conductor", "tipo_dano"
     ).all()
 
+    accidentes_qs = Accidente.objects.select_related(
+        "autobus", "conductor", "tipo_dano"
+    ).all().order_by("-fecha")
+
+    total = Accidente.objects.all()
+
     # --- FILTROS ---
     # Estado
     estado = request.GET.get("estado")
@@ -79,11 +86,11 @@ def accidentes(request):
     if fecha_desde:
         fecha_desde_obj = parse_date(fecha_desde)
         if fecha_desde_obj:
-            accidentes = accidentes.filter(fecha__gte=fecha_desde_obj)
+            accidentes = accidentes.filter(fecha__date__gte=fecha_desde_obj)
     if fecha_hasta:
         fecha_hasta_obj = parse_date(fecha_hasta)
         if fecha_hasta_obj:
-            accidentes = accidentes.filter(fecha__lte=fecha_hasta_obj)
+            accidentes = accidentes.filter(fecha__date__lte=fecha_hasta_obj)
 
     # Búsqueda por unidad, conductor o código
     q = request.GET.get("q")
@@ -111,6 +118,10 @@ def accidentes(request):
         page_number = request.GET.get("page")
         page_obj = paginator.get_page(page_number)
 
+    # Obtener fechas para el calendario
+    fecha_min = accidentes_qs.order_by("fecha").first().fecha if accidentes_qs.exists() else None
+    fecha_max = now().date()  # fecha actual
+
     context = {
         "accidentes": page_obj,
         "paginator": paginator if mostrar != 0 else None,
@@ -120,6 +131,9 @@ def accidentes(request):
         "fecha_hasta": fecha_hasta or "",
         "mostrar": mostrar,
         "q": q or "",
+        "fecha_min": fecha_min,
+        "today": fecha_max,
+        "total": total,
     }
 
     return render(request, "ACC/accidentes.html", context)
@@ -505,3 +519,44 @@ def finalizar_accidente(request, accidente_id):
         "mensaje": "Accidente finalizado correctamente"
     })
 
+def vista_accidente(request, accidente_id):
+
+    accidente = get_object_or_404(Accidente.objects.select_related(
+        'autobus',
+        'conductor',
+        'tipo_dano',
+        'tipo_cargo',
+        'proveedor'
+    ), id=accidente_id)
+
+    return JsonResponse({
+
+        "id": accidente.id,
+
+        "fecha": timezone.localtime(accidente.fecha).strftime("%d/%m/%Y"),
+
+        "descripcion": accidente.descripcion,
+
+        "estado": accidente.estado,
+
+        "autobus": {
+            "economico": accidente.autobus.economico,
+            "tipo": accidente.autobus.tipo,
+            "seams": accidente.autobus.seams,
+            "no_obra": accidente.autobus.no_obra,
+            "serie": accidente.autobus.serie,
+            "placas": accidente.autobus.placas,
+        },
+
+        "conductor": {
+            "clave": accidente.conductor.clave,
+            "nombre": f"{accidente.conductor.nombres} {accidente.conductor.a_paterno} {accidente.conductor.a_materno}"
+        },
+
+        "tipo_dano": accidente.tipo_dano.descripcion,
+
+        "tipo_cargo": accidente.tipo_cargo.descripcion,
+
+        "proveedor": accidente.proveedor.nombre if accidente.proveedor else "Sin asignar",
+
+    })

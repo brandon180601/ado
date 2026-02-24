@@ -43,47 +43,60 @@
 
           <!-- FILTROS -->
           <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-6">
-            <form method="get" class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-6">
-              <div class="flex flex-wrap items-center gap-4">
-                  <!-- Mostrar registros -->
-                  <div class="flex items-center gap-2 text-sm text-gray-600">
-                      <span>Mostrar</span>
-                      <select name="mostrar" class="border rounded-md px-2 py-1 text-sm" onchange="this.form.submit()">
-                          <option value="50" {% if mostrar == 50 %}selected{% endif %}>50</option>
-                          <option value="100" {% if mostrar == 100 %}selected{% endif %}>100</option>
-                          <option value="150" {% if mostrar == 150 %}selected{% endif %}>150</option>
-                          <option value="0" {% if mostrar == 0 %}selected{% endif %}>Todos</option>
-                      </select>
-                      <span>registros</span>
-                  </div>
+            <form method="get" class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 w-full">
 
-                  <!-- Estado -->
-                  <select name="estado" class="border rounded-md px-3 py-2 text-sm" onchange="this.form.submit()">
-                      <option value="TODOS" {% if estado == "TODOS" %}selected{% endif %}>Todos</option>
-                      <option value="EN_PROCESO" {% if estado == "EN_PROCESO" %}selected{% endif %}>En proceso</option>
-                      <option value="EN_REPARACION" {% if estado == "EN_REPARACION" %}selected{% endif %}>En reparación</option>
-                      <option value="FINALIZADO" {% if estado == "FINALIZADO" %}selected{% endif %}>Cerrado</option>
-                  </select>
+              <div class="flex flex-wrap items-center gap-2">
 
-                  <!-- Tipo unidad -->
-                  <select name="tipo" class="border rounded-md px-3 py-2 text-sm" onchange="this.form.submit()">
-                      <option value="TODOS" {% if tipo == "TODOS" %}selected{% endif %}>Todos</option>
-                      <option value="GL" {% if tipo == "GL" %}selected{% endif %}>GL</option>
-                      <option value="PL" {% if tipo == "PL" %}selected{% endif %}>PL</option>
-                  </select>
+                <!-- Mostrar registros -->
+                <select name="mostrar" class="border rounded-md px-2 py-1 text-sm" onchange="this.form.submit()">
+                    <option disabled>Mostrar</option>
+                    <option value="50" {% if mostrar == 50 %}selected{% endif %}>50</option>
+                    <option value="100" {% if mostrar == 100 %}selected{% endif %}>100</option>
+                    <option value="150" {% if mostrar == 150 %}selected{% endif %}>150</option>
+                    <option value="0" {% if mostrar == 0 %}selected{% endif %}>Todos</option>
+                </select>
 
-                  <!-- Fecha -->
-                  <div class="flex items-center gap-2 text-sm text-gray-600">
-                      <input type="date" name="fecha_desde" value="{{ fecha_desde }}" class="border rounded-md px-2 py-1 text-sm">
-                      <span>a</span>
-                      <input type="date" name="fecha_hasta" value="{{ fecha_hasta }}" class="border rounded-md px-2 py-1 text-sm">
-                  </div>
+                <!-- Estado -->
+                <select name="estado" class="border rounded-md px-2 py-1 text-sm" onchange="this.form.submit()">
+                    <option disabled>Estado</option>
+                    <option value="TODOS" {% if estado == "TODOS" %}selected{% endif %}>Todos</option>
+                    <option value="EN_PROCESO" {% if estado == "EN_PROCESO" %}selected{% endif %}>En proceso</option>
+                    <option value="EN_REPARACION" {% if estado == "EN_REPARACION" %}selected{% endif %}>En reparación</option>
+                    <option value="FINALIZADO" {% if estado == "FINALIZADO" %}selected{% endif %}>Cerrado</option>
+                </select>
+
+                <!-- Tipo unidad -->
+                <select name="tipo" class="border rounded-md px-2 py-1 text-sm" onchange="this.form.submit()">
+                    <option disabled>Tipo</option>
+                    <option value="TODOS" {% if tipo == "TODOS" %}selected{% endif %}>Todos</option>
+                    <option value="GL" {% if tipo == "GL" %}selected{% endif %}>GL</option>
+                    <option value="PL" {% if tipo == "PL" %}selected{% endif %}>PL</option>
+                </select>
+
+                <!-- Fecha -->
+                <input type="date" name="fecha_desde" value="{{ fecha_desde }}" 
+                      class="border rounded-md px-2 py-1 text-sm"
+                      onchange="this.form.submit()"
+                      min="{{ fecha_min }}"
+                      max="{{ today }}">
+                <span class="hidden lg:inline">a</span>
+                <input type="date" name="fecha_hasta" value="{{ fecha_hasta }}" 
+                      class="border rounded-md px-2 py-1 text-sm"
+                      onchange="this.form.submit()"
+                      min="{{ fecha_min }}"
+                      max="{{ today }}">
+
+                      {% if mostrar != 50 or estado != "TODOS" or tipo != "TODOS" or fecha_desde or fecha_hasta or q %}
+                      <a href="/accidentes/" class="relative bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-md text-sm ml-2">
+                          Quitar filtos
+                      </a>
+                      {% endif %}
               </div>
-
               <!-- Busqueda -->
-              <div class="relative">
-                  <i class="bi bi-search absolute left-3 top-2 text-gray-400"></i>
-                  <input type="text" name="q" placeholder="Buscar unidad o conductor..." value="{{ q }}" class="border rounded-lg pl-10 pr-4 py-2 text-sm w-64" />
+              <div class="relative mt-2 lg:mt-0">
+                <i class="bi bi-search absolute left-3 top-2 text-gray-400"></i>
+                <input type="text" name="q" placeholder="Buscar unidad o conductor..." value="{{ q }}" 
+                      class="border rounded-lg pl-10 pr-4 py-2 text-sm w-64" />
               </div>
             </form>
           </div>
@@ -165,9 +178,12 @@
                     <!-- Acciones -->
                     <td class="px-4 py-3 flex justify-center gap-2">
                       <!-- VER -->
-                      <button class="group text-gray-400 hover:text-[#00194F] transition">
+                      <button onclick="verAccidente({{ acc.id }})"
+                              class="group text-gray-400 hover:text-[#00194F] transition">
+
                         <i class="bi bi-eye group-hover:hidden text-lg"></i>
                         <i class="bi bi-eye-fill hidden group-hover:inline text-lg"></i>
+
                       </button>
 
                       {% if acc.estado == 'EN_PROCESO' %}
@@ -217,7 +233,7 @@
                   </span>
               {% else %}
                   <span>
-                      Mostrando 1 {{ accidentes|length }} de {{ accidentes|length }} registros
+                      Mostrando {{ accidentes|length }} de {{ total|length }} registros
                   </span>
               {% endif %}
               <div class="flex gap-2">
@@ -531,6 +547,150 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- MODAL VER ACCIDENTE -->
+    <div id="modalVerAccidente"
+        class="fixed inset-0 bg-black/40 hidden items-center justify-center z-50">
+
+      <div class="bg-white w-[900px] rounded-xl shadow-lg">
+
+        <!-- HEADER -->
+        <div class="px-6 py-4 border-b flex justify-between items-center">
+          <h2 class="text-lg font-semibold text-gray-800">
+            Detalles del accidente
+          </h2>
+
+          <button onclick="cerrarModalVer()"
+                  class="text-gray-400 hover:text-gray-600 text-xl">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+
+        <!-- CONTENIDO -->
+        <div class="p-6">
+
+          <div class="grid grid-cols-2 gap-6">
+
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="space-y-3 text-sm">
+
+              <div class="flex">
+                <span class="w-40 text-gray-500">Fecha</span>
+                <span id="ver_fecha" class="text-gray-800 font-medium"></span>
+              </div>
+
+              <div class="flex">
+                <span class="w-40 text-gray-500">Unidad</span>
+                <span id="ver_unidad" class="text-gray-800 font-medium"></span>
+              </div>
+
+              <div class="flex">
+                <span class="w-40 text-gray-500">Placas</span>
+                <span id="ver_placas" class="text-gray-800 font-medium"></span>
+              </div>
+
+              <div class="flex">
+                <span class="w-40 text-gray-500">Seams</span>
+                <span id="ver_seams" class="text-gray-800 font-medium"></span>
+              </div>
+
+              <div class="flex">
+                <span class="w-40 text-gray-500">Número de obra</span>
+                <span id="ver_no_obra" class="text-gray-800 font-medium"></span>
+              </div>
+
+
+              <!-- TIPO -->
+              <div class="flex items-center">
+                <span class="w-40 text-gray-500">Tipo</span>
+
+                <span id="ver_tipo_badge"
+                  class="text-white px-2 py-1 rounded-full text-xs">
+                </span>
+              </div>
+
+
+              <!-- CONDUCTOR -->
+              <div class="flex">
+                <span class="w-40 text-gray-500">Conductor</span>
+                <span id="ver_conductor" class="text-gray-800 font-medium"></span>
+              </div>
+
+
+              <!-- ESTADO -->
+              <div class="flex">
+                <span class="w-40 text-gray-500">Estado</span>
+
+                <span id="ver_estado_badge"
+                      class="px-3 py-1 rounded-full text-xs">
+                </span>
+              </div>
+
+
+              <div class="flex">
+                <span class="w-40 text-gray-500">Proveedor</span>
+                <span id="ver_proveedor" class="text-gray-800 font-medium"></span>
+              </div>
+
+            </div>
+
+
+            <!-- COLUMNA DERECHA -->
+            <div>
+
+              <h3 class="font-semibold text-gray-700 mb-2">
+                Fotos del incidente
+              </h3>
+
+              <div class="bg-gray-100 rounded-lg h-[220px] flex items-center justify-center">
+
+                <img id="ver_imagen"
+                    class="max-h-[200px] rounded-lg hidden">
+
+                <span id="sin_imagen"
+                      class="text-gray-400 text-sm">
+                  Sin evidencia
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- DESCRIPCIÓN -->
+          <div class="mt-6">
+
+            <h3 class="text-sm font-semibold text-gray-700 mb-2">
+              Descripción del accidente
+            </h3>
+
+            <div class="border rounded-lg p-4 bg-gray-50 text-sm text-gray-700">
+
+              <span id="ver_descripcion"></span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="px-6 py-4 border-t text-center">
+
+          <button onclick="cerrarModalVer()"
+                  class="bg-[#00194F] text-white px-6 py-2 rounded-lg hover:bg-blue-900">
+            Cerrar
+          </button>
+
+        </div>
+
+      </div>
+
     </div>
 
     {% include './includes/scripts.html' %}

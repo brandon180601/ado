@@ -1,10 +1,14 @@
-
 const inputSearch = document.querySelector('input[name="q"]');
-let timeout = null;
 
-inputSearch.addEventListener('input', function () {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => {
+inputSearch.addEventListener('keydown', function (e) {
+    if (e.key === "Enter") {
+        e.preventDefault(); // evita que se haga un submit doble
         this.form.submit();
-    }, 500); // espera medio segundo después de dejar de escribir
+    }
+});
+
+inputSearch.addEventListener('blur', function () {
+    if (this.value.trim() !== "") {
+        this.form.submit();
+    }
 });
