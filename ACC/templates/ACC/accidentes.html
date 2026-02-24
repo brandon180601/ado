@@ -28,10 +28,10 @@
             <h2 class="text-2xl font-semibold text-gray-800">Accidentes</h2>
 
             <div class="flex gap-3 mt-4 md:mt-0">
-              <button class="group flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+              <button class="group flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
                 <i class="bi bi-file-earmark-arrow-down group-hover:hidden"></i>
                 <i class="bi bi-file-earmark-arrow-down-fill hidden group-hover:inline"></i>
-                Exportar PDF
+                Exportar Excel
               </button>
 
               <button id="openModal" class="flex items-center gap-2 bg-purple-700 hover:bg-purple-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition group">
@@ -644,14 +644,14 @@
                 Fotos del incidente
               </h3>
 
-              <div class="bg-gray-100 rounded-lg h-[220px] flex items-center justify-center relative">
+              <div class="bg-gray-100 rounded-lg h-[250px] flex items-center justify-center relative">
                 <!-- Botón anterior -->
                 <button onclick="anteriorImagen()"
                     class="absolute left-2 bg-white shadow px-2 py-1 rounded">
                     ‹
                 </button>
                 <img id="ver_imagen"
-                    class="max-h-[200px] rounded-lg hidden">
+                    class="w-full h-full object-cover rounded-lg hidden">
                 <span id="sin_imagen"
                     class="text-gray-400 text-sm">
                     Sin evidencia
