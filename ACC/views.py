@@ -17,6 +17,9 @@ from decimal import Decimal
 from django.core.paginator import Paginator
 from django.db.models import Q
 from django.utils.dateparse import parse_date
+from django.template.loader import render_to_string
+from weasyprint import HTML
+from django.http import HttpResponse
 import json
 
 def login_view(request):
@@ -596,3 +599,79 @@ def vista_accidente(request, accidente_id):
         "proveedor": accidente.proveedor.nombre if accidente.proveedor else "Sin asignar",
 
     })
+
+
+def extraer_folder_id(url):
+    if not url:
+        return None
+    
+    if "folders/" in url:
+        return url.split("folders/")[1].split("?")[0]
+    
+    return url
+
+def obtener_imagenes_drive(folder_url):
+
+    service = get_drive_service()
+
+    folder_id = extraer_folder_id(folder_url)
+
+    results = service.files().list(
+        q=f"'{folder_id}' in parents and mimeType contains 'image/' and trashed=false",
+        fields="files(id, name, mimeType)",
+        orderBy="createdTime asc"
+    ).execute()
+
+    files = results.get("files", [])
+
+    imagenes = []
+
+    for file in files:
+        imagenes.append(
+            f"https://drive.google.com/uc?export=view&id={file['id']}"
+        )
+
+    return imagenes
+
+def generar_pdf_accidente(request, id):
+
+    accidente = Accidente.objects.select_related(
+        'autobus',
+        'conductor',
+        'proveedor'
+    ).get(id=id)
+
+
+    evidencia_inicial = obtener_imagenes_drive(
+        accidente.carpeta_evidencia_inicial_id
+    )
+
+
+    evidencia_final = []
+
+    if accidente.carpeta_evidencia_final:
+        evidencia_final = obtener_imagenes_drive(
+            accidente.carpeta_evidencia_final
+        )
+
+
+    html_string = render_to_string(
+        "ACC/pdf/reporte_accidente.html",
+        {
+            "accidente": accidente,
+            "evidencia_inicial": evidencia_inicial,
+            "evidencia_final": evidencia_final
+        }
+    )
+
+
+    pdf = HTML(string=html_string).write_pdf()
+
+
+    response = HttpResponse(pdf, content_type="application/pdf")
+
+    response['Content-Disposition'] = \
+        f'inline; filename="Accidente_{accidente.codigo_acc}.pdf"'
+
+
+    return response

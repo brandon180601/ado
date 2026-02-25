@@ -693,11 +693,8 @@
                   class="bg-[#00194F] text-white px-6 py-2 rounded-lg hover:bg-blue-900">
             Cerrar
           </button>
-
         </div>
-
       </div>
-
     </div>
 
     {% include './includes/scripts.html' %}
@@ -705,7 +702,10 @@
       function getCSRFToken() {
         return document.querySelector('meta[name="csrf-token"]').getAttribute('content')
       }
-      
+      function descargarPDF(id) {
+        const url = `/accidente/pdf/${id}/`;
+        window.open(url, "_blank");
+      }
       /* ===================== VALIDACIONES ===================== */
       
       function validarStep1() {
@@ -790,7 +790,7 @@
         }
       })
     </script>
-    <SCript>
+    <script>
       function mostrarTabAccidente(tabId, btn) {
         // Ocultar tabs
         document.querySelectorAll('#modalEditarAccidente [id^="tab-"]').forEach((tab) => {
@@ -820,6 +820,7 @@
           btnFinalizar.classList.add('hidden')
         }
       }
-    </SCript>
+    </script>
+  
   </body>
 </html>

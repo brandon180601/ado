@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = [os.environ.get("RENDER_EXTERNAL_HOSTNAME"),
     'localhost',
     '127.0.0.1',
-    '192.168.1.68',
+    '192.168.1.71',
     '192.168.137.186',
     '128.3.76.116',]
 
